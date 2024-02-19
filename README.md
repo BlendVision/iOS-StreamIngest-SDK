@@ -10,3 +10,6 @@ You can integrate BVStreamingest into your Xcode project using Swift Package Man
 3. Enter https://github.com/BlendVision/bv-streamingest as the package repository URL.
 4. Choose the appropriate version range and click "Next".
 5. Follow the prompts to complete the installation.
+
+## Our Examples
+See our [examples](https://github.com/BlendVision/iOS-StreamIngest-Samples) for more details. There, you can find simple applications, including BasicStreamIngesting for iOS.
