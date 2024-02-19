@@ -2,14 +2,14 @@
 BlendVision stream ingest SDK is a powerful streaming ingestion library for live video streaming on iOS platform.
 
 ## Installation
-### Swift Package Manager
-You can integrate BVStreamingest into your Xcode project using Swift Package Manager (SPM).
+### Using Swift Package Manager
+[Swift Package Manager](https://www.swift.org/documentation/package-manager/) is a tool for managing the distribution of Swift frameworks. It integrates with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
-1. Open your project in Xcode.
-2. Select "File" > "Swift Packages" > "Add Package Dependency..." from the menu.
-3. Enter https://github.com/BlendVision/bv-streamingest as the package repository URL.
-4. Choose the appropriate version range and click "Next".
-5. Follow the prompts to complete the installation.
+#### Using Xcode
+To integrate using Xcode 14, open your Project file and specify it in `Project > Package Dependencies` using the following URL:
+```swift
+https://github.com/BlendVision/iOS-StreamIngest-SDK.git
+```
 
 ## Our Examples
 See our [examples](https://github.com/BlendVision/iOS-StreamIngest-Samples) for more details. There, you can find simple applications, including BasicStreamIngesting for iOS.
