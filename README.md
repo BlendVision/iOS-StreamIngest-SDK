@@ -1,5 +1,5 @@
-# BVStreamingest
-BVStreamingest is a powerful streaming ingestion library for live video streaming on iOS platform.
+# BlendVision Stream Ingest SDK
+BlendVision stream ingest SDK is a powerful streaming ingestion library for live video streaming on iOS platform.
 
 ## Installation
 ### Swift Package Manager
