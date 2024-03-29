@@ -1,6 +1,13 @@
 # BlendVision Stream Ingest iOS SDK
 BlendVision stream ingest SDK is a powerful streaming ingestion library for live video streaming on iOS platform.
 
+## Dependencies
+- PerfectLibCore.xcframework
+- PerfectLibFaceTrackingPlus.xcframework
+- PerfectLibHandlerCore.xcframework
+- PerfectLibMakeupPlus.xcframework
+- PerfectLibProductHandler.xcframework
+
 ## Installation
 ### Using Swift Package Manager
 [Swift Package Manager](https://www.swift.org/documentation/package-manager/) is a tool for managing the distribution of Swift frameworks. It integrates with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
