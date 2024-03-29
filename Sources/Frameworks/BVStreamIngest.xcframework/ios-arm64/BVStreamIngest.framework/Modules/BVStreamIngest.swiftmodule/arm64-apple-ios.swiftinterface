@@ -6,12 +6,39 @@ import AVFoundation
 @_exported import BVStreamIngest
 import Foundation
 import HaishinKit
+import PerfectLibCore
+import PerfectLibMakeupPlus
+import PerfectLibProductHandler
 import Swift
 import UIKit
 import VideoToolbox
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum EffectType {
+  case unknown
+  case skinSmooth
+  public static func == (a: BVStreamIngest.EffectType, b: BVStreamIngest.EffectType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class Effect {
+  public var type: BVStreamIngest.EffectType {
+    get
+  }
+  public var intensity: Swift.Int
+  public init(intensity: Swift.Int = 0)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class SkinSmoothEffect : BVStreamIngest.Effect {
+  override public var type: BVStreamIngest.EffectType {
+    get
+  }
+  override public init(intensity: Swift.Int = super)
+  @objc deinit
+}
 public enum StreamIngestQualityLevel : Swift.String {
   case low
   case medium
@@ -73,6 +100,48 @@ public struct StreamIngestQualityHigh : BVStreamIngest.StreamIngestQuality {
   }
   public init()
 }
+public enum EffectStreamIngestLoadStatus {
+  case unknown
+  case loading
+  case ready
+  case fail
+  public static func == (a: BVStreamIngest.EffectStreamIngestLoadStatus, b: BVStreamIngest.EffectStreamIngestLoadStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol EffectStreamIngestDelegate : ObjectiveC.NSObjectProtocol {
+  func effectStreamIngest(_ ingest: BVStreamIngest.EffectStreamIngest, didChange loadStatus: BVStreamIngest.EffectStreamIngestLoadStatus)
+}
+@objc public class EffectStreamIngest : ObjectiveC.NSObject {
+  public var videoRawDataFrameSize: CoreFoundation.CGSize
+  weak public var delegate: (any BVStreamIngest.EffectStreamIngestDelegate)?
+  public var effects: [BVStreamIngest.Effect] {
+    get
+  }
+  public init(streamIngest: BVStreamIngest.StreamIngest, videoRawDataFrameSize: CoreFoundation.CGSize = CGSize(width: 720, height: 1280))
+  @objc deinit
+  public func createCameraView(_ cameraView: UIKit.UIView)
+  public func attachCamera(device: AVFoundation.AVCaptureDevice) throws
+  public func attachAudio(device: AVFoundation.AVCaptureDevice) throws
+  public func startRunning()
+  public func stopRunning()
+  public func detachCamera()
+  public func detachAudio()
+  public func getEffect(with type: BVStreamIngest.EffectType) -> BVStreamIngest.Effect?
+  public func setEffects(_ effects: [BVStreamIngest.Effect])
+}
+extension BVStreamIngest.EffectStreamIngest : PerfectLibMakeupPlus.MakeupCamDelegate {
+  @objc dynamic public func pfMakeupCam(_ makeupCam: PerfectLibMakeupPlus.MakeupCam, didChange loadStatus: PerfectLibMakeupPlus.MakeupCamLoadStatus)
+}
+extension BVStreamIngest.EffectStreamIngest : PerfectLibProductHandler.VtoApplierDelegate {
+}
+public class StreamIngestAuthorizer {
+  public init(debugMode: Swift.Bool = false)
+  public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
+  @objc deinit
+}
 public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   func streamIngestDidStartPublishing(_ streamIngest: BVStreamIngest.StreamIngest)
   func streamIngestDidStopPublishing(_ streamIngest: BVStreamIngest.StreamIngest)
@@ -112,6 +181,7 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   @objc override final public func removeObserver(_ observer: ObjectiveC.NSObject, forKeyPath keyPath: Swift.String)
   final public func attachCamera(_ device: AVFoundation.AVCaptureDevice?, channel: Swift.UInt8 = 0, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   final public func attachAudio(_ device: AVFoundation.AVCaptureDevice?, automaticallyConfiguresApplicationAudioSession: Swift.Bool = false, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
+  final public func append(sampleBuffer: CoreMedia.CMSampleBuffer)
   final public func startPublish(rtmpUrl: Swift.String, stream name: Swift.String)
   final public func stopPublish()
   final public func close()
@@ -121,6 +191,10 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   @_Concurrency.MainActor(unsafe) final public func attachStream(_ stream: BVStreamIngest.StreamIngest?)
   @objc deinit
 }
+extension BVStreamIngest.EffectType : Swift.Equatable {}
+extension BVStreamIngest.EffectType : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.Equatable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.RawRepresentable {}
+extension BVStreamIngest.EffectStreamIngestLoadStatus : Swift.Equatable {}
+extension BVStreamIngest.EffectStreamIngestLoadStatus : Swift.Hashable {}

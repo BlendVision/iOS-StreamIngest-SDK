@@ -280,6 +280,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import PerfectLibMakeupPlus;
+@import PerfectLibProductHandler;
 @import UIKit;
 #endif
 
@@ -301,6 +303,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
+@interface EffectStreamIngest : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface EffectStreamIngest (SWIFT_EXTENSION(BVStreamIngest)) <PFVtoApplierDelegate>
+@end
+
+
+
+@class PFMakeupCam;
+
+@interface EffectStreamIngest (SWIFT_EXTENSION(BVStreamIngest)) <PFMakeupCamDelegate>
+- (void)pfMakeupCam:(PFMakeupCam * _Nonnull)makeupCam didChangeLoadStatus:(PFMakeupCamLoadStatus)loadStatus;
+@end
+
+
+
 @class NSString;
 
 SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
