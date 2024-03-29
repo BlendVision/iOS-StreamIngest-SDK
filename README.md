@@ -1,6 +1,13 @@
 # BVStreamingest
 BVStreamingest is a powerful streaming ingestion library for live video streaming on iOS platform.
 
+## Dependencies
+- PerfectLibCore.xcframework
+- PerfectLibFaceTrackingPlus.xcframework
+- PerfectLibHandlerCore.xcframework
+- PerfectLibMakeupPlus.xcframework
+- PerfectLibProductHandler.xcframework
+
 ## Installation
 ### Swift Package Manager
 You can integrate BVStreamingest into your Xcode project using Swift Package Manager (SPM).
