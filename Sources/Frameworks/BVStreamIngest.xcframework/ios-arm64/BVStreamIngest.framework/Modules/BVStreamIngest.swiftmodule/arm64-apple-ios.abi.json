@@ -4460,6 +4460,41 @@
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1170,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1207,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1282,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1319,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1324,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
       "kind": "StringLiteral",
       "offset": 343,
       "length": 18,
@@ -4468,7 +4503,7 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
       "kind": "BooleanLiteral",
-      "offset": 2703,
+      "offset": 3542,
       "length": 4,
       "value": "true"
     },
@@ -4503,126 +4538,147 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 356,
+      "offset": 419,
       "length": 26,
       "value": "\"USERDEFAULT_IMAGE_SOURCE\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 468,
+      "offset": 531,
       "length": 26,
       "value": "\"USERDEFAULT_IMAGE_SOURCE\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "BooleanLiteral",
-      "offset": 599,
+      "offset": 662,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 738,
       "length": 25,
       "value": "\"bv.stream.ingest.userId\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 885,
       "length": 25,
       "value": "\"bv.stream.ingest.userId\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1185,
+      "offset": 1248,
       "length": 9,
       "value": "\"preload\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1209,
+      "offset": 1272,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1255,
+      "offset": 1318,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1680,
+      "offset": 1743,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1749,
+      "offset": 1812,
       "length": 17,
       "value": "\"isDeveloperMode\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1832,
+      "offset": 1895,
       "length": 15,
       "value": "\"isPreviewMode\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1913,
+      "offset": 1976,
       "length": 15,
       "value": "\"isMappingMode\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2000,
+      "offset": 2063,
       "length": 20,
       "value": "\"isFunStickerSDMode\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2101,
+      "offset": 2159,
       "length": 7,
       "value": "\"model\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2118,
+      "offset": 2176,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
+      "kind": "StringLiteral",
+      "offset": 2295,
+      "length": 8,
+      "value": "\"config\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
+      "kind": "StringLiteral",
+      "offset": 2313,
+      "length": 6,
+      "value": "\"json\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
+      "kind": "StringLiteral",
+      "offset": 2334,
+      "length": 9,
+      "value": "\"configs\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2290,
+      "offset": 2510,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2359,
+      "offset": 2579,
       "length": 4,
       "value": "\"us\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2415,
+      "offset": 2635,
       "length": 7,
       "value": "\"en_US\""
     },
