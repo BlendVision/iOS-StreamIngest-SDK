@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eK7F5cfiTeUGAg0tli6GO/g385I=
+		Wr4ImOfDdYYX2ZAZiLJK7LWr+bg=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		L8gZJNWUoDjZw3uRVSccUi9VCYE=
+		oOa2NwU7SBPKDOfWZq6YOHKapoc=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,27 @@
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		psryejuA6lopUd/j5AqDlsO4gus=
+		zs93J0yqK6lPd9cvFGUiZttOkc4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		ZrDJ94odqHAy+dKRU/ec3s1MgyA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		xYCqt5CJyy9w/mHZzNlQMDWimhM=
+		</data>
+		<key>configs/config.json</key>
+		<data>
+		ApcFFFt/7DinR17h7TYl28ujkSY=
+		</data>
+		<key>model/YMK_Davinci_20200512_fp16.mnn</key>
+		<data>
+		2QiUJV8vG7zb7xCZVfy8WP5171U=
+		</data>
+		<key>model/YMK_Venus_20210709_fp16_alignmodel.mnn</key>
+		<data>
+		hD+j4A/oXVtE8lF6oD3uxEtBR54=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -61,7 +77,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wy2J4iryX0WyN3+WEXq4LsI7o6wS/vDb4fAEGUDkiTU=
+			i+IftIKn0llnNlnrAvbx7xS3pKP/AbZidVW8PmI49ok=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -89,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YfFP2k2vOnkVsc3OslGLXD/5HbjsL5zaSYuXabFdfkY=
+			X7a/65Aus3IM+HX4Xzr1gxMzCMyJSkeWn616GuTALR0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -97,6 +113,34 @@
 			<key>hash2</key>
 			<data>
 			+AI9iDNi09zn/MdLfSu3exY8E0MEex5dgltZOrGUD8I=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4SlsCllkxmHb1mV+eT1MqNXrIc2Vin4amd8pjFLSFls=
+			</data>
+		</dict>
+		<key>configs/config.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5jXbqHsOlSY5RMOMzhRjHs9/OwdzHdBKGqVZzGysqiA=
+			</data>
+		</dict>
+		<key>model/YMK_Davinci_20200512_fp16.mnn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2kWCP8aIyCHQrPNxjWkwde0yM4dBml0oiTKWrWICi5s=
+			</data>
+		</dict>
+		<key>model/YMK_Venus_20210709_fp16_alignmodel.mnn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KZ17OPPRCPbCf6Odu4K4NCn2xf4r08DZy27xRfhAlVs=
 			</data>
 		</dict>
 	</dict>
