@@ -26,6 +26,19 @@ This document provides a detailed overview of the changes made in the new versio
     let config = StreamIngestConfig(key: licenseKey)
     guard let streamIngest = try await StreamIngest.create(with: config) else { return }
     ```
+- **StreamIngest Authorization:**
+  - **Change**: The `authorizer` property has been removed in the new version.
+  - **New Approach**: Authorization is now required using the `requestAuthentication(completion:)` method.
+  - **Usage**:
+    ```swift
+    streamIngest.requestAuthentication { error in
+      if let error {
+          debugPrint("Authority error = \(error)")
+      } else {
+          debugPrint("StreamIngest SDK authority success")
+      }
+    }
+    ```
 
 ## Notable Changes
 - **Introduction of `CameraPreviewView`:**
@@ -42,6 +55,7 @@ This document provides a detailed overview of the changes made in the new versio
 
 3. **Method Updates:**
    - Made the `StreamIngest` initializer private and introduced the `create(with:)` method for instance creation.
+   - Updated the authorization process to use the `requestAuthentication(completion:)` method instead of the authorizer property.
 
 4. **Specialized View:**
    - Introduced `CameraPreviewView` to handle camera previews more effectively.
