@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BVStreamIngest-Swift.h</key>
 		<data>
-		7PmuyYWSUDPottFuqJKa3HFnO88=
+		N1+tdzm6kn0OQkzQZ7/0IOsUj5Y=
 		</data>
 		<key>Headers/BVStreamIngest.h</key>
 		<data>
@@ -14,51 +14,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UH3UMnOVm8EpePDi8up1BHhFQnE=
+		67esOT5czVBXK4zVH3gIok84OhA=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		L8gZJNWUoDjZw3uRVSccUi9VCYE=
+		Flz9x7wqftPt5+y+SE9UBeeR/zo=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+LPzrSeDpIwQG84ILIvNWzi2dEU=
+		a+Eqhk8SJpvgsIklO7SpGX2IkzE=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		N6xP31xQLN41NaiMtWAN+fQLzjo=
+		9+M0MEBHPSuMaMISmZ2LySlLzTY=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+LPzrSeDpIwQG84ILIvNWzi2dEU=
+		a+Eqhk8SJpvgsIklO7SpGX2IkzE=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vpgc7fBxyhxEjGVFt6FsnSGB6MM=
+		1MVR84SY7gXNWzZWl3FCaEcoSN8=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		L8gZJNWUoDjZw3uRVSccUi9VCYE=
+		Flz9x7wqftPt5+y+SE9UBeeR/zo=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8OQekxJa7QcQI2sFalogfnPC8jo=
+		sCusBmtvBoxe/hBlKp4tJ1kznbU=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CKDmiduV086dzNwrZTKz62JK1Mc=
+		3ceIPC0mzWaVBmqTdPs1kvUk8/k=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8OQekxJa7QcQI2sFalogfnPC8jo=
+		sCusBmtvBoxe/hBlKp4tJ1kznbU=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uvam7CUXmNZKEj6vZYGEJKbf/iY=
+		AepVVwJUpS0QBGhpgdFpVwCif28=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		ZrDJ94odqHAy+dKRU/ec3s1MgyA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		EbM3oOMQnzSYKkR2ojQey7OtKxw=
+		</data>
+		<key>configs/config.json</key>
+		<data>
+		ApcFFFt/7DinR17h7TYl28ujkSY=
+		</data>
+		<key>model/YMK_Davinci_20200512_fp16.mnn</key>
+		<data>
+		2QiUJV8vG7zb7xCZVfy8WP5171U=
+		</data>
+		<key>model/YMK_Venus_20210709_fp16_alignmodel.mnn</key>
+		<data>
+		hD+j4A/oXVtE8lF6oD3uxEtBR54=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jkMuzDAVvFnj+90ICGz98xYIf8qT84APs+v2+SdQOkU=
+			WV1TcNXMAd9Dy2ANbnM1JlglwUNlmvmlg6fJZRcZPzs=
 			</data>
 		</dict>
 		<key>Headers/BVStreamIngest.h</key>
@@ -81,70 +97,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wy2J4iryX0WyN3+WEXq4LsI7o6wS/vDb4fAEGUDkiTU=
+			h3HCmP/j6xSEImBzz+tq0OVb7998jnPNjH93qpEgCGM=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rlte3iPTiz28iw17NCVdBPVOLQe/3FnQ+7zXPCpZOUQ=
+			K80QD1/5eztpQcXqFJOkxboeIVrMiLdWD8+DadPR9pw=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OnoFqGIJz+QutAKT7heERO9mqZagEYS89SNStlLqQzA=
+			OBvdJnl+mTWdc24bmm+KZ4GlODySp24sgW4S30PoE6E=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rlte3iPTiz28iw17NCVdBPVOLQe/3FnQ+7zXPCpZOUQ=
+			K80QD1/5eztpQcXqFJOkxboeIVrMiLdWD8+DadPR9pw=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jg4Bg9QP/1IHXVkCdEipAInDcCCkZfnZ3gDXRx8Mug0=
+			b60Z006ttShq7S4w5wvUEiCdF2P78zXjw7vV2xuIxQI=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wy2J4iryX0WyN3+WEXq4LsI7o6wS/vDb4fAEGUDkiTU=
+			h3HCmP/j6xSEImBzz+tq0OVb7998jnPNjH93qpEgCGM=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Yxg/peKTVkV5uR2DpODfiD4nk5WCF+5ENoVQUK6rVg=
+			ajPwV7eHwyF73F06qnKlG5ELsNbd4Wegm5OmpmwKINY=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zBqioVdtjYu9QsYdER3HADeG1RBdrS4Tw01C/xVgKbY=
+			v91o8rL78GhoDwxFSf+VUxcqoKhP02oNHMWsKJNDb70=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Yxg/peKTVkV5uR2DpODfiD4nk5WCF+5ENoVQUK6rVg=
+			ajPwV7eHwyF73F06qnKlG5ELsNbd4Wegm5OmpmwKINY=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IfjmZ5sT23BwmacCJ+C3zXvTGbA2q53JdRfU69TOr2w=
+			XcLCMFBJS3H2AAVurz7ftPWCyUJtgHItPOPRtvNanX8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +168,34 @@
 			<key>hash2</key>
 			<data>
 			+AI9iDNi09zn/MdLfSu3exY8E0MEex5dgltZOrGUD8I=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WmFSJq94kcPiM8OnEbNHYQWbFWtbD/WooM80R3cKYBI=
+			</data>
+		</dict>
+		<key>configs/config.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5jXbqHsOlSY5RMOMzhRjHs9/OwdzHdBKGqVZzGysqiA=
+			</data>
+		</dict>
+		<key>model/YMK_Davinci_20200512_fp16.mnn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2kWCP8aIyCHQrPNxjWkwde0yM4dBml0oiTKWrWICi5s=
+			</data>
+		</dict>
+		<key>model/YMK_Venus_20210709_fp16_alignmodel.mnn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KZ17OPPRCPbCf6Odu4K4NCn2xf4r08DZy27xRfhAlVs=
 			</data>
 		</dict>
 	</dict>
