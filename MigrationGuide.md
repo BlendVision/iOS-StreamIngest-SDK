@@ -18,7 +18,7 @@ This document provides a detailed overview of the changes made in the new versio
     - **Description**: This change indicates a shift towards using a more specialized view for handling camera previews.
 
 ## Method Updates
-- **`StreamIngest` Initialization:**
+- **StreamIngest Initialization:**
   - **Change**: The initializer of the `StreamIngest` class has been made private.
   - **New Approach**: Instances of `StreamIngest` must now be created using the `create(with:)` method.
   - **Usage**:
