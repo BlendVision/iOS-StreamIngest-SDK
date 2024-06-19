@@ -497,6 +497,142 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraPreviewView",
+        "printedName": "CameraPreviewView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "adjustRenderView",
+            "printedName": "adjustRenderView(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGSize?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest17CameraPreviewViewC012adjustRenderE02toySo6CGSizeVSg_tF",
+            "mangledName": "$s14BVStreamIngest17CameraPreviewViewC012adjustRenderE02toySo6CGSizeVSg_tF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BVStreamIngest@objc(cs)CameraPreviewView",
+        "mangledName": "$s14BVStreamIngest17CameraPreviewViewC",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1537,8 +1673,8 @@
       },
       {
         "kind": "Import",
-        "name": "PerfectLibCore",
-        "printedName": "PerfectLibCore",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BVStreamIngest",
         "declAttributes": [
@@ -1547,15 +1683,46 @@
       },
       {
         "kind": "Import",
+        "name": "PerfectLibCore",
+        "printedName": "PerfectLibCore",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "PerfectLibMakeupPlus",
         "printedName": "PerfectLibMakeupPlus",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest"
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
         "name": "PerfectLibProductHandler",
         "printedName": "PerfectLibProductHandler",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "BVStreamIngest"
       },
@@ -2173,23 +2340,38 @@
           {
             "kind": "Function",
             "name": "createCameraView",
-            "printedName": "createCameraView(_:)",
+            "printedName": "createCameraView(frame:aspectRatio:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Optional",
+                "printedName": "BVStreamIngest.CameraPreviewView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPreviewView",
+                    "printedName": "BVStreamIngest.CameraPreviewView",
+                    "usr": "c:@M@BVStreamIngest@objc(cs)CameraPreviewView"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C16createCameraViewyySo6UIViewCF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C16createCameraViewyySo6UIViewCF",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C16createCameraView5frame11aspectRatioAA0f7PreviewG0CSgSo6CGRectV_14CoreFoundation7CGFloatVtF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C16createCameraView5frame11aspectRatioAA0f7PreviewG0CSgSo6CGRectV_12CoreGraphics7CGFloatVtF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
@@ -2424,42 +2606,6 @@
               "Override"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "pfMakeupCam",
-            "printedName": "pfMakeupCam(_:didChange:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MakeupCam",
-                "printedName": "PerfectLibMakeupPlus.MakeupCam",
-                "usr": "c:objc(cs)PFMakeupCam"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MakeupCamLoadStatus",
-                "printedName": "PerfectLibMakeupPlus.MakeupCamLoadStatus",
-                "usr": "c:@E@PFMakeupCamLoadStatus"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BVStreamIngest@objc(cs)EffectStreamIngest(im)pfMakeupCam:didChangeLoadStatus:",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C11pfMakeupCam_9didChangeySo08PFMakeupG0C_So0jG10LoadStatusVtF",
-            "moduleName": "BVStreamIngest",
-            "objc_name": "pfMakeupCam:didChangeLoadStatus:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2538,6 +2684,23 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2551,14 +2714,20 @@
         "name": "PerfectLibCore",
         "printedName": "PerfectLibCore",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest"
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
         "name": "PerfectLibMakeupPlus",
         "printedName": "PerfectLibMakeupPlus",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest"
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -2585,7 +2754,10 @@
         "name": "PerfectLibCore",
         "printedName": "PerfectLibCore",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest"
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -2810,6 +2982,45 @@
         "name": "StreamIngest",
         "printedName": "StreamIngest",
         "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BVStreamIngest.StreamIngest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StreamIngest",
+                    "printedName": "BVStreamIngest.StreamIngest",
+                    "usr": "c:@M@BVStreamIngest@objc(cs)StreamIngest"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StreamIngestConfig",
+                "printedName": "BVStreamIngest.StreamIngestConfig",
+                "usr": "s:14BVStreamIngest06StreamB6ConfigC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB0C6create4withACSgAA0cB6ConfigC_tYaKFZ",
+            "mangledName": "$s14BVStreamIngest06StreamB0C6create4withACSgAA0cB6ConfigC_tYaKFZ",
+            "moduleName": "BVStreamIngest",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Var",
             "name": "videoBitrate",
@@ -3488,32 +3699,6 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "StreamIngest",
-                "printedName": "BVStreamIngest.StreamIngest",
-                "usr": "c:@M@BVStreamIngest@objc(cs)StreamIngest"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BVStreamIngest@objc(cs)StreamIngest(im)init",
-            "mangledName": "$s14BVStreamIngest06StreamB0CACycfc",
-            "moduleName": "BVStreamIngest",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "addObserver",
             "printedName": "addObserver(_:forKeyPath:options:context:)",
@@ -3865,6 +4050,62 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestAuthentication",
+            "printedName": "requestAuthentication(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Error?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB0C21requestAuthentication10completionyys5Error_pSgcSg_tF",
+            "mangledName": "$s14BVStreamIngest06StreamB0C21requestAuthentication10completionyys5Error_pSgcSg_tF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3877,6 +4118,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -3948,14 +4190,20 @@
         "name": "PerfectLibCore",
         "printedName": "PerfectLibCore",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest"
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
         "name": "PerfectLibMakeupPlus",
         "printedName": "PerfectLibMakeupPlus",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest"
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -3980,6 +4228,46 @@
         "printedName": "HaishinKit",
         "declKind": "Import",
         "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PerfectLibCore",
+        "printedName": "PerfectLibCore",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PerfectLibMakeupPlus",
+        "printedName": "PerfectLibMakeupPlus",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -4066,8 +4354,8 @@
             "mangledName": "$s14BVStreamIngest16StreamRenderViewC06attachC0yyAA0cB0CSgF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "Custom",
               "Final",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -4154,6 +4442,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -4164,6 +4459,214 @@
         "declKind": "Import",
         "moduleName": "BVStreamIngest",
         "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PerfectLibCore",
+        "printedName": "PerfectLibCore",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PerfectLibMakeupPlus",
+        "printedName": "PerfectLibMakeupPlus",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PerfectLibProductHandler",
+        "printedName": "PerfectLibProductHandler",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StreamIngestConfig",
+        "printedName": "StreamIngestConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest06StreamB6ConfigC3keySSvp",
+            "mangledName": "$s14BVStreamIngest06StreamB6ConfigC3keySSvp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB6ConfigC3keySSvg",
+                "mangledName": "$s14BVStreamIngest06StreamB6ConfigC3keySSvg",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB6ConfigC3keySSvs",
+                "mangledName": "$s14BVStreamIngest06StreamB6ConfigC3keySSvs",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB6ConfigC3keySSvM",
+                "mangledName": "$s14BVStreamIngest06StreamB6ConfigC3keySSvM",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StreamIngestConfig",
+                "printedName": "BVStreamIngest.StreamIngestConfig",
+                "usr": "s:14BVStreamIngest06StreamB6ConfigC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVStreamIngest06StreamB6ConfigC3keyACSS_tcfc",
+            "mangledName": "$s14BVStreamIngest06StreamB6ConfigC3keyACSS_tcfc",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14BVStreamIngest06StreamB6ConfigC",
+        "mangledName": "$s14BVStreamIngest06StreamB6ConfigC",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       }
@@ -4205,6 +4708,76 @@
       "offset": 1721,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 770,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "StringLiteral",
+      "offset": 1270,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "StringLiteral",
+      "offset": 1354,
+      "length": 41,
+      "value": "\"The object \""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "StringLiteral",
+      "offset": 1373,
+      "length": 3,
+      "value": "\" has been deallocated\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1809,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1815,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3250,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3265,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3622,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3736,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
@@ -4375,67 +4948,60 @@
       "value": "1000"
     },
     {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/ServerErrorResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 434,
+      "length": 7,
+      "value": "\"@type\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/ServerErrorResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 434,
+      "length": 7,
+      "value": "\"@type\""
+    },
+    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
       "kind": "IntegerLiteral",
-      "offset": 1483,
+      "offset": 1654,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
       "kind": "IntegerLiteral",
-      "offset": 1496,
+      "offset": 1667,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 1746,
+      "offset": 2140,
       "length": 41,
       "value": "\"The object \""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 1765,
+      "offset": 2159,
       "length": 3,
       "value": "\" has been deallocated\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2009,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 487,
+      "offset": 584,
       "length": 18,
       "value": "\"BVStreamIngest.EffectStreamIngest\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
       "kind": "Array",
-      "offset": 3217,
+      "offset": 3549,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3881,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3912,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoCaptureUnit.swift",
@@ -4459,16 +5025,65 @@
       "value": "\" has been deallocated\""
     },
     {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/StreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 818,
+      "length": 41,
+      "value": "\"The object \""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/StreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 837,
+      "length": 3,
+      "value": "\" has been deallocated\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1212,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1249,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1324,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1361,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1366,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
       "kind": "StringLiteral",
-      "offset": 343,
+      "offset": 385,
       "length": 18,
       "value": "\"BVStreamIngest.VideoRawDataOutput\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
       "kind": "BooleanLiteral",
-      "offset": 2703,
+      "offset": 3584,
       "length": 4,
       "value": "true"
     },
@@ -4503,462 +5118,504 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 356,
+      "offset": 440,
       "length": 26,
       "value": "\"USERDEFAULT_IMAGE_SOURCE\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 468,
+      "offset": 552,
       "length": 26,
       "value": "\"USERDEFAULT_IMAGE_SOURCE\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "BooleanLiteral",
-      "offset": 599,
+      "offset": 683,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 759,
       "length": 25,
       "value": "\"bv.stream.ingest.userId\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 906,
       "length": 25,
       "value": "\"bv.stream.ingest.userId\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1185,
+      "offset": 1269,
       "length": 9,
       "value": "\"preload\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1209,
+      "offset": 1293,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1255,
+      "offset": 1339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1680,
+      "offset": 1764,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1749,
+      "offset": 1833,
       "length": 17,
       "value": "\"isDeveloperMode\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1832,
+      "offset": 1916,
       "length": 15,
       "value": "\"isPreviewMode\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 1913,
+      "offset": 1997,
       "length": 15,
       "value": "\"isMappingMode\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2000,
+      "offset": 2084,
       "length": 20,
       "value": "\"isFunStickerSDMode\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2101,
+      "offset": 2180,
       "length": 7,
       "value": "\"model\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2118,
+      "offset": 2197,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
+      "kind": "StringLiteral",
+      "offset": 2316,
+      "length": 8,
+      "value": "\"config\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
+      "kind": "StringLiteral",
+      "offset": 2334,
+      "length": 6,
+      "value": "\"json\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
+      "kind": "StringLiteral",
+      "offset": 2355,
+      "length": 9,
+      "value": "\"configs\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2290,
+      "offset": 2531,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2359,
+      "offset": 2600,
       "length": 4,
       "value": "\"us\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "StringLiteral",
-      "offset": 2415,
+      "offset": 2656,
       "length": 7,
       "value": "\"en_US\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1672,
+      "offset": 2308,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2934,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4209,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 3132,
+      "offset": 4258,
       "length": 41,
       "value": "\"The object \""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 3151,
+      "offset": 4277,
       "length": 3,
       "value": "\" has been deallocated\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "Array",
-      "offset": 3386,
+      "offset": 4512,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "IntegerLiteral",
-      "offset": 3860,
+      "offset": 4981,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 4280,
+      "offset": 5401,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 5824,
+      "offset": 6216,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
+      "kind": "StringLiteral",
+      "offset": 7249,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 6370,
+      "offset": 7795,
       "length": 26,
       "value": "\"Undefined code = \""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 6395,
+      "offset": 7820,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 6532,
+      "offset": 7957,
       "length": 43,
       "value": "\"rtmp error notification = \""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 6574,
+      "offset": 7999,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 265,
+      "offset": 307,
       "length": 26,
       "value": "\"attribute vec4 position;\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 302,
+      "offset": 344,
       "length": 40,
       "value": "\"attribute vec4 inputTextureCoordinate;\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 353,
+      "offset": 395,
       "length": 33,
       "value": "\"varying vec2 textureCoordinate;\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 397,
+      "offset": 439,
       "length": 13,
       "value": "\"void main()\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 421,
+      "offset": 463,
       "length": 3,
       "value": "\"{\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 435,
+      "offset": 477,
       "length": 28,
       "value": "\"   gl_Position = position;\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 474,
+      "offset": 516,
       "length": 51,
       "value": "\"   textureCoordinate = inputTextureCoordinate.xy;\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 528,
+      "offset": 570,
       "length": 3,
       "value": "\"}\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 730,
       "length": 39,
       "value": "\"varying highp vec2 textureCoordinate;\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 738,
+      "offset": 780,
       "length": 38,
       "value": "\"uniform sampler2D inputImageTexture;\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 787,
+      "offset": 829,
       "length": 13,
       "value": "\"void main()\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 811,
+      "offset": 853,
       "length": 3,
       "value": "\"{\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 825,
+      "offset": 867,
       "length": 73,
       "value": "\"   gl_FragColor = texture2D(inputImageTexture, textureCoordinate).bgra;\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 901,
+      "offset": 943,
       "length": 3,
       "value": "\"}\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1677,
+      "offset": 1719,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "FloatLiteral",
-      "offset": 2527,
+      "offset": 2569,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "FloatLiteral",
-      "offset": 2532,
+      "offset": 2574,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "FloatLiteral",
-      "offset": 2537,
+      "offset": 2579,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "FloatLiteral",
-      "offset": 2542,
+      "offset": 2584,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "Array",
-      "offset": 2662,
+      "offset": 2704,
       "length": 105,
       "value": "[-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "Array",
-      "offset": 2821,
+      "offset": 2863,
       "length": 99,
       "value": "[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3129,
+      "offset": 3171,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3215,
+      "offset": 3257,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3236,
+      "offset": 3278,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3239,
+      "offset": 3281,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3340,
+      "offset": 3382,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3361,
+      "offset": 3403,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3364,
+      "offset": 3406,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3618,
+      "offset": 3660,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 3621,
+      "offset": 3663,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "BooleanLiteral",
-      "offset": 3845,
+      "offset": 3887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 4588,
+      "offset": 4630,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 4591,
+      "offset": 4633,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5217,
+      "offset": 5259,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 5538,
+      "offset": 5580,
       "length": 70,
       "value": "\"Creating pixel buffer from pixels read from GL failed, code = \""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 5607,
+      "offset": 5649,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
-      "offset": 913,
+      "offset": 955,
       "length": 19,
       "value": "\"BVStreamIngest.RawOutputPluginDemo\""
     },
@@ -5019,6 +5676,34 @@
       "value": "30"
     },
     {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/MakeupCamEventReceiver.swift",
+      "kind": "StringLiteral",
+      "offset": 703,
+      "length": 41,
+      "value": "\"The object \""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/MakeupCamEventReceiver.swift",
+      "kind": "StringLiteral",
+      "offset": 722,
+      "length": 3,
+      "value": "\" has been deallocated\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/MakeupCamEventReceiver.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 22,
+      "value": "\"BVStreamIngest.MakeupCamEventReceiver\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkRequest.swift",
+      "kind": "Array",
+      "offset": 1568,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamRenderView.swift",
       "kind": "BooleanLiteral",
       "offset": 311,
@@ -5052,6 +5737,251 @@
       "offset": 826,
       "length": 3,
       "value": "\" has been deallocated\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 24,
+      "value": "\"\/core\/license\/v1\/check\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 24,
+      "value": "\"\/core\/license\/v1\/check\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 38,
+      "value": "\"https:\/\/api.platform.blendvision.com\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 168,
+      "length": 14,
+      "value": "\"streamingest\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 22,
+      "value": "\"streamingest-retouch\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 168,
+      "length": 14,
+      "value": "\"streamingest\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 22,
+      "value": "\"streamingest-retouch\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 15,
+      "value": "\"license_token\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 20,
+      "value": "\"available_features\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 15,
+      "value": "\"license_token\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 20,
+      "value": "\"available_features\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1095,
+      "length": 13,
+      "value": "\"license_key\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1138,
+      "length": 16,
+      "value": "\"check_features\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1095,
+      "length": 13,
+      "value": "\"license_key\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1138,
+      "length": 16,
+      "value": "\"check_features\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "Dictionary",
+      "offset": 1688,
+      "length": 36,
+      "value": "[(\"Content-Type\", \"application\/json\")]"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1170,
+      "length": 14,
+      "value": "\"BVStreamIngest.LicenseRequest\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
+      "kind": "BooleanLiteral",
+      "offset": 498,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
+      "kind": "BooleanLiteral",
+      "offset": 558,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
+      "kind": "BooleanLiteral",
+      "offset": 565,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 892,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
+      "length": 3,
+      "value": "299"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 862,
+      "length": 41,
+      "value": "\"The object \""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 3,
+      "value": "\" has been deallocated\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1190,
+      "length": 47,
+      "value": "\"load status has been changed to \""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1236,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1744,
+      "length": 53,
+      "value": "\"invalid makeupCam =\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1796,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1884,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "Array",
+      "offset": 2902,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "Array",
+      "offset": 2981,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "Array",
+      "offset": 3091,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3417,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3448,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 24,
+      "value": "\"BVStreamIngest.EffectStreamIngestModule\""
     }
   ]
 }

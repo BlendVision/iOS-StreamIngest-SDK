@@ -6,9 +6,6 @@ import AVFoundation
 @_exported import BVStreamIngest
 import Foundation
 import HaishinKit
-import PerfectLibCore
-import PerfectLibMakeupPlus
-import PerfectLibProductHandler
 import Swift
 import UIKit
 import VideoToolbox
@@ -38,6 +35,10 @@ public class Effect {
   }
   override public init(intensity: Swift.Int = super)
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CameraPreviewView : UIKit.UIView {
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func adjustRenderView(to size: CoreFoundation.CGSize? = nil)
 }
 public enum StreamIngestQualityLevel : Swift.String {
   case low
@@ -122,7 +123,7 @@ public protocol EffectStreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   }
   public init(streamIngest: BVStreamIngest.StreamIngest, videoRawDataFrameSize: CoreFoundation.CGSize = CGSize(width: 720, height: 1280))
   @objc deinit
-  public func createCameraView(_ cameraView: UIKit.UIView)
+  public func createCameraView(frame: CoreFoundation.CGRect, aspectRatio ratio: CoreFoundation.CGFloat) -> BVStreamIngest.CameraPreviewView?
   public func attachCamera(device: AVFoundation.AVCaptureDevice) throws
   public func attachAudio(device: AVFoundation.AVCaptureDevice) throws
   public func startRunning()
@@ -131,11 +132,6 @@ public protocol EffectStreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   public func detachAudio()
   public func getEffect(with type: BVStreamIngest.EffectType) -> BVStreamIngest.Effect?
   public func setEffects(_ effects: [BVStreamIngest.Effect])
-}
-extension BVStreamIngest.EffectStreamIngest : PerfectLibMakeupPlus.MakeupCamDelegate {
-  @objc dynamic public func pfMakeupCam(_ makeupCam: PerfectLibMakeupPlus.MakeupCam, didChange loadStatus: PerfectLibMakeupPlus.MakeupCamLoadStatus)
-}
-extension BVStreamIngest.EffectStreamIngest : PerfectLibProductHandler.VtoApplierDelegate {
 }
 public class StreamIngestAuthorizer {
   public init(debugMode: Swift.Bool = false)
@@ -147,7 +143,10 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   func streamIngestDidStopPublishing(_ streamIngest: BVStreamIngest.StreamIngest)
   func streamIngestDidFailToPublish(_ streamIngest: BVStreamIngest.StreamIngest)
 }
-@objc @_inheritsConvenienceInitializers final public class StreamIngest : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class StreamIngest : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func create(with config: BVStreamIngest.StreamIngestConfig) async throws -> BVStreamIngest.StreamIngest?
+  #endif
   final public var videoBitrate: Swift.Int {
     get
     set
@@ -175,7 +174,6 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
     get
     set
   }
-  @objc override dynamic public init()
   @objc deinit
   @objc override final public func addObserver(_ observer: ObjectiveC.NSObject, forKeyPath keyPath: Swift.String, options: Foundation.NSKeyValueObservingOptions = [], context: Swift.UnsafeMutableRawPointer?)
   @objc override final public func removeObserver(_ observer: ObjectiveC.NSObject, forKeyPath keyPath: Swift.String)
@@ -185,10 +183,16 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   final public func startPublish(rtmpUrl: Swift.String, stream name: Swift.String)
   final public func stopPublish()
   final public func close()
+  final public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class StreamRenderView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) final public func attachStream(_ stream: BVStreamIngest.StreamIngest?)
+  @objc deinit
+}
+public class StreamIngestConfig {
+  public var key: Swift.String
+  public init(key: Swift.String)
   @objc deinit
 }
 extension BVStreamIngest.EffectType : Swift.Equatable {}
