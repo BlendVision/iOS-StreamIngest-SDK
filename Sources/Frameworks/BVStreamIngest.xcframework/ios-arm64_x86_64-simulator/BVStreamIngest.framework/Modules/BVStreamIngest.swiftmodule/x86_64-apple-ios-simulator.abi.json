@@ -3015,7 +3015,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -4665,7 +4666,8 @@
         "mangledName": "$s14BVStreamIngest06StreamB6ConfigC",
         "moduleName": "BVStreamIngest",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       }
     ],
@@ -5263,98 +5265,98 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 2117,
+      "offset": 2308,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 2743,
+      "offset": 2934,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 4018,
+      "offset": 4209,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 4067,
+      "offset": 4258,
       "length": 41,
       "value": "\"The object \""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 4086,
+      "offset": 4277,
       "length": 3,
       "value": "\" has been deallocated\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "Array",
-      "offset": 4321,
+      "offset": 4512,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "IntegerLiteral",
-      "offset": 4790,
+      "offset": 4981,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 5210,
+      "offset": 5401,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 6025,
+      "offset": 6216,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 7058,
+      "offset": 7249,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 7604,
+      "offset": 7795,
       "length": 26,
       "value": "\"Undefined code = \""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 7629,
+      "offset": 7820,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 7766,
+      "offset": 7957,
       "length": 43,
       "value": "\"rtmp error notification = \""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "StringLiteral",
-      "offset": 7808,
+      "offset": 7999,
       "length": 2,
       "value": "\"\""
     },
