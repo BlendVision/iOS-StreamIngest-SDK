@@ -280,8 +280,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
-@import PerfectLibMakeupPlus;
-@import PerfectLibProductHandler;
 @import UIKit;
 #endif
 
@@ -303,6 +301,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSCoder;
+
+SWIFT_CLASS("_TtC14BVStreamIngest17CameraPreviewView")
+@interface CameraPreviewView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
 
 SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 @interface EffectStreamIngest : NSObject
@@ -311,16 +317,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 @end
 
 
-@interface EffectStreamIngest (SWIFT_EXTENSION(BVStreamIngest)) <PFVtoApplierDelegate>
-@end
 
-
-
-@class PFMakeupCam;
-
-@interface EffectStreamIngest (SWIFT_EXTENSION(BVStreamIngest)) <PFMakeupCamDelegate>
-- (void)pfMakeupCam:(PFMakeupCam * _Nonnull)makeupCam didChangeLoadStatus:(PFMakeupCamLoadStatus)loadStatus;
-@end
 
 
 
@@ -328,12 +325,12 @@ SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 
 SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 @interface StreamIngest : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)addObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath options:(NSKeyValueObservingOptions)options context:(void * _Nullable)context;
 - (void)removeObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath;
 @end
 
-@class NSCoder;
 
 SWIFT_CLASS("_TtC14BVStreamIngest16StreamRenderView")
 @interface StreamRenderView : UIView
@@ -631,8 +628,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
-@import PerfectLibMakeupPlus;
-@import PerfectLibProductHandler;
 @import UIKit;
 #endif
 
@@ -654,6 +649,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSCoder;
+
+SWIFT_CLASS("_TtC14BVStreamIngest17CameraPreviewView")
+@interface CameraPreviewView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
 
 SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 @interface EffectStreamIngest : NSObject
@@ -662,16 +665,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 @end
 
 
-@interface EffectStreamIngest (SWIFT_EXTENSION(BVStreamIngest)) <PFVtoApplierDelegate>
-@end
 
-
-
-@class PFMakeupCam;
-
-@interface EffectStreamIngest (SWIFT_EXTENSION(BVStreamIngest)) <PFMakeupCamDelegate>
-- (void)pfMakeupCam:(PFMakeupCam * _Nonnull)makeupCam didChangeLoadStatus:(PFMakeupCamLoadStatus)loadStatus;
-@end
 
 
 
@@ -679,12 +673,12 @@ SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 
 SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 @interface StreamIngest : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)addObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath options:(NSKeyValueObservingOptions)options context:(void * _Nullable)context;
 - (void)removeObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath;
 @end
 
-@class NSCoder;
 
 SWIFT_CLASS("_TtC14BVStreamIngest16StreamRenderView")
 @interface StreamRenderView : UIView
