@@ -511,6 +511,293 @@
         "printedName": "CameraPreviewView",
         "children": [
           {
+            "kind": "TypeDecl",
+            "name": "ScaleMode",
+            "printedName": "ScaleMode",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "aspectFit",
+                "printedName": "aspectFit",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BVStreamIngest.CameraPreviewView.ScaleMode.Type) -> BVStreamIngest.CameraPreviewView.ScaleMode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScaleMode",
+                        "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                        "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ScaleMode",
+                            "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                            "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO9aspectFityA2EmF",
+                "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9ScaleModeO9aspectFityA2EmF",
+                "moduleName": "BVStreamIngest"
+              },
+              {
+                "kind": "Var",
+                "name": "aspectFill",
+                "printedName": "aspectFill",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BVStreamIngest.CameraPreviewView.ScaleMode.Type) -> BVStreamIngest.CameraPreviewView.ScaleMode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScaleMode",
+                        "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                        "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ScaleMode",
+                            "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                            "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO10aspectFillyA2EmF",
+                "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9ScaleModeO10aspectFillyA2EmF",
+                "moduleName": "BVStreamIngest"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScaleMode",
+                    "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                    "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScaleMode",
+                    "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                    "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9ScaleModeO2eeoiySbAE_AEtFZ",
+                "moduleName": "BVStreamIngest",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO9hashValueSivp",
+                "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9ScaleModeO9hashValueSivp",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO9hashValueSivg",
+                    "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9ScaleModeO9hashValueSivg",
+                    "moduleName": "BVStreamIngest",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9ScaleModeO4hash4intoys6HasherVz_tF",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO",
+            "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9ScaleModeO",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scaleMode",
+            "printedName": "scaleMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScaleMode",
+                "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovp",
+            "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScaleMode",
+                    "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                    "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovg",
+                "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovg",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScaleMode",
+                    "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                    "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovs",
+                "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovs",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0OvM",
+                "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0OvM",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "adjustRenderView",
             "printedName": "adjustRenderView(to:)",
@@ -539,6 +826,28 @@
             "declKind": "Func",
             "usr": "s:14BVStreamIngest17CameraPreviewViewC012adjustRenderE02toySo6CGSizeVSg_tF",
             "mangledName": "$s14BVStreamIngest17CameraPreviewViewC012adjustRenderE02toySo6CGSizeVSg_tF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "switchScaleMode",
+            "printedName": "switchScaleMode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest17CameraPreviewViewC15switchScaleModeyyF",
+            "mangledName": "$s14BVStreamIngest17CameraPreviewViewC15switchScaleModeyyF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "Custom",
@@ -2070,9 +2379,11 @@
             "usr": "s:14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvp",
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvp",
             "moduleName": "BVStreamIngest",
+            "deprecated": true,
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "hasStorage": true,
             "accessors": [
@@ -2134,7 +2445,11 @@
                 "usr": "s:14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvM",
                 "mangledName": "$s14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvM",
                 "moduleName": "BVStreamIngest",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -2147,7 +2462,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "BVStreamIngest.EffectStreamIngestDelegate?"
+                "printedName": "(any BVStreamIngest.EffectStreamIngestDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -2171,12 +2486,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "BVStreamIngest.EffectStreamIngestDelegate?",
+                    "printedName": "(any BVStreamIngest.EffectStreamIngestDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EffectStreamIngestDelegate",
-                        "printedName": "BVStreamIngest.EffectStreamIngestDelegate",
+                        "printedName": "any BVStreamIngest.EffectStreamIngestDelegate",
                         "usr": "s:14BVStreamIngest012EffectStreamB8DelegateP"
                       }
                     ],
@@ -2203,12 +2518,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "BVStreamIngest.EffectStreamIngestDelegate?",
+                    "printedName": "(any BVStreamIngest.EffectStreamIngestDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "EffectStreamIngestDelegate",
-                        "printedName": "BVStreamIngest.EffectStreamIngestDelegate",
+                        "printedName": "any BVStreamIngest.EffectStreamIngestDelegate",
                         "usr": "s:14BVStreamIngest012EffectStreamB8DelegateP"
                       }
                     ],
@@ -2306,7 +2621,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(streamIngest:videoRawDataFrameSize:)",
+            "printedName": "init(streamIngest:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2319,28 +2634,22 @@
                 "name": "StreamIngest",
                 "printedName": "BVStreamIngest.StreamIngest",
                 "usr": "c:@M@BVStreamIngest@objc(cs)StreamIngest"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "hasDefaultArg": true,
-                "usr": "c:@S@CGSize"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C06streamB021videoRawDataFrameSizeAcA0dB0C_So6CGSizeVtcfc",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C06streamB021videoRawDataFrameSizeAcA0dB0C_So6CGSizeVtcfc",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C06streamB0AcA0dB0C_tcfc",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C06streamB0AcA0dB0C_tcfc",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
+              "Convenience",
               "AccessControl"
             ],
-            "init_kind": "Designated"
+            "init_kind": "Convenience"
           },
           {
             "kind": "Function",
             "name": "createCameraView",
-            "printedName": "createCameraView(frame:aspectRatio:)",
+            "printedName": "createCameraView(aspectRatio:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2358,23 +2667,54 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "CGFloat",
                 "printedName": "CoreGraphics.CGFloat",
                 "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C16createCameraView5frame11aspectRatioAA0f7PreviewG0CSgSo6CGRectV_14CoreFoundation7CGFloatVtF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C16createCameraView5frame11aspectRatioAA0f7PreviewG0CSgSo6CGRectV_12CoreGraphics7CGFloatVtF",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C16createCameraView11aspectRatioAA0f7PreviewG0CSg14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C16createCameraView11aspectRatioAA0f7PreviewG0CSg12CoreGraphics7CGFloatV_tF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createCameraView",
+            "printedName": "createCameraView(mode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BVStreamIngest.CameraPreviewView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPreviewView",
+                    "printedName": "BVStreamIngest.CameraPreviewView",
+                    "usr": "c:@M@BVStreamIngest@objc(cs)CameraPreviewView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScaleMode",
+                "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C16createCameraView4modeAA0f7PreviewG0CSgAG9ScaleModeO_tF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C16createCameraView4modeAA0f7PreviewG0CSgAG9ScaleModeO_tF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2606,6 +2946,90 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(streamIngest:videoRawDataFrameSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EffectStreamIngest",
+                "printedName": "BVStreamIngest.EffectStreamIngest",
+                "usr": "c:@M@BVStreamIngest@objc(cs)EffectStreamIngest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StreamIngest",
+                "printedName": "BVStreamIngest.StreamIngest",
+                "usr": "c:@M@BVStreamIngest@objc(cs)StreamIngest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "hasDefaultArg": true,
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C06streamB021videoRawDataFrameSizeAcA0dB0C_So6CGSizeVtcfc",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C06streamB021videoRawDataFrameSizeAcA0dB0C_So6CGSizeVtcfc",
+            "moduleName": "BVStreamIngest",
+            "deprecated": true,
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "createCameraView",
+            "printedName": "createCameraView(frame:aspectRatio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BVStreamIngest.CameraPreviewView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPreviewView",
+                    "printedName": "BVStreamIngest.CameraPreviewView",
+                    "usr": "c:@M@BVStreamIngest@objc(cs)CameraPreviewView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C16createCameraView5frame11aspectRatioAA0f7PreviewG0CSgSo6CGRectV_14CoreFoundation7CGFloatVtF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C16createCameraView5frame11aspectRatioAA0f7PreviewG0CSgSo6CGRectV_12CoreGraphics7CGFloatVtF",
+            "moduleName": "BVStreamIngest",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2617,6 +3041,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -2670,6 +3095,93 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EffectStreamTestingControllable",
+        "printedName": "EffectStreamTestingControllable",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "changeScaleMode",
+            "printedName": "changeScaleMode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest31EffectStreamTestingControllableP15changeScaleModeyyF",
+            "mangledName": "$s14BVStreamIngest31EffectStreamTestingControllableP15changeScaleModeyyF",
+            "moduleName": "BVStreamIngest",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.EffectStreamTestingControllable>",
+            "sugared_genericSig": "<Self where Self : BVStreamIngest.EffectStreamTestingControllable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setScaleButton",
+            "printedName": "setScaleButton(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScaleMode",
+                    "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                    "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest31EffectStreamTestingControllableP14setScaleButtonyyAA17CameraPreviewViewC0H4ModeOSgF",
+            "mangledName": "$s14BVStreamIngest31EffectStreamTestingControllableP14setScaleButtonyyAA17CameraPreviewViewC0H4ModeOSgF",
+            "moduleName": "BVStreamIngest",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.EffectStreamTestingControllable>",
+            "sugared_genericSig": "<Self where Self : BVStreamIngest.EffectStreamTestingControllable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14BVStreamIngest31EffectStreamTestingControllableP",
+        "mangledName": "$s14BVStreamIngest31EffectStreamTestingControllableP",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -2741,6 +3253,562 @@
       },
       {
         "kind": "Import",
+        "name": "HaishinKit",
+        "printedName": "HaishinKit",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StreamIngestEventName",
+        "printedName": "StreamIngestEventName",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "streamError",
+            "printedName": "streamError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BVStreamIngest.StreamIngestEventName.Type) -> BVStreamIngest.StreamIngestEventName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StreamIngestEventName",
+                    "printedName": "BVStreamIngest.StreamIngestEventName",
+                    "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BVStreamIngest.StreamIngestEventName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StreamIngestEventName",
+                        "printedName": "BVStreamIngest.StreamIngestEventName",
+                        "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14BVStreamIngest06StreamB9EventNameO11streamErroryA2CmF",
+            "mangledName": "$s14BVStreamIngest06StreamB9EventNameO11streamErroryA2CmF",
+            "moduleName": "BVStreamIngest"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BVStreamIngest.StreamIngestEventName.Type) -> BVStreamIngest.StreamIngestEventName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StreamIngestEventName",
+                    "printedName": "BVStreamIngest.StreamIngestEventName",
+                    "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BVStreamIngest.StreamIngestEventName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StreamIngestEventName",
+                        "printedName": "BVStreamIngest.StreamIngestEventName",
+                        "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14BVStreamIngest06StreamB9EventNameO7unknownyA2CmF",
+            "mangledName": "$s14BVStreamIngest06StreamB9EventNameO7unknownyA2CmF",
+            "moduleName": "BVStreamIngest"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BVStreamIngest.StreamIngestEventName?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StreamIngestEventName",
+                    "printedName": "BVStreamIngest.StreamIngestEventName",
+                    "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVStreamIngest06StreamB9EventNameO8rawValueACSgSS_tcfc",
+            "mangledName": "$s14BVStreamIngest06StreamB9EventNameO8rawValueACSgSS_tcfc",
+            "moduleName": "BVStreamIngest",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest06StreamB9EventNameO8rawValueSSvp",
+            "mangledName": "$s14BVStreamIngest06StreamB9EventNameO8rawValueSSvp",
+            "moduleName": "BVStreamIngest",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB9EventNameO8rawValueSSvg",
+                "mangledName": "$s14BVStreamIngest06StreamB9EventNameO8rawValueSSvg",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14BVStreamIngest06StreamB9EventNameO",
+        "mangledName": "$s14BVStreamIngest06StreamB9EventNameO",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StreamIngestEvent",
+        "printedName": "StreamIngestEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest06StreamB5EventC9timestamp10Foundation4DateVvp",
+            "mangledName": "$s14BVStreamIngest06StreamB5EventC9timestamp10Foundation4DateVvp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB5EventC9timestamp10Foundation4DateVvg",
+                "mangledName": "$s14BVStreamIngest06StreamB5EventC9timestamp10Foundation4DateVvg",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StreamIngestEventName",
+                "printedName": "BVStreamIngest.StreamIngestEventName",
+                "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest06StreamB5EventC4nameAA0cbD4NameOvp",
+            "mangledName": "$s14BVStreamIngest06StreamB5EventC4nameAA0cbD4NameOvp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StreamIngestEventName",
+                    "printedName": "BVStreamIngest.StreamIngestEventName",
+                    "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB5EventC4nameAA0cbD4NameOvg",
+                "mangledName": "$s14BVStreamIngest06StreamB5EventC4nameAA0cbD4NameOvg",
+                "moduleName": "BVStreamIngest",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14BVStreamIngest06StreamB5EventC",
+        "mangledName": "$s14BVStreamIngest06StreamB5EventC",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StreamIngestErrorEvent",
+        "printedName": "StreamIngestErrorEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StreamIngestEventName",
+                "printedName": "BVStreamIngest.StreamIngestEventName",
+                "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest06StreamB10ErrorEventC4nameAA0cbE4NameOvp",
+            "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC4nameAA0cbE4NameOvp",
+            "moduleName": "BVStreamIngest",
+            "overriding": true,
+            "declAttributes": [
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StreamIngestEventName",
+                    "printedName": "BVStreamIngest.StreamIngestEventName",
+                    "usr": "s:14BVStreamIngest06StreamB9EventNameO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB10ErrorEventC4nameAA0cbE4NameOvg",
+                "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC4nameAA0cbE4NameOvg",
+                "moduleName": "BVStreamIngest",
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest06StreamB10ErrorEventC4codeSSvp",
+            "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC4codeSSvp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB10ErrorEventC4codeSSvg",
+                "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC4codeSSvg",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest06StreamB10ErrorEventC4dataypSgvp",
+            "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC4dataypSgvp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB10ErrorEventC4dataypSgvg",
+                "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC4dataypSgvg",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB10ErrorEventC4dataypSgvs",
+                "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC4dataypSgvs",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB10ErrorEventC4dataypSgvM",
+                "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC4dataypSgvM",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14BVStreamIngest06StreamB10ErrorEventC",
+        "mangledName": "$s14BVStreamIngest06StreamB10ErrorEventC",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:14BVStreamIngest06StreamB5EventC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "BVStreamIngest.StreamIngestEvent"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2805,12 +3873,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Error?) -> ())?",
+                "printedName": "(((any Swift.Error)?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?) -> ()",
+                    "printedName": "((any Swift.Error)?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2820,12 +3888,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -2942,7 +4010,7 @@
           {
             "kind": "Function",
             "name": "streamIngestDidFailToPublish",
-            "printedName": "streamIngestDidFailToPublish(_:)",
+            "printedName": "streamIngestDidFailToPublish(_:with:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2954,15 +4022,24 @@
                 "name": "StreamIngest",
                 "printedName": "BVStreamIngest.StreamIngest",
                 "usr": "c:@M@BVStreamIngest@objc(cs)StreamIngest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StreamIngestErrorEvent",
+                "printedName": "BVStreamIngest.StreamIngestErrorEvent",
+                "usr": "s:14BVStreamIngest06StreamB10ErrorEventC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BVStreamIngest06StreamB8DelegateP06streamB16DidFailToPublishyyAA0cB0CF",
-            "mangledName": "$s14BVStreamIngest06StreamB8DelegateP06streamB16DidFailToPublishyyAA0cB0CF",
+            "usr": "s:14BVStreamIngest06StreamB8DelegateP06streamB16DidFailToPublish_4withyAA0cB0C_AA0cB10ErrorEventCtF",
+            "mangledName": "$s14BVStreamIngest06StreamB8DelegateP06streamB16DidFailToPublish_4withyAA0cB0C_AA0cB10ErrorEventCtF",
             "moduleName": "BVStreamIngest",
             "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.StreamIngestDelegate>",
             "sugared_genericSig": "<Self where Self : BVStreamIngest.StreamIngestDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -3497,7 +4574,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "BVStreamIngest.StreamIngestDelegate?"
+                "printedName": "(any BVStreamIngest.StreamIngestDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -3522,12 +4599,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "BVStreamIngest.StreamIngestDelegate?",
+                    "printedName": "(any BVStreamIngest.StreamIngestDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StreamIngestDelegate",
-                        "printedName": "BVStreamIngest.StreamIngestDelegate",
+                        "printedName": "any BVStreamIngest.StreamIngestDelegate",
                         "usr": "s:14BVStreamIngest06StreamB8DelegateP"
                       }
                     ],
@@ -3557,12 +4634,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "BVStreamIngest.StreamIngestDelegate?",
+                    "printedName": "(any BVStreamIngest.StreamIngestDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StreamIngestDelegate",
-                        "printedName": "BVStreamIngest.StreamIngestDelegate",
+                        "printedName": "any BVStreamIngest.StreamIngestDelegate",
                         "usr": "s:14BVStreamIngest06StreamB8DelegateP"
                       }
                     ],
@@ -3827,12 +4904,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Error?) -> ())?",
+                "printedName": "(((any Swift.Error)?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?) -> ()",
+                    "printedName": "((any Swift.Error)?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3842,12 +4919,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -3905,12 +4982,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Error?) -> ())?",
+                "printedName": "(((any Swift.Error)?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?) -> ()",
+                    "printedName": "((any Swift.Error)?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3920,12 +4997,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -4064,12 +5141,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Error?) -> ())?",
+                "printedName": "(((any Swift.Error)?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?) -> ()",
+                    "printedName": "((any Swift.Error)?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4079,12 +5156,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -4354,8 +5431,8 @@
             "mangledName": "$s14BVStreamIngest16StreamRenderViewC06attachC0yyAA0cB0CSgF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "Final",
               "Custom",
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -4689,97 +5766,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CaptureSession.swift",
-      "kind": "StringLiteral",
-      "offset": 694,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CaptureSession.swift",
-      "kind": "StringLiteral",
-      "offset": 713,
-      "length": 3,
-      "value": "\" has been deallocated\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CaptureSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1721,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 770,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "StringLiteral",
-      "offset": 1270,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "StringLiteral",
-      "offset": 1354,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "StringLiteral",
-      "offset": 1373,
-      "length": 3,
-      "value": "\" has been deallocated\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1809,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1815,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3250,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3265,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3622,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/CameraPreviewView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3736,
-      "length": 1,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
       "offset": 184,
@@ -4822,132 +5808,6 @@
       "value": "\"High\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 609,
-      "length": 3,
-      "value": "854"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 622,
-      "length": 3,
-      "value": "480"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 669,
-      "length": 3,
-      "value": "800"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 675,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 722,
-      "length": 2,
-      "value": "64"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 727,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 944,
-      "length": 4,
-      "value": "1280"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 958,
-      "length": 3,
-      "value": "720"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1005,
-      "length": 4,
-      "value": "1600"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1012,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1059,
-      "length": 2,
-      "value": "96"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1064,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1277,
-      "length": 4,
-      "value": "1920"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1291,
-      "length": 4,
-      "value": "1080"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1339,
-      "length": 4,
-      "value": "3200"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1346,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1393,
-      "length": 3,
-      "value": "128"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1399,
-      "length": 4,
-      "value": "1000"
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/ServerErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 434,
@@ -4960,34 +5820,6 @@
       "offset": 434,
       "length": 7,
       "value": "\"@type\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1654,
-      "length": 3,
-      "value": "720"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1667,
-      "length": 4,
-      "value": "1280"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 2140,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 2159,
-      "length": 3,
-      "value": "\" has been deallocated\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
@@ -4997,81 +5829,11 @@
       "value": "\"BVStreamIngest.EffectStreamIngest\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "Array",
-      "offset": 3549,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoCaptureUnit.swift",
       "kind": "StringLiteral",
       "offset": 716,
       "length": 39,
       "value": "\"com.bv.ingest.video.capture.unit.lock\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoCaptureUnit.swift",
-      "kind": "StringLiteral",
-      "offset": 848,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoCaptureUnit.swift",
-      "kind": "StringLiteral",
-      "offset": 867,
-      "length": 3,
-      "value": "\" has been deallocated\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/StreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 818,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/StreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 837,
-      "length": 3,
-      "value": "\" has been deallocated\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1212,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1249,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1324,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1361,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1366,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
@@ -5081,11 +5843,53 @@
       "value": "\"BVStreamIngest.VideoRawDataOutput\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3584,
-      "length": 4,
-      "value": "true"
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 390,
+      "length": 22,
+      "value": "\"BVStreamIngest.StreamIngestErrorEvent\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 9,
+      "value": "\"warning\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 958,
+      "length": 7,
+      "value": "\"error\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 9,
+      "value": "\"warning\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 958,
+      "length": 7,
+      "value": "\"error\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
@@ -5116,18 +5920,18 @@
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 440,
-      "length": 26,
-      "value": "\"USERDEFAULT_IMAGE_SOURCE\""
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/ReadyToDeprecate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 698,
+      "length": 3,
+      "value": "720"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 552,
-      "length": 26,
-      "value": "\"USERDEFAULT_IMAGE_SOURCE\""
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/ReadyToDeprecate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 711,
+      "length": 4,
+      "value": "1280"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
@@ -5137,228 +5941,25 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 759,
-      "length": 25,
-      "value": "\"bv.stream.ingest.userId\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 906,
-      "length": 25,
-      "value": "\"bv.stream.ingest.userId\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 1269,
-      "length": 9,
-      "value": "\"preload\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1293,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1339,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 1764,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 1833,
-      "length": 17,
-      "value": "\"isDeveloperMode\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 1916,
-      "length": 15,
-      "value": "\"isPreviewMode\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 1997,
-      "length": 15,
-      "value": "\"isMappingMode\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 2084,
-      "length": 20,
-      "value": "\"isFunStickerSDMode\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 2180,
-      "length": 7,
-      "value": "\"model\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 2197,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 2316,
-      "length": 8,
-      "value": "\"config\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 2334,
-      "length": 6,
-      "value": "\"json\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 2355,
-      "length": 9,
-      "value": "\"configs\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2531,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 2600,
-      "length": 4,
-      "value": "\"us\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "StringLiteral",
-      "offset": 2656,
-      "length": 7,
-      "value": "\"en_US\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2308,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2934,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4209,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 4258,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 4277,
-      "length": 3,
-      "value": "\" has been deallocated\""
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "Array",
-      "offset": 4512,
+      "offset": 5120,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "IntegerLiteral",
-      "offset": 4981,
+      "offset": 5589,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 5401,
+      "offset": 6009,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 6216,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 7249,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 7795,
-      "length": 26,
-      "value": "\"Undefined code = \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 7820,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 7957,
-      "length": 43,
-      "value": "\"rtmp error notification = \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 7999,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
@@ -5460,160 +6061,6 @@
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1719,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "FloatLiteral",
-      "offset": 2569,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "FloatLiteral",
-      "offset": 2574,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "FloatLiteral",
-      "offset": 2579,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "FloatLiteral",
-      "offset": 2584,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "Array",
-      "offset": 2704,
-      "length": 105,
-      "value": "[-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0]"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "Array",
-      "offset": 2863,
-      "length": 99,
-      "value": "[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0]"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3171,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3257,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3278,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3281,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3382,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3403,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3406,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3660,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3663,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3887,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4630,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4633,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5259,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 5580,
-      "length": 70,
-      "value": "\"Creating pixel buffer from pixels read from GL failed, code = \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 5649,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 955,
       "length": 19,
@@ -5629,65 +6076,51 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "Array",
-      "offset": 550,
+      "offset": 547,
       "length": 10,
       "value": "[0.0, 0.0]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "BooleanLiteral",
-      "offset": 596,
+      "offset": 593,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 658,
+      "offset": 655,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 669,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 701,
+      "offset": 698,
       "length": 4,
       "value": "1600"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 708,
+      "offset": 705,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 739,
+      "offset": 736,
       "length": 2,
       "value": "30"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/MakeupCamEventReceiver.swift",
-      "kind": "StringLiteral",
-      "offset": 703,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/MakeupCamEventReceiver.swift",
-      "kind": "StringLiteral",
-      "offset": 722,
-      "length": 3,
-      "value": "\" has been deallocated\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/MakeupCamEventReceiver.swift",
@@ -5697,25 +6130,11 @@
       "value": "\"BVStreamIngest.MakeupCamEventReceiver\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkRequest.swift",
-      "kind": "Array",
-      "offset": 1568,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamRenderView.swift",
       "kind": "BooleanLiteral",
       "offset": 311,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamRenderView.swift",
-      "kind": "StringLiteral",
-      "offset": 931,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioCaptureUnit.swift",
@@ -5725,20 +6144,6 @@
       "value": "\"com.bv.ingest.audio.capture.unit.lock\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioCaptureUnit.swift",
-      "kind": "StringLiteral",
-      "offset": 807,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioCaptureUnit.swift",
-      "kind": "StringLiteral",
-      "offset": 826,
-      "length": 3,
-      "value": "\" has been deallocated\""
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 198,
@@ -5751,13 +6156,6 @@
       "offset": 198,
       "length": 24,
       "value": "\"\/core\/license\/v1\/check\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 355,
-      "length": 38,
-      "value": "\"https:\/\/api.platform.blendvision.com\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
@@ -5842,13 +6240,6 @@
       "offset": 1138,
       "length": 16,
       "value": "\"check_features\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
-      "kind": "Dictionary",
-      "offset": 1688,
-      "length": 36,
-      "value": "[(\"Content-Type\", \"application\/json\")]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
@@ -5856,125 +6247,6 @@
       "offset": 1170,
       "length": 14,
       "value": "\"BVStreamIngest.LicenseRequest\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
-      "kind": "BooleanLiteral",
-      "offset": 498,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
-      "kind": "BooleanLiteral",
-      "offset": 558,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
-      "kind": "BooleanLiteral",
-      "offset": 565,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 892,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 898,
-      "length": 3,
-      "value": "299"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 862,
-      "length": 41,
-      "value": "\"The object \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 881,
-      "length": 3,
-      "value": "\" has been deallocated\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 1190,
-      "length": 47,
-      "value": "\"load status has been changed to \""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 1236,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 1744,
-      "length": 53,
-      "value": "\"invalid makeupCam =\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 1796,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1884,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "Array",
-      "offset": 2902,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "Array",
-      "offset": 2981,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "Array",
-      "offset": 3091,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3417,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3448,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
