@@ -35,6 +35,10 @@ public class Effect {
   override public init(intensity: Swift.Int = super)
   @objc deinit
 }
+public struct EffectStreamIngestConfig {
+  public var enableSkinSmoothFaceOnly: Swift.Bool
+  public init(enableSkinSmoothFaceOnly: Swift.Bool = false)
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CameraPreviewView : UIKit.UIView {
   public enum ScaleMode {
     case aspectFit
@@ -124,15 +128,17 @@ public enum EffectStreamIngestLoadStatus {
 }
 public protocol EffectStreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   func effectStreamIngest(_ ingest: BVStreamIngest.EffectStreamIngest, didChange loadStatus: BVStreamIngest.EffectStreamIngestLoadStatus)
+  func effectStreamIngestSwitchToUnfiltered(_ ingest: BVStreamIngest.EffectStreamIngest)
 }
 @objc @_hasMissingDesignatedInitializers public class EffectStreamIngest : ObjectiveC.NSObject {
+  public var filterConfig: BVStreamIngest.EffectStreamIngestConfig
   @available(*, deprecated, message: "This parameter will soon be deprecated and no longer available.")
   public var videoRawDataFrameSize: CoreFoundation.CGSize
   weak public var delegate: (any BVStreamIngest.EffectStreamIngestDelegate)?
   public var effects: [BVStreamIngest.Effect] {
     get
   }
-  convenience public init(streamIngest: BVStreamIngest.StreamIngest)
+  convenience public init(streamIngest: BVStreamIngest.StreamIngest, config: BVStreamIngest.EffectStreamIngestConfig = EffectStreamIngestConfig())
   @objc deinit
   public func createCameraView(aspectRatio ratio: CoreFoundation.CGFloat) -> BVStreamIngest.CameraPreviewView?
   public func createCameraView(mode: BVStreamIngest.CameraPreviewView.ScaleMode) -> BVStreamIngest.CameraPreviewView?
@@ -144,10 +150,6 @@ public protocol EffectStreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   public func detachAudio()
   public func getEffect(with type: BVStreamIngest.EffectType) -> BVStreamIngest.Effect?
   public func setEffects(_ effects: [BVStreamIngest.Effect])
-}
-public protocol EffectStreamTestingControllable {
-  func changeScaleMode()
-  func setScaleButton(_ mode: BVStreamIngest.CameraPreviewView.ScaleMode?)
 }
 public enum StreamIngestEventName : Swift.String {
   case streamError
@@ -175,7 +177,7 @@ public enum StreamIngestEventName : Swift.String {
 }
 extension BVStreamIngest.EffectStreamIngest {
   @available(*, deprecated, renamed: "init(streamIngest:)", message: "This method is deprecated. Use 'init(streamIngest:)' without the videoRawDataFrameSize parameter instead.")
-  convenience public init(streamIngest: BVStreamIngest.StreamIngest, videoRawDataFrameSize: CoreFoundation.CGSize = CGSize(width: 720, height: 1280))
+  convenience public init(streamIngest: BVStreamIngest.StreamIngest, config: BVStreamIngest.EffectStreamIngestConfig = EffectStreamIngestConfig(), videoRawDataFrameSize: CoreFoundation.CGSize = CGSize(width: 720, height: 1280))
   @available(*, deprecated, message: "This function is deprecated and will be removed in a future release. Use createCameraView(aspectRatio:) instead.")
   public func createCameraView(frame: CoreFoundation.CGRect, aspectRatio ratio: CoreFoundation.CGFloat) -> BVStreamIngest.CameraPreviewView?
 }
@@ -188,6 +190,8 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   func streamIngestDidStartPublishing(_ streamIngest: BVStreamIngest.StreamIngest)
   func streamIngestDidStopPublishing(_ streamIngest: BVStreamIngest.StreamIngest)
   func streamIngestDidFailToPublish(_ streamIngest: BVStreamIngest.StreamIngest, with error: BVStreamIngest.StreamIngestErrorEvent)
+  func streamIngestDidStartRetrying(_ streamIngest: BVStreamIngest.StreamIngest)
+  func streamIngestDidStopRetrying(_ streamIngest: BVStreamIngest.StreamIngest)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class StreamIngest : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $AsyncAwait
@@ -238,7 +242,8 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
 }
 public class StreamIngestConfig {
   public var key: Swift.String
-  public init(key: Swift.String)
+  final public let maxRetryAttempts: Swift.Int
+  public init(key: Swift.String, maxRetryAttempts: Swift.Int = 5)
   @objc deinit
 }
 extension BVStreamIngest.EffectType : Swift.Equatable {}

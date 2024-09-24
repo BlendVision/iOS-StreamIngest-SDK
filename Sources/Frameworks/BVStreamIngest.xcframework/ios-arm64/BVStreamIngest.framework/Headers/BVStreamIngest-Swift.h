@@ -333,6 +333,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 @end
 
 
+
 SWIFT_CLASS("_TtC14BVStreamIngest16StreamRenderView")
 @interface StreamRenderView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
