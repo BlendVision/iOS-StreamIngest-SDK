@@ -43,9 +43,7 @@
 		</dict>
 	</array>
 	<key>NSPrivacyAccessedAPITypes</key>
-	<array>
-		<dict/>
-	</array>
+	<array/>
 	<key>NSPrivacyTrackingDomains</key>
 	<array/>
 	<key>NSPrivacyTracking</key>
