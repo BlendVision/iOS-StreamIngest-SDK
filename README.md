@@ -1,4 +1,4 @@
-# BlendVision Stream Ingest iOS SDK
+# BlendVision Stream Ingest iOS SDK - BETA
 BlendVision stream ingest SDK is a powerful streaming ingestion library for live video streaming on iOS platform.
 
 ## Installation
