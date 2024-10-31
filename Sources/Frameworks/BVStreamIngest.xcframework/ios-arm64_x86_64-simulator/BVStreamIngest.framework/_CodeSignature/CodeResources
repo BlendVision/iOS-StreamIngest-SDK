@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BVStreamIngest-Swift.h</key>
 		<data>
-		05d7Xr1dJMS3aFzmZiStacHtBLU=
+		2xysYMLic9b53DtLs+yKu0RhE8c=
 		</data>
 		<key>Headers/BVStreamIngest.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		i8IoztF837g42zbSttB5KunpdkQ=
+		7OkCdUwoNspojBo5C7sYD5hCBWw=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Xt9U419Khg8dNaZUy1aZ/tfPPvI=
+		gWp+zjoNHiMl/JSJXJZSkNCg1gk=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3A5++H2+xOIuIv1k7EZRXSXbhRM=
+		PfeDKIp5QEuesM++AJKRuF3CmfQ=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3A5++H2+xOIuIv1k7EZRXSXbhRM=
+		PfeDKIp5QEuesM++AJKRuF3CmfQ=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sa99aMjQ8gAPELwMmjUaJ6pIgHs=
+		ykU0JN1n1TLj2DXg9+S8zveMgrA=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Xt9U419Khg8dNaZUy1aZ/tfPPvI=
+		gWp+zjoNHiMl/JSJXJZSkNCg1gk=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JQ0A+/rM7S/vBzftMwRq1TklR0g=
+		nngRSWma2I83ZI45zhlT6ObvqWg=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JQ0A+/rM7S/vBzftMwRq1TklR0g=
+		nngRSWma2I83ZI45zhlT6ObvqWg=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lxNgZ9Osr5qBxmKkeaw7e2SQegM=
+		wavaMZ693F2qQcPE7qesabBQXC0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MuSOyPaMO6RweFQsZNU2NXjlWo2VKyffacOGsIHZ414=
+			YWGltmIfV/l4G+PSJE5OQzvE2mvosmnWpFr5GyQF2Ds=
 			</data>
 		</dict>
 		<key>Headers/BVStreamIngest.h</key>
@@ -97,14 +97,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLGWu6VbYvvpjD+LAZ39uOzFLezOsrbvskw8QQKDkw0=
+			irrnObrvHB6Y21Z60OrGy5RNE3Or2wmaZA1ar+R0u6c=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AAtBw+dendVZzJYaIy+H7T+/Pwh5BcHvURo2yk33iE4=
+			JdHFsR7oXY33rkwFGGvPgsXjdlPI+D0nKiXH8PCuf9U=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -118,28 +118,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AAtBw+dendVZzJYaIy+H7T+/Pwh5BcHvURo2yk33iE4=
+			JdHFsR7oXY33rkwFGGvPgsXjdlPI+D0nKiXH8PCuf9U=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			grJZIUa4U+wKvyEzttl4dIG/pT2Xo9Ou8Xj8MeTuA+M=
+			H/bLpLPNP5ObI7k4+WyweSkqKMgWv3KbJ24ToZfNr6U=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLGWu6VbYvvpjD+LAZ39uOzFLezOsrbvskw8QQKDkw0=
+			irrnObrvHB6Y21Z60OrGy5RNE3Or2wmaZA1ar+R0u6c=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zQdkkCSlq07vUXv3/cFYslIsIpPbcBV+DtwnivIm4Rc=
+			dOJipUQKtJBNzlqPGSsIqWLYe77ZMnViTaXphWuu4C8=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -153,14 +153,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zQdkkCSlq07vUXv3/cFYslIsIpPbcBV+DtwnivIm4Rc=
+			dOJipUQKtJBNzlqPGSsIqWLYe77ZMnViTaXphWuu4C8=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hT4sE4WiC6fK2vX3HOF/KoCriH7VAfOyq3DFlZAtwQE=
+			H7ETU+zTQ4G5zUyG66sh80cwJ4bEKktAOYOv/wbgL94=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

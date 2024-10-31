@@ -340,6 +340,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest16StreamRenderView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -689,6 +690,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest16StreamRenderView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 #endif
 #if __has_attribute(external_source_symbol)

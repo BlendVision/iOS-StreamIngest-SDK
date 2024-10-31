@@ -1106,6 +1106,43 @@
         "children": [
           {
             "kind": "Var",
+            "name": "auto",
+            "printedName": "auto",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BVStreamIngest.StreamIngestQualityLevel.Type) -> BVStreamIngest.StreamIngestQualityLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StreamIngestQualityLevel",
+                    "printedName": "BVStreamIngest.StreamIngestQualityLevel",
+                    "usr": "s:14BVStreamIngest06StreamB12QualityLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BVStreamIngest.StreamIngestQualityLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StreamIngestQualityLevel",
+                        "printedName": "BVStreamIngest.StreamIngestQualityLevel",
+                        "usr": "s:14BVStreamIngest06StreamB12QualityLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14BVStreamIngest06StreamB12QualityLevelO4autoyA2CmF",
+            "mangledName": "$s14BVStreamIngest06StreamB12QualityLevelO4autoyA2CmF",
+            "moduleName": "BVStreamIngest"
+          },
+          {
+            "kind": "Var",
             "name": "low",
             "printedName": "low",
             "children": [
@@ -1383,9 +1420,9 @@
             ]
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "videoSize",
-            "printedName": "videoSize",
+            "printedName": "videoSize()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1394,40 +1431,20 @@
                 "usr": "c:@S@CGSize"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB7QualityP9videoSizeSo6CGSizeVvp",
-            "mangledName": "$s14BVStreamIngest06StreamB7QualityP9videoSizeSo6CGSizeVvp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB7QualityP9videoSizeSo6CGSizeVyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB7QualityP9videoSizeSo6CGSizeVyYaF",
             "moduleName": "BVStreamIngest",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.StreamIngestQuality>",
+            "sugared_genericSig": "<Self where Self : BVStreamIngest.StreamIngestQuality>",
             "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB7QualityP9videoSizeSo6CGSizeVvg",
-                "mangledName": "$s14BVStreamIngest06StreamB7QualityP9videoSizeSo6CGSizeVvg",
-                "moduleName": "BVStreamIngest",
-                "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.StreamIngestQuality>",
-                "sugared_genericSig": "<Self where Self : BVStreamIngest.StreamIngestQuality>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "videoBitRate",
-            "printedName": "videoBitRate",
+            "printedName": "videoBitRate()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1436,40 +1453,20 @@
                 "usr": "s:Si"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB7QualityP12videoBitRateSivp",
-            "mangledName": "$s14BVStreamIngest06StreamB7QualityP12videoBitRateSivp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB7QualityP12videoBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB7QualityP12videoBitRateSiyYaF",
             "moduleName": "BVStreamIngest",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.StreamIngestQuality>",
+            "sugared_genericSig": "<Self where Self : BVStreamIngest.StreamIngestQuality>",
             "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB7QualityP12videoBitRateSivg",
-                "mangledName": "$s14BVStreamIngest06StreamB7QualityP12videoBitRateSivg",
-                "moduleName": "BVStreamIngest",
-                "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.StreamIngestQuality>",
-                "sugared_genericSig": "<Self where Self : BVStreamIngest.StreamIngestQuality>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "audioBitRate",
-            "printedName": "audioBitRate",
+            "printedName": "audioBitRate()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1478,35 +1475,15 @@
                 "usr": "s:Si"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB7QualityP12audioBitRateSivp",
-            "mangledName": "$s14BVStreamIngest06StreamB7QualityP12audioBitRateSivp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB7QualityP12audioBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB7QualityP12audioBitRateSiyYaF",
             "moduleName": "BVStreamIngest",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.StreamIngestQuality>",
+            "sugared_genericSig": "<Self where Self : BVStreamIngest.StreamIngestQuality>",
             "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB7QualityP12audioBitRateSivg",
-                "mangledName": "$s14BVStreamIngest06StreamB7QualityP12audioBitRateSivg",
-                "moduleName": "BVStreamIngest",
-                "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.StreamIngestQuality>",
-                "sugared_genericSig": "<Self where Self : BVStreamIngest.StreamIngestQuality>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -1563,9 +1540,9 @@
             ]
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "videoSize",
-            "printedName": "videoSize",
+            "printedName": "videoSize()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1574,38 +1551,19 @@
                 "usr": "c:@S@CGSize"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB10QualityLowV9videoSizeSo6CGSizeVvp",
-            "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV9videoSizeSo6CGSizeVvp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB10QualityLowV9videoSizeSo6CGSizeVyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV9videoSizeSo6CGSizeVyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB10QualityLowV9videoSizeSo6CGSizeVvg",
-                "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV9videoSizeSo6CGSizeVvg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "videoBitRate",
-            "printedName": "videoBitRate",
+            "printedName": "videoBitRate()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1614,38 +1572,19 @@
                 "usr": "s:Si"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB10QualityLowV12videoBitRateSivp",
-            "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV12videoBitRateSivp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB10QualityLowV12videoBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV12videoBitRateSiyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB10QualityLowV12videoBitRateSivg",
-                "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV12videoBitRateSivg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "audioBitRate",
-            "printedName": "audioBitRate",
+            "printedName": "audioBitRate()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1654,33 +1593,14 @@
                 "usr": "s:Si"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB10QualityLowV12audioBitRateSivp",
-            "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV12audioBitRateSivp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB10QualityLowV12audioBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV12audioBitRateSiyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB10QualityLowV12audioBitRateSivg",
-                "mangledName": "$s14BVStreamIngest06StreamB10QualityLowV12audioBitRateSivg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -1767,9 +1687,9 @@
             ]
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "videoSize",
-            "printedName": "videoSize",
+            "printedName": "videoSize()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1778,38 +1698,19 @@
                 "usr": "c:@S@CGSize"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB13QualityMediumV9videoSizeSo6CGSizeVvp",
-            "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV9videoSizeSo6CGSizeVvp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB13QualityMediumV9videoSizeSo6CGSizeVyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV9videoSizeSo6CGSizeVyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB13QualityMediumV9videoSizeSo6CGSizeVvg",
-                "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV9videoSizeSo6CGSizeVvg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "videoBitRate",
-            "printedName": "videoBitRate",
+            "printedName": "videoBitRate()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1818,38 +1719,19 @@
                 "usr": "s:Si"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB13QualityMediumV12videoBitRateSivp",
-            "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV12videoBitRateSivp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB13QualityMediumV12videoBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV12videoBitRateSiyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB13QualityMediumV12videoBitRateSivg",
-                "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV12videoBitRateSivg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "audioBitRate",
-            "printedName": "audioBitRate",
+            "printedName": "audioBitRate()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1858,33 +1740,14 @@
                 "usr": "s:Si"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB13QualityMediumV12audioBitRateSivp",
-            "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV12audioBitRateSivp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB13QualityMediumV12audioBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV12audioBitRateSiyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB13QualityMediumV12audioBitRateSivg",
-                "mangledName": "$s14BVStreamIngest06StreamB13QualityMediumV12audioBitRateSivg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -1971,9 +1834,9 @@
             ]
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "videoSize",
-            "printedName": "videoSize",
+            "printedName": "videoSize()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1982,38 +1845,19 @@
                 "usr": "c:@S@CGSize"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB11QualityHighV9videoSizeSo6CGSizeVvp",
-            "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV9videoSizeSo6CGSizeVvp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB11QualityHighV9videoSizeSo6CGSizeVyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV9videoSizeSo6CGSizeVyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB11QualityHighV9videoSizeSo6CGSizeVvg",
-                "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV9videoSizeSo6CGSizeVvg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "videoBitRate",
-            "printedName": "videoBitRate",
+            "printedName": "videoBitRate()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2022,38 +1866,19 @@
                 "usr": "s:Si"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB11QualityHighV12videoBitRateSivp",
-            "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV12videoBitRateSivp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB11QualityHighV12videoBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV12videoBitRateSiyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB11QualityHighV12videoBitRateSivg",
-                "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV12videoBitRateSivg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "audioBitRate",
-            "printedName": "audioBitRate",
+            "printedName": "audioBitRate()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2062,33 +1887,14 @@
                 "usr": "s:Si"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest06StreamB11QualityHighV12audioBitRateSivp",
-            "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV12audioBitRateSivp",
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB11QualityHighV12audioBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV12audioBitRateSiyYaF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest06StreamB11QualityHighV12audioBitRateSivg",
-                "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV12audioBitRateSivg",
-                "moduleName": "BVStreamIngest",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -2115,6 +1921,153 @@
         "declKind": "Struct",
         "usr": "s:14BVStreamIngest06StreamB11QualityHighV",
         "mangledName": "$s14BVStreamIngest06StreamB11QualityHighV",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "StreamIngestQuality",
+            "printedName": "StreamIngestQuality",
+            "usr": "s:14BVStreamIngest06StreamB7QualityP",
+            "mangledName": "$s14BVStreamIngest06StreamB7QualityP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StreamIngestQualityAuto",
+        "printedName": "StreamIngestQualityAuto",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "level",
+            "printedName": "level",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StreamIngestQualityLevel",
+                "printedName": "BVStreamIngest.StreamIngestQualityLevel",
+                "usr": "s:14BVStreamIngest06StreamB12QualityLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest06StreamB11QualityAutoV5levelAA0cbD5LevelOvp",
+            "mangledName": "$s14BVStreamIngest06StreamB11QualityAutoV5levelAA0cbD5LevelOvp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StreamIngestQualityLevel",
+                    "printedName": "BVStreamIngest.StreamIngestQualityLevel",
+                    "usr": "s:14BVStreamIngest06StreamB12QualityLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest06StreamB11QualityAutoV5levelAA0cbD5LevelOvg",
+                "mangledName": "$s14BVStreamIngest06StreamB11QualityAutoV5levelAA0cbD5LevelOvg",
+                "moduleName": "BVStreamIngest",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "videoSize",
+            "printedName": "videoSize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB11QualityAutoV9videoSizeSo6CGSizeVyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB11QualityAutoV9videoSizeSo6CGSizeVyYaF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoBitRate",
+            "printedName": "videoBitRate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB11QualityAutoV12videoBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB11QualityAutoV12videoBitRateSiyYaF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioBitRate",
+            "printedName": "audioBitRate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest06StreamB11QualityAutoV12audioBitRateSiyYaF",
+            "mangledName": "$s14BVStreamIngest06StreamB11QualityAutoV12audioBitRateSiyYaF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StreamIngestQualityAuto",
+                "printedName": "BVStreamIngest.StreamIngestQualityAuto",
+                "usr": "s:14BVStreamIngest06StreamB11QualityAutoV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVStreamIngest06StreamB11QualityAutoVACycfc",
+            "mangledName": "$s14BVStreamIngest06StreamB11QualityAutoVACycfc",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14BVStreamIngest06StreamB11QualityAutoV",
+        "mangledName": "$s14BVStreamIngest06StreamB11QualityAutoV",
         "moduleName": "BVStreamIngest",
         "declAttributes": [
           "AccessControl"
@@ -3414,6 +3367,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "PerfectLibCore",
         "printedName": "PerfectLibCore",
         "declKind": "Import",
@@ -3980,6 +3957,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
       },
       {
         "kind": "Import",
@@ -5603,6 +5604,30 @@
       },
       {
         "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5783,6 +5808,23 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
       },
       {
         "kind": "Import",
@@ -6120,42 +6162,56 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
-      "offset": 184,
+      "offset": 185,
+      "length": 6,
+      "value": "\"Auto\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
       "length": 5,
       "value": "\"Low\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
-      "offset": 208,
+      "offset": 231,
       "length": 8,
       "value": "\"Medium\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
-      "offset": 233,
+      "offset": 256,
       "length": 6,
       "value": "\"High\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
-      "offset": 184,
+      "offset": 185,
+      "length": 6,
+      "value": "\"Auto\""
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
       "length": 5,
       "value": "\"Low\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
-      "offset": 208,
+      "offset": 231,
       "length": 8,
       "value": "\"Medium\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
-      "offset": 233,
+      "offset": 256,
       "length": 6,
       "value": "\"High\""
     },
@@ -6477,56 +6533,56 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 353,
+      "offset": 347,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "Array",
-      "offset": 547,
+      "offset": 541,
       "length": 10,
       "value": "[0.0, 0.0]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "BooleanLiteral",
-      "offset": 593,
+      "offset": 587,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 655,
+      "offset": 649,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 669,
+      "offset": 663,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 698,
+      "offset": 692,
       "length": 4,
       "value": "1600"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 705,
+      "offset": 699,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 736,
+      "offset": 730,
       "length": 2,
       "value": "30"
     },
