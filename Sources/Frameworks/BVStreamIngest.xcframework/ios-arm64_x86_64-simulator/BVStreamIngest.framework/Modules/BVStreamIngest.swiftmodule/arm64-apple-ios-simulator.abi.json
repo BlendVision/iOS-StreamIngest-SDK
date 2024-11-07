@@ -4362,7 +4362,8 @@
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -6244,7 +6245,7 @@
       "value": "\"com.bv.ingest.video.capture.unit.lock\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoRawDataOutput.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/VideoRawDataOutput.swift",
       "kind": "StringLiteral",
       "offset": 385,
       "length": 18,
@@ -6351,124 +6352,124 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "Array",
-      "offset": 5610,
+      "offset": 5762,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "IntegerLiteral",
-      "offset": 6079,
+      "offset": 6231,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 6499,
+      "offset": 6651,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 307,
       "length": 26,
       "value": "\"attribute vec4 position;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 40,
       "value": "\"attribute vec4 inputTextureCoordinate;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 33,
       "value": "\"varying vec2 textureCoordinate;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 439,
       "length": 13,
       "value": "\"void main()\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 463,
       "length": 3,
       "value": "\"{\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 477,
       "length": 28,
       "value": "\"   gl_Position = position;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 51,
       "value": "\"   textureCoordinate = inputTextureCoordinate.xy;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 570,
       "length": 3,
       "value": "\"}\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 730,
       "length": 39,
       "value": "\"varying highp vec2 textureCoordinate;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 780,
       "length": 38,
       "value": "\"uniform sampler2D inputImageTexture;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 829,
       "length": 13,
       "value": "\"void main()\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 3,
       "value": "\"{\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 73,
       "value": "\"   gl_FragColor = texture2D(inputImageTexture, textureCoordinate).bgra;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 943,
       "length": 3,
       "value": "\"}\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 955,
       "length": 19,
@@ -6540,49 +6541,49 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "Array",
-      "offset": 541,
+      "offset": 530,
       "length": 10,
       "value": "[0.0, 0.0]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "BooleanLiteral",
-      "offset": 587,
+      "offset": 576,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 649,
+      "offset": 638,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 663,
+      "offset": 652,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 692,
+      "offset": 681,
       "length": 4,
       "value": "1600"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 699,
+      "offset": 688,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 730,
+      "offset": 719,
       "length": 2,
       "value": "30"
     },
