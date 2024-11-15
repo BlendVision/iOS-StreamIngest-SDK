@@ -334,6 +334,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 
 
 
+
 SWIFT_CLASS("_TtC14BVStreamIngest16StreamRenderView")
 @interface StreamRenderView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -682,6 +683,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 - (void)addObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath options:(NSKeyValueObservingOptions)options context:(void * _Nullable)context;
 - (void)removeObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath;
 @end
+
 
 
 

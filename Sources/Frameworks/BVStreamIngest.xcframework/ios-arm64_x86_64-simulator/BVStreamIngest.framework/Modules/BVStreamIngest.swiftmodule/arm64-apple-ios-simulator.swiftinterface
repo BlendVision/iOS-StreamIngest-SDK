@@ -141,6 +141,39 @@ public struct StreamIngestQualityAuto : BVStreamIngest.StreamIngestQuality {
   #endif
   public init()
 }
+public class StreamIngestBufferState {
+  public enum BufferState {
+    case normal
+    case warning
+    case critical
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: BVStreamIngest.StreamIngestBufferState.BufferState, b: BVStreamIngest.StreamIngestBufferState.BufferState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct BufferMetrics {
+    public let queuedBytes: Swift.Int64
+    public let targetBytesPerSecond: Swift.Int64
+    public let bufferDuration: Swift.Double
+    public var queuedMegabytes: Swift.Double {
+      get
+    }
+    public var targetMegabytesPerSecond: Swift.Double {
+      get
+    }
+  }
+  public var status: BVStreamIngest.StreamIngestBufferState.BufferState
+  final public let bufferInfo: BVStreamIngest.StreamIngestBufferState.BufferMetrics
+  public init(bufferInfo: BVStreamIngest.StreamIngestBufferState.BufferMetrics)
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
 public enum EffectStreamIngestLoadStatus {
   case unknown
   case loading
@@ -218,6 +251,7 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   func streamIngestDidFailToPublish(_ streamIngest: BVStreamIngest.StreamIngest, with error: BVStreamIngest.StreamIngestErrorEvent)
   func streamIngestDidStartRetrying(_ streamIngest: BVStreamIngest.StreamIngest)
   func streamIngestDidStopRetrying(_ streamIngest: BVStreamIngest.StreamIngest)
+  func streamIngestDidUpdateBufferStatus(_ streamIngest: BVStreamIngest.StreamIngest, with status: BVStreamIngest.StreamIngestBufferState)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class StreamIngest : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $AsyncAwait
@@ -279,6 +313,8 @@ extension BVStreamIngest.CameraPreviewView.ScaleMode : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.Equatable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.RawRepresentable {}
+extension BVStreamIngest.StreamIngestBufferState.BufferState : Swift.Equatable {}
+extension BVStreamIngest.StreamIngestBufferState.BufferState : Swift.Hashable {}
 extension BVStreamIngest.EffectStreamIngestLoadStatus : Swift.Equatable {}
 extension BVStreamIngest.EffectStreamIngestLoadStatus : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestEventName : Swift.Equatable {}
