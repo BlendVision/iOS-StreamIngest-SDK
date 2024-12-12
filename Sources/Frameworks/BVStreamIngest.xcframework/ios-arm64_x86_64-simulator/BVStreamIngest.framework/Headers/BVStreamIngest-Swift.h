@@ -334,11 +334,13 @@ SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 
 
 
+
 SWIFT_CLASS("_TtC14BVStreamIngest16StreamRenderView")
 @interface StreamRenderView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -684,11 +686,13 @@ SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 
 
 
+
 SWIFT_CLASS("_TtC14BVStreamIngest16StreamRenderView")
 @interface StreamRenderView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 #endif
 #if __has_attribute(external_source_symbol)

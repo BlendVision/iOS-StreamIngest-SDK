@@ -2,9 +2,13 @@
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BVStreamIngest
 import AVFoundation
+import Accelerate
 @_exported import BVStreamIngest
+import CoreTelephony
+import CoreVideo
 import Foundation
 import HaishinKit
+import Network
 import Swift
 import UIKit
 import VideoToolbox
@@ -55,6 +59,7 @@ public struct EffectStreamIngestConfig {
   @_Concurrency.MainActor(unsafe) public func switchScaleMode()
 }
 public enum StreamIngestQualityLevel : Swift.String {
+  case auto
   case low
   case medium
   case high
@@ -66,54 +71,108 @@ public enum StreamIngestQualityLevel : Swift.String {
 }
 public protocol StreamIngestQuality {
   var level: BVStreamIngest.StreamIngestQualityLevel { get }
-  var videoSize: CoreFoundation.CGSize { get }
-  var videoBitRate: Swift.Int { get }
-  var audioBitRate: Swift.Int { get }
+  #if compiler(>=5.3) && $AsyncAwait
+  func videoSize() async -> CoreFoundation.CGSize
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func videoBitRate() async -> Swift.Int
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func audioBitRate() async -> Swift.Int
+  #endif
 }
 public struct StreamIngestQualityLow : BVStreamIngest.StreamIngestQuality {
   public var level: BVStreamIngest.StreamIngestQualityLevel {
     get
   }
-  public var videoSize: CoreFoundation.CGSize {
-    get
-  }
-  public var videoBitRate: Swift.Int {
-    get
-  }
-  public var audioBitRate: Swift.Int {
-    get
-  }
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoSize() async -> CoreFoundation.CGSize
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoBitRate() async -> Swift.Int
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func audioBitRate() async -> Swift.Int
+  #endif
   public init()
 }
 public struct StreamIngestQualityMedium : BVStreamIngest.StreamIngestQuality {
   public var level: BVStreamIngest.StreamIngestQualityLevel {
     get
   }
-  public var videoSize: CoreFoundation.CGSize {
-    get
-  }
-  public var videoBitRate: Swift.Int {
-    get
-  }
-  public var audioBitRate: Swift.Int {
-    get
-  }
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoSize() async -> CoreFoundation.CGSize
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoBitRate() async -> Swift.Int
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func audioBitRate() async -> Swift.Int
+  #endif
   public init()
 }
 public struct StreamIngestQualityHigh : BVStreamIngest.StreamIngestQuality {
   public var level: BVStreamIngest.StreamIngestQualityLevel {
     get
   }
-  public var videoSize: CoreFoundation.CGSize {
-    get
-  }
-  public var videoBitRate: Swift.Int {
-    get
-  }
-  public var audioBitRate: Swift.Int {
-    get
-  }
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoSize() async -> CoreFoundation.CGSize
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoBitRate() async -> Swift.Int
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func audioBitRate() async -> Swift.Int
+  #endif
   public init()
+}
+public struct StreamIngestQualityAuto : BVStreamIngest.StreamIngestQuality {
+  public var level: BVStreamIngest.StreamIngestQualityLevel {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoSize() async -> CoreFoundation.CGSize
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoBitRate() async -> Swift.Int
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func audioBitRate() async -> Swift.Int
+  #endif
+  public init()
+}
+public class StreamIngestBufferState {
+  public enum BufferState {
+    case normal
+    case warning
+    case critical
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: BVStreamIngest.StreamIngestBufferState.BufferState, b: BVStreamIngest.StreamIngestBufferState.BufferState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct BufferMetrics {
+    public let queuedBytes: Swift.Int64
+    public let targetBytesPerSecond: Swift.Int64
+    public let bufferDuration: Swift.Double
+    public var queuedMegabytes: Swift.Double {
+      get
+    }
+    public var targetMegabytesPerSecond: Swift.Double {
+      get
+    }
+  }
+  public var status: BVStreamIngest.StreamIngestBufferState.BufferState
+  final public let bufferInfo: BVStreamIngest.StreamIngestBufferState.BufferMetrics
+  public init(bufferInfo: BVStreamIngest.StreamIngestBufferState.BufferMetrics)
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
 }
 public enum EffectStreamIngestLoadStatus {
   case unknown
@@ -183,7 +242,6 @@ extension BVStreamIngest.EffectStreamIngest {
 }
 public class StreamIngestAuthorizer {
   public init(debugMode: Swift.Bool = false)
-  public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   @objc deinit
 }
 public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
@@ -192,6 +250,7 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   func streamIngestDidFailToPublish(_ streamIngest: BVStreamIngest.StreamIngest, with error: BVStreamIngest.StreamIngestErrorEvent)
   func streamIngestDidStartRetrying(_ streamIngest: BVStreamIngest.StreamIngest)
   func streamIngestDidStopRetrying(_ streamIngest: BVStreamIngest.StreamIngest)
+  func streamIngestDidUpdateBufferStatus(_ streamIngest: BVStreamIngest.StreamIngest, with status: BVStreamIngest.StreamIngestBufferState)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class StreamIngest : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $AsyncAwait
@@ -233,7 +292,6 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   final public func startPublish(rtmpUrl: Swift.String, stream name: Swift.String)
   final public func stopPublish()
   final public func close()
-  final public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class StreamRenderView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -253,6 +311,8 @@ extension BVStreamIngest.CameraPreviewView.ScaleMode : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.Equatable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.RawRepresentable {}
+extension BVStreamIngest.StreamIngestBufferState.BufferState : Swift.Equatable {}
+extension BVStreamIngest.StreamIngestBufferState.BufferState : Swift.Hashable {}
 extension BVStreamIngest.EffectStreamIngestLoadStatus : Swift.Equatable {}
 extension BVStreamIngest.EffectStreamIngestLoadStatus : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestEventName : Swift.Equatable {}
