@@ -242,6 +242,7 @@ extension BVStreamIngest.EffectStreamIngest {
 }
 public class StreamIngestAuthorizer {
   public init(debugMode: Swift.Bool = false)
+  public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   @objc deinit
 }
 public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
