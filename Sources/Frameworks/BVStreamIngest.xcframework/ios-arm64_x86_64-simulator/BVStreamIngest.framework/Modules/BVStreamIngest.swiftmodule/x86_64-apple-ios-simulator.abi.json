@@ -7110,21 +7110,33 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "Array",
+<<<<<<< HEAD
       "offset": 5611,
+=======
+      "offset": 5676,
+>>>>>>> 30c0bad702461296cdd63dcc5a5af58510b4cb10
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "IntegerLiteral",
+<<<<<<< HEAD
       "offset": 6080,
+=======
+      "offset": 6145,
+>>>>>>> 30c0bad702461296cdd63dcc5a5af58510b4cb10
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
+<<<<<<< HEAD
       "offset": 6500,
+=======
+      "offset": 6565,
+>>>>>>> 30c0bad702461296cdd63dcc5a5af58510b4cb10
       "length": 5,
       "value": "false"
     },
