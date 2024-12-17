@@ -4859,9 +4859,13 @@
             "usr": "s:14BVStreamIngest06StreamB10AuthorizerC21requestAuthentication10completionyys5Error_pSgcSg_tF",
             "mangledName": "$s14BVStreamIngest06StreamB10AuthorizerC21requestAuthentication10completionyys5Error_pSgcSg_tF",
             "moduleName": "BVStreamIngest",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available",
+              "RawDocComment"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -6218,10 +6222,14 @@
             "usr": "s:14BVStreamIngest06StreamB0C21requestAuthentication10completionyys5Error_pSgcSg_tF",
             "mangledName": "$s14BVStreamIngest06StreamB0C21requestAuthentication10completionyys5Error_pSgcSg_tF",
             "moduleName": "BVStreamIngest",
+            "deprecated": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "Available",
+              "RawDocComment"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -6438,10 +6446,67 @@
         "moduleName": "BVStreamIngest"
       },
       {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
+      },
+      {
         "kind": "TypeDecl",
         "name": "StreamRenderView",
         "printedName": "StreamRenderView",
         "children": [
+          {
+            "kind": "Var",
+            "name": "mode",
+            "printedName": "mode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVLayerVideoGravity",
+                "printedName": "AVFoundation.AVLayerVideoGravity",
+                "usr": "c:@T@AVLayerVideoGravity"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest16StreamRenderViewC4modeSo19AVLayerVideoGravityavp",
+            "mangledName": "$s14BVStreamIngest16StreamRenderViewC4modeSo19AVLayerVideoGravityavp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVLayerVideoGravity",
+                    "printedName": "AVFoundation.AVLayerVideoGravity",
+                    "usr": "c:@T@AVLayerVideoGravity"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest16StreamRenderViewC4modeSo19AVLayerVideoGravityavg",
+                "mangledName": "$s14BVStreamIngest16StreamRenderViewC4modeSo19AVLayerVideoGravityavg",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -6503,6 +6568,34 @@
             "declKind": "Func",
             "usr": "s:14BVStreamIngest16StreamRenderViewC06attachC0yyAA0cB0CSgF",
             "mangledName": "$s14BVStreamIngest16StreamRenderViewC06attachC0yyAA0cB0CSgF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoGravity",
+            "printedName": "setVideoGravity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVLayerVideoGravity",
+                "printedName": "AVFoundation.AVLayerVideoGravity",
+                "usr": "c:@T@AVLayerVideoGravity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest16StreamRenderViewC15setVideoGravityyySo07AVLayergH0aF",
+            "mangledName": "$s14BVStreamIngest16StreamRenderViewC15setVideoGravityyySo07AVLayergH0aF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "Custom",
@@ -7158,22 +7251,29 @@
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4906,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "Array",
-      "offset": 5676,
+      "offset": 6259,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "IntegerLiteral",
-      "offset": 6145,
+      "offset": 6728,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 6565,
+      "offset": 7148,
       "length": 5,
       "value": "false"
     },
@@ -7404,7 +7504,7 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamRenderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 311,
+      "offset": 331,
       "length": 5,
       "value": "false"
     },

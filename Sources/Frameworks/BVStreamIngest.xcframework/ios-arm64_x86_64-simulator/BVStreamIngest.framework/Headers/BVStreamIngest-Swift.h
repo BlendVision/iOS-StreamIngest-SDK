@@ -310,6 +310,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest17CameraPreviewView")
 @end
 
 
+
 SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 @interface EffectStreamIngest : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -331,6 +332,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 - (void)addObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath options:(NSKeyValueObservingOptions)options context:(void * _Nullable)context;
 - (void)removeObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath;
 @end
+
 
 
 
@@ -662,6 +664,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest17CameraPreviewView")
 @end
 
 
+
 SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 @interface EffectStreamIngest : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -683,6 +686,7 @@ SWIFT_CLASS("_TtC14BVStreamIngest12StreamIngest")
 - (void)addObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath options:(NSKeyValueObservingOptions)options context:(void * _Nullable)context;
 - (void)removeObserver:(NSObject * _Nonnull)observer forKeyPath:(NSString * _Nonnull)keyPath;
 @end
+
 
 
 

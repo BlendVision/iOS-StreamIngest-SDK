@@ -53,7 +53,10 @@ public struct EffectStreamIngestConfig {
       get
     }
   }
-  @_Concurrency.MainActor(unsafe) public var scaleMode: BVStreamIngest.CameraPreviewView.ScaleMode
+  @_Concurrency.MainActor(unsafe) public var scaleMode: BVStreamIngest.CameraPreviewView.ScaleMode {
+    get
+    set
+  }
   @objc deinit
   @_Concurrency.MainActor(unsafe) public func adjustRenderView(to size: CoreFoundation.CGSize? = nil)
   @_Concurrency.MainActor(unsafe) public func switchScaleMode()
@@ -240,9 +243,16 @@ extension BVStreamIngest.EffectStreamIngest {
   @available(*, deprecated, message: "This function is deprecated and will be removed in a future release. Use createCameraView(aspectRatio:) instead.")
   public func createCameraView(frame: CoreFoundation.CGRect, aspectRatio ratio: CoreFoundation.CGFloat) -> BVStreamIngest.CameraPreviewView?
 }
+extension BVStreamIngest.StreamIngestAuthorizer {
+  @available(*, deprecated, message: "This method is deprecated and has been removed. The authentication functionality has been moved to StreamIngest.create().")
+  public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
+}
+extension BVStreamIngest.StreamIngest {
+  @available(*, deprecated, message: "This method is deprecated and has no effect. The authentication functionality has been moved to StreamIngest.create().")
+  final public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
+}
 public class StreamIngestAuthorizer {
   public init(debugMode: Swift.Bool = false)
-  public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   @objc deinit
 }
 public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
@@ -293,11 +303,14 @@ public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   final public func startPublish(rtmpUrl: Swift.String, stream name: Swift.String)
   final public func stopPublish()
   final public func close()
-  final public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class StreamRenderView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) final public var mode: AVFoundation.AVLayerVideoGravity {
+    get
+  }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) final public func attachStream(_ stream: BVStreamIngest.StreamIngest?)
+  @_Concurrency.MainActor(unsafe) final public func setVideoGravity(_ gravity: AVFoundation.AVLayerVideoGravity)
   @objc deinit
 }
 public class StreamIngestConfig {
