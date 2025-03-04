@@ -63,6 +63,7 @@ public struct EffectStreamIngestConfig {
 }
 public enum StreamIngestQualityLevel : Swift.String {
   case auto
+  case ultraLow
   case low
   case medium
   case high
@@ -84,13 +85,10 @@ public protocol StreamIngestQuality {
   func audioBitRate() async -> Swift.Int
   #endif
 }
-public struct StreamIngestQualityLow : BVStreamIngest.StreamIngestQuality {
+public struct StreamIngestQualityUltraLow : BVStreamIngest.StreamIngestQuality {
   public var level: BVStreamIngest.StreamIngestQualityLevel {
     get
   }
-  #if compiler(>=5.3) && $AsyncAwait
-  public func videoSize() async -> CoreFoundation.CGSize
-  #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func videoBitRate() async -> Swift.Int
   #endif
@@ -98,6 +96,24 @@ public struct StreamIngestQualityLow : BVStreamIngest.StreamIngestQuality {
   public func audioBitRate() async -> Swift.Int
   #endif
   public init()
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoSize() async -> CoreFoundation.CGSize
+  #endif
+}
+public struct StreamIngestQualityLow : BVStreamIngest.StreamIngestQuality {
+  public var level: BVStreamIngest.StreamIngestQualityLevel {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoBitRate() async -> Swift.Int
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func audioBitRate() async -> Swift.Int
+  #endif
+  public init()
+  #if compiler(>=5.3) && $AsyncAwait
+  public func videoSize() async -> CoreFoundation.CGSize
+  #endif
 }
 public struct StreamIngestQualityMedium : BVStreamIngest.StreamIngestQuality {
   public var level: BVStreamIngest.StreamIngestQualityLevel {
