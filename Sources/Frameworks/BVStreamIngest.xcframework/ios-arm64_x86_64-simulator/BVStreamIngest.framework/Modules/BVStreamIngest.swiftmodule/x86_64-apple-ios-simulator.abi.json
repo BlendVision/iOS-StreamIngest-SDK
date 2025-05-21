@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BVStreamIngest",
+    "printedName": "BVStreamIngest",
     "children": [
       {
         "kind": "Import",
@@ -200,6 +200,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -381,6 +395,22 @@
         "moduleName": "BVStreamIngest",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -473,6 +503,22 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "BVStreamIngest.Effect"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -622,6 +668,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -835,6 +897,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -867,8 +943,9 @@
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -967,6 +1044,7 @@
             "mangledName": "$s14BVStreamIngest17CameraPreviewViewC012adjustRenderE02toySo6CGSizeVSg_tF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -989,6 +1067,7 @@
             "mangledName": "$s14BVStreamIngest17CameraPreviewViewC15switchScaleModeyyF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -1001,6 +1080,7 @@
         "mangledName": "$s14BVStreamIngest17CameraPreviewViewC",
         "moduleName": "BVStreamIngest",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -1014,6 +1094,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1380,6 +1474,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1536,6 +1644,22 @@
         "moduleName": "BVStreamIngest",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1676,6 +1800,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "StreamIngestQuality",
@@ -1825,6 +1963,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "StreamIngestQuality",
             "printedName": "StreamIngestQuality",
             "usr": "s:14BVStreamIngest06StreamB7QualityP",
@@ -1970,6 +2122,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "StreamIngestQuality",
@@ -2119,6 +2285,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "StreamIngestQuality",
             "printedName": "StreamIngestQuality",
             "usr": "s:14BVStreamIngest06StreamB7QualityP",
@@ -2264,6 +2444,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "StreamIngestQuality",
@@ -2562,6 +2756,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -2806,6 +3014,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -3021,6 +3245,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3328,6 +3568,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3419,6 +3673,22 @@
         "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3903,7 +4173,7 @@
           {
             "kind": "Function",
             "name": "attachAudio",
-            "printedName": "attachAudio(device:)",
+            "printedName": "attachAudio(device:automaticallyConfiguresApplicationAudioSession:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3915,11 +4185,18 @@
                 "name": "AVCaptureDevice",
                 "printedName": "AVFoundation.AVCaptureDevice",
                 "usr": "c:objc(cs)AVCaptureDevice"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C11attachAudio6deviceySo15AVCaptureDeviceC_tKF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C11attachAudio6deviceySo15AVCaptureDeviceC_tKF",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C11attachAudio6device034automaticallyConfiguresApplicationF7SessionySo15AVCaptureDeviceC_SbtKF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C11attachAudio6device034automaticallyConfiguresApplicationF7SessionySo15AVCaptureDeviceC_SbtKF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
@@ -4208,6 +4485,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4520,6 +4811,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4659,7 +4964,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -4877,6 +5198,22 @@
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "BVStreamIngest.StreamIngestEvent"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5066,6 +5403,22 @@
         "moduleName": "BVStreamIngest",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5286,6 +5639,22 @@
         "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6442,6 +6811,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6667,8 +7050,9 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl"
             ],
@@ -6725,6 +7109,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -6761,6 +7146,7 @@
             "mangledName": "$s14BVStreamIngest16StreamRenderViewC06attachC0yyAA0cB0CSgF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl"
@@ -6789,6 +7175,7 @@
             "mangledName": "$s14BVStreamIngest16StreamRenderViewC15setVideoGravityyySo07AVLayergH0aF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl"
@@ -6801,6 +7188,7 @@
         "mangledName": "$s14BVStreamIngest16StreamRenderViewC",
         "moduleName": "BVStreamIngest",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "Final",
@@ -6815,6 +7203,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7203,6 +7605,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       }
     ],
@@ -7210,672 +7628,497 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Effect.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Effect.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Effect.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Effect.swift",
       "kind": "IntegerLiteral",
       "offset": 379,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngestConfig.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngestConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 402,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandlerConfig.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandlerConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 219,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 6,
       "value": "\"Auto\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
       "offset": 225,
       "length": 10,
       "value": "\"UltraLow\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
       "offset": 251,
       "length": 5,
       "value": "\"Low\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 8,
       "value": "\"Medium\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 6,
       "value": "\"High\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "StringLiteral",
-      "offset": 198,
-      "length": 6,
-      "value": "\"Auto\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "StringLiteral",
-      "offset": 225,
-      "length": 10,
-      "value": "\"UltraLow\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "StringLiteral",
-      "offset": 251,
-      "length": 5,
-      "value": "\"Low\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "StringLiteral",
-      "offset": 275,
-      "length": 8,
-      "value": "\"Medium\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestQuality.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 6,
-      "value": "\"High\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/ServerErrorResponse.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/ServerErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 434,
       "length": 7,
       "value": "\"@type\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/ServerErrorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 434,
-      "length": 7,
-      "value": "\"@type\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Monitor\/StreamIngestBufferState.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Monitor\/StreamIngestBufferState.swift",
       "kind": "FloatLiteral",
       "offset": 2819,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Monitor\/StreamIngestBufferState.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Monitor\/StreamIngestBufferState.swift",
       "kind": "FloatLiteral",
       "offset": 2834,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
-      "kind": "StringLiteral",
-      "offset": 1078,
-      "length": 18,
-      "value": "\"BVStreamIngest.EffectStreamIngest\""
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4654,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoCaptureUnit.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoCaptureUnit.swift",
       "kind": "StringLiteral",
       "offset": 716,
       "length": 39,
       "value": "\"com.bv.ingest.video.capture.unit.lock\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/VideoRawDataOutput.swift",
-      "kind": "StringLiteral",
-      "offset": 385,
-      "length": 18,
-      "value": "\"BVStreamIngest.VideoRawDataOutput\""
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/StreamIngestModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2301,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 390,
-      "length": 22,
-      "value": "\"BVStreamIngest.StreamIngestErrorEvent\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
       "kind": "StringLiteral",
       "offset": 903,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
       "kind": "StringLiteral",
       "offset": 931,
       "length": 9,
       "value": "\"warning\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
       "kind": "StringLiteral",
       "offset": 958,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 903,
-      "length": 8,
-      "value": "\"status\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 931,
-      "length": 9,
-      "value": "\"warning\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 958,
-      "length": 7,
-      "value": "\"error\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 423,
       "length": 2,
       "value": "96"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 428,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 554,
       "length": 5,
       "value": "44100"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 598,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/ReadyToDeprecate.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/ReadyToDeprecate.swift",
       "kind": "IntegerLiteral",
       "offset": 761,
       "length": 3,
       "value": "720"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/ReadyToDeprecate.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/ReadyToDeprecate.swift",
       "kind": "IntegerLiteral",
       "offset": 774,
       "length": 4,
       "value": "1280"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
       "kind": "BooleanLiteral",
       "offset": 683,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
       "offset": 4906,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "Array",
       "offset": 6259,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "IntegerLiteral",
       "offset": 6728,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
       "offset": 7148,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 307,
       "length": 26,
       "value": "\"attribute vec4 position;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 40,
       "value": "\"attribute vec4 inputTextureCoordinate;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 33,
       "value": "\"varying vec2 textureCoordinate;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 439,
       "length": 13,
       "value": "\"void main()\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 463,
       "length": 3,
       "value": "\"{\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 477,
       "length": 28,
       "value": "\"   gl_Position = position;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 51,
       "value": "\"   textureCoordinate = inputTextureCoordinate.xy;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 570,
       "length": 3,
       "value": "\"}\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 730,
       "length": 39,
       "value": "\"varying highp vec2 textureCoordinate;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 780,
       "length": 38,
       "value": "\"uniform sampler2D inputImageTexture;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 829,
       "length": 13,
       "value": "\"void main()\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 3,
       "value": "\"{\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 73,
       "value": "\"   gl_FragColor = texture2D(inputImageTexture, textureCoordinate).bgra;\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
       "kind": "StringLiteral",
       "offset": 943,
       "length": 3,
       "value": "\"}\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 955,
-      "length": 19,
-      "value": "\"BVStreamIngest.RawOutputPluginDemo\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
       "kind": "StringLiteral",
       "offset": 907,
       "length": 36,
       "value": "\"com.bv.bvstreamingest.retryHandler\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 978,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 1068,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 1110,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
       "kind": "StringLiteral",
       "offset": 1448,
       "length": 18,
       "value": "\"OperationSuccess\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
       "kind": "StringLiteral",
       "offset": 1499,
       "length": 18,
       "value": "\"OperationFailure\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1448,
-      "length": 18,
-      "value": "\"OperationSuccess\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1499,
-      "length": 18,
-      "value": "\"OperationFailure\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 979,
       "length": 4,
       "value": "1280"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 993,
       "length": 3,
       "value": "720"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 1022,
       "length": 4,
       "value": "1600"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 1029,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 1554,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "Array",
       "offset": 1728,
       "length": 10,
       "value": "[0.0, 0.0]"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "BooleanLiteral",
       "offset": 1785,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/VideoSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 1821,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/MakeupCamEventReceiver.swift",
-      "kind": "StringLiteral",
-      "offset": 222,
-      "length": 22,
-      "value": "\"BVStreamIngest.MakeupCamEventReceiver\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamRenderView.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamRenderView.swift",
       "kind": "BooleanLiteral",
       "offset": 331,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryError.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryError.swift",
       "kind": "IntegerLiteral",
       "offset": 158,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryError.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryError.swift",
       "kind": "IntegerLiteral",
       "offset": 172,
       "length": 15,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 158,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 172,
-      "length": 15,
-      "value": "1001"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 158,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 172,
-      "length": 15,
-      "value": "1001"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioCaptureUnit.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioCaptureUnit.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 39,
       "value": "\"com.bv.ingest.audio.capture.unit.lock\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkConstant.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/AudioCaptureUnit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1038,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 24,
       "value": "\"\/core\/license\/v1\/check\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/NetworkConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 198,
-      "length": 24,
-      "value": "\"\/core\/license\/v1\/check\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
       "kind": "StringLiteral",
       "offset": 168,
       "length": 14,
       "value": "\"streamingest\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 22,
       "value": "\"streamingest-retouch\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 168,
-      "length": 14,
-      "value": "\"streamingest\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 214,
-      "length": 22,
-      "value": "\"streamingest-retouch\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 15,
       "value": "\"license_token\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
       "kind": "StringLiteral",
       "offset": 438,
       "length": 20,
       "value": "\"available_features\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 398,
-      "length": 15,
-      "value": "\"license_token\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 438,
-      "length": 20,
-      "value": "\"available_features\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
       "kind": "StringLiteral",
       "offset": 1095,
       "length": 13,
       "value": "\"license_key\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
       "kind": "StringLiteral",
       "offset": 1138,
       "length": 16,
       "value": "\"check_features\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1095,
-      "length": 13,
-      "value": "\"license_key\""
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1670,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1138,
-      "length": 16,
-      "value": "\"check_features\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Network\/LicenseRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1170,
-      "length": 14,
-      "value": "\"BVStreamIngest.LicenseRequest\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
-      "kind": "StringLiteral",
-      "offset": 278,
-      "length": 24,
-      "value": "\"BVStreamIngest.EffectStreamIngestModule\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/k4GcNMyz\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestConfig.swift",
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 854,
       "length": 1,
