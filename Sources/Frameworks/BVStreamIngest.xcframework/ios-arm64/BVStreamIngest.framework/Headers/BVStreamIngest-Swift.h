@@ -314,15 +314,11 @@ SWIFT_CLASS("_TtC14BVStreamIngest17CameraPreviewView")
 @end
 
 
-
 SWIFT_CLASS("_TtC14BVStreamIngest18EffectStreamIngest")
 @interface EffectStreamIngest : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-
-
 
 
 

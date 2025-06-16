@@ -1,0 +1,6 @@
+framework module BVGfx {
+  umbrella header "BVGfx.h"
+  export *
+
+  module * { export * }
+}

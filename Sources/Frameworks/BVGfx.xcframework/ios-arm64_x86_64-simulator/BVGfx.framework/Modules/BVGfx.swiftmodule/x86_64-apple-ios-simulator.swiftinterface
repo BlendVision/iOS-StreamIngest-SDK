@@ -1,0 +1,549 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BVGfx
+import AVFoundation
+import AVKit
+@_exported import BVGfx
+import CoreImage
+import Foundation
+import Metal
+import MetalKit
+import OSLog
+import QuartzCore
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import simd
+final public class ResourceTracker {
+  public init()
+  @objc deinit
+  final public func track(resource: any BVGfx.ManagedResource)
+  final public func untrack(resource: any BVGfx.ManagedResource)
+  final public func printTrackedResources()
+}
+public class PresentTextureEffect : BVGfx.Effect {
+  public var contentMode: BVGfx.ContentMode {
+    get
+    set
+  }
+  public var rotation: BVGfx.ImageRotation {
+    get
+    set
+  }
+  public var flipHorizontally: Swift.Bool {
+    get
+    set
+  }
+  public init(device: BVGfx.Device, inputTexture: BVGfx.Texture, outputTexture: BVGfx.Texture, outputPixelFormat: Metal.MTLPixelFormat, contentMode: BVGfx.ContentMode = .scaleAspectFit, rotation: BVGfx.ImageRotation = .degrees0, flipHorizontally: Swift.Bool = false)
+  override open func prepare() -> Swift.Bool
+  @objc deinit
+}
+public class PresentTexturePass : BVGfx.RenderPass {
+  public init(device: BVGfx.Device, inputTexture: BVGfx.Texture, outputTexture: BVGfx.Texture, outputPixelFormat: Metal.MTLPixelFormat, contentMode: BVGfx.ContentMode = .scaleAspectFit, rotation: BVGfx.ImageRotation = .degrees0, flipHorizontally: Swift.Bool = false)
+  public func set(contentMode: BVGfx.ContentMode, rotation: BVGfx.ImageRotation, flipHorizontally: Swift.Bool)
+  @objc deinit
+}
+extension BVGfx.PresentTexturePass : BVGfx.TextureDelegate {
+  public func texture(_ texture: BVGfx.Texture, didChangeSize size: BVGfx.Size2i)
+}
+open class ComputePass : BVGfx.Pass {
+  final public let device: BVGfx.Device
+  final public let outputTexture: BVGfx.Texture
+  public init(device: BVGfx.Device, computeShader: BVGfx.Shader, outputTexture: BVGfx.Texture)
+  @objc deinit
+  open func getThreadGroupDispatchSize(pipelineState: any Metal.MTLComputePipelineState) -> (threadGroupSize: Metal.MTLSize, threadGroupsPerGrid: Metal.MTLSize)
+  open func encode(commandBuffer: any Metal.MTLCommandBuffer) -> Swift.Bool
+  open func sourceResolutionDidChange(width: Swift.Int, height: Swift.Int)
+  open func outputResolutionDidChange(width: Swift.Int, height: Swift.Int)
+}
+public protocol EffectDelegate : AnyObject {
+  func effectDidStartGPUTasks(_ effect: BVGfx.Effect)
+  func effectDidCompleteGPUTasks(_ effect: BVGfx.Effect)
+}
+open class Effect {
+  final public let device: BVGfx.Device
+  weak public var delegate: (any BVGfx.EffectDelegate)?
+  public var shouldWaitForCompletion: Swift.Bool
+  public init(device: BVGfx.Device)
+  @objc deinit
+  public func add(pass: any BVGfx.Pass, named name: Swift.String)
+  public func removeAllPasses()
+  public func getPass(named name: Swift.String) -> (any BVGfx.Pass)?
+  public func getPass<T>(named name: Swift.String) -> T? where T : BVGfx.Pass
+  open func prepare() -> Swift.Bool
+  open func encode(commandBuffer: any Metal.MTLCommandBuffer) -> Swift.Bool
+  open func apply(present drawable: (any Metal.MTLDrawable)? = nil) -> Swift.Bool
+}
+public protocol Pass {
+  func encode(commandBuffer: any Metal.MTLCommandBuffer) -> Swift.Bool
+  func sourceResolutionDidChange(width: Swift.Int, height: Swift.Int)
+  func outputResolutionDidChange(width: Swift.Int, height: Swift.Int)
+}
+open class RenderPass : BVGfx.Pass {
+  final public let device: BVGfx.Device
+  final public let vertexShader: BVGfx.Shader
+  final public let fragmentShader: BVGfx.Shader
+  final public let outputTexture: BVGfx.Texture
+  public init(device: BVGfx.Device, vertexShader: BVGfx.Shader, fragmentShader: BVGfx.Shader, mesh: BVGfx.Mesh, outputTexture: BVGfx.Texture, outputPixelFormat: Metal.MTLPixelFormat = .bgra8Unorm)
+  @objc deinit
+  open func encode(commandBuffer: any Metal.MTLCommandBuffer) -> Swift.Bool
+  open func sourceResolutionDidChange(width: Swift.Int, height: Swift.Int)
+  open func outputResolutionDidChange(width: Swift.Int, height: Swift.Int)
+}
+public class MetalComputeCommandRunner {
+  public init?(device: any Metal.MTLDevice, function: any Metal.MTLFunction)
+  convenience public init?(device: any Metal.MTLDevice, shaderLib: any Metal.MTLLibrary, functionName: Swift.String)
+  convenience public init?(device: any Metal.MTLDevice, bundle: Foundation.Bundle, functionName: Swift.String)
+  public func makeConstantBuffer(withData data: Swift.UnsafeRawPointer, length: Swift.Int, index: Swift.Int) -> Swift.Bool
+  public func makeConstantBuffer(length: Swift.Int, index: Swift.Int) -> Swift.Bool
+  public func updateConstantBuffer(withData data: Swift.UnsafeRawPointer, length: Swift.Int, index: Swift.Int) -> Swift.Bool
+  public func run(withTextures textures: [Swift.Int : any Metal.MTLTexture], outputTextureWidth width: Swift.Int, outputTextureHeight height: Swift.Int, samplers: [Swift.Int : any Metal.MTLSamplerState]?, waitUntilCompleted: Swift.Bool = false) -> Swift.Bool
+  @objc deinit
+}
+public class AVPlayerItemFrameSource : BVGfx.VideoFrameSource {
+  public init(playerItem: AVFoundation.AVPlayerItem)
+  @objc deinit
+  public func destroy()
+  public func add(delegate: any BVGfx.VideoFrameSourceDelegate)
+  public func remove(delegate: any BVGfx.VideoFrameSourceDelegate)
+}
+public class CMSampleBufferFrameSource : BVGfx.VideoFrameSource {
+  public var sampleBuffer: CoreMedia.CMSampleBuffer? {
+    get
+  }
+  public init()
+  public func destroy()
+  public func add(delegate: any BVGfx.VideoFrameSourceDelegate)
+  public func remove(delegate: any BVGfx.VideoFrameSourceDelegate)
+  public func processFrame(_ sampleBuffer: CoreMedia.CMSampleBuffer)
+  @objc deinit
+}
+public protocol VideoFrameSourceDelegate : AnyObject {
+  func videoFrameSource(_ source: any BVGfx.VideoFrameSource, didReceiveNewVideoFrame pixelBuffer: CoreVideo.CVPixelBuffer)
+}
+public protocol VideoFrameSource : AnyObject {
+  func destroy()
+  func add(delegate: any BVGfx.VideoFrameSourceDelegate)
+  func remove(delegate: any BVGfx.VideoFrameSourceDelegate)
+}
+@_hasMissingDesignatedInitializers public class ConstantBuffer : BVGfx.ShaderResource, BVGfx.ManagedResource {
+  final public let device: BVGfx.Device
+  public var resourceType: BVGfx.ShaderResourceType {
+    get
+  }
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+  public func updateBufferContent(withData data: Swift.UnsafeRawPointer, length: Swift.Int)
+  public func bind(using encoder: any Metal.MTLRenderCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+  public func bind(using encoder: any Metal.MTLComputeCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+}
+public class Device : BVGfx.ManagedResource {
+  final public let mtlDevice: any Metal.MTLDevice
+  public var defaultQuadMesh: BVGfx.Mesh! {
+    get
+  }
+  public var textureConverter: BVGfx.MetalTextureConverter! {
+    get
+  }
+  public init?(mtlDevice: any Metal.MTLDevice)
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+  public func track(resource: any BVGfx.ManagedResource)
+  public func untrack(resource: any BVGfx.ManagedResource)
+  public func printTrackedResources()
+  public func makeShaderLibrary(bundleForClass classType: Swift.AnyClass, resourceName name: Swift.String, extension ext: Swift.String) -> BVGfx.ShaderLibrary?
+  public func makeShaderLibrary(fromURL url: Foundation.URL) -> BVGfx.ShaderLibrary?
+  public func makeDefaultShaderLibrary() -> BVGfx.ShaderLibrary?
+  public func makeDefaultShaderLibrary(bundle: Foundation.Bundle) -> BVGfx.ShaderLibrary?
+  public func makeConstantBuffer(withData data: Swift.UnsafeRawPointer, length: Swift.Int) -> BVGfx.ConstantBuffer?
+  public func makeSampler(minFilter: Metal.MTLSamplerMinMagFilter, magFilter: Metal.MTLSamplerMinMagFilter, sAddressMode: Metal.MTLSamplerAddressMode, tAddressMode: Metal.MTLSamplerAddressMode, maxAnisotropy: Swift.Int = 1, borderColor: Metal.MTLSamplerBorderColor = .transparentBlack) -> BVGfx.Sampler?
+  public func makeTexture(fromURL url: Foundation.URL, sRGB: Swift.Bool = true) -> BVGfx.Texture?
+  public func makeTexture(fromBundle bundle: Foundation.Bundle, fileName: Swift.String, fileExtension: Swift.String, sRGB: Swift.Bool = true) -> BVGfx.Texture?
+  public func makeTexture(width: Swift.Int, height: Swift.Int, pixelFormat: Metal.MTLPixelFormat = .bgra8Unorm, usages: Metal.MTLTextureUsage = [.shaderRead, .shaderWrite]) -> BVGfx.Texture?
+  public func makeTexture(size: BVGfx.Size2i, pixelFormat: Metal.MTLPixelFormat = .bgra8Unorm, usages: Metal.MTLTextureUsage = [.shaderRead, .shaderWrite]) -> BVGfx.Texture?
+  public func makeRenderViewTexture(view: MetalKit.MTKView) -> BVGfx.RenderViewTexture
+  public func makeVideoTexture(frameAvailable: ((BVGfx.VideoTexture) -> Swift.Void)? = nil) -> BVGfx.VideoTexture
+  public func makeQuadMesh() -> BVGfx.Mesh?
+}
+@_hasMissingDesignatedInitializers public class DeviceManager : BVGfx.ManagedResource {
+  public static var shared: BVGfx.DeviceManager {
+    get
+  }
+  public var defaultDevice: BVGfx.Device? {
+    get
+  }
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+}
+public class Mesh : BVGfx.ManagedResource {
+  final public let device: BVGfx.Device
+  public init?(device: BVGfx.Device, descriptor: BVGfx.MeshDescriptor, vertexData: Swift.UnsafeRawPointer, indexData: Swift.UnsafeRawPointer)
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+  public func encode(encoder: any Metal.MTLRenderCommandEncoder) -> Swift.Bool
+}
+public class VertexAttributeDescriptor {
+  public var format: Metal.MTLVertexFormat {
+    get
+  }
+  public var offset: Swift.Int {
+    get
+  }
+  public var bufferIndex: Swift.Int {
+    get
+  }
+  public init(format: Metal.MTLVertexFormat, offset: Swift.Int, bufferIndex: Swift.Int = 0)
+  @objc deinit
+}
+public class MeshDescriptor {
+  public var primitiveType: Metal.MTLPrimitiveType {
+    get
+  }
+  public var vertexCount: Swift.Int {
+    get
+  }
+  public var vertexStride: Swift.Int {
+    get
+  }
+  public var vertexBufferOffset: Swift.Int {
+    get
+  }
+  public var indexCount: Swift.Int {
+    get
+  }
+  public var indexType: Metal.MTLIndexType {
+    get
+  }
+  public var indexBufferOffset: Swift.Int {
+    get
+  }
+  public init(primitiveType: Metal.MTLPrimitiveType, vertexCount: Swift.Int, vertexStride: Swift.Int, vertexBufferOffset: Swift.Int = 0, indexCount: Swift.Int, indexType: Metal.MTLIndexType = .uint16, indexBufferOffset: Swift.Int = 0)
+  public func addVertexAttribute(format: Metal.MTLVertexFormat, offset: Swift.Int, bufferIndex: Swift.Int = 0)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RenderViewTexture : BVGfx.Texture {
+  override public func prepareForRelease()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Sampler : BVGfx.ShaderResource, BVGfx.ManagedResource {
+  final public let device: BVGfx.Device
+  public var resourceType: BVGfx.ShaderResourceType {
+    get
+  }
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+  public func bind(using encoder: any Metal.MTLRenderCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+  public func bind(using encoder: any Metal.MTLComputeCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class Shader : BVGfx.ManagedResource {
+  final public let device: BVGfx.Device
+  final public let shaderType: BVGfx.ShaderType
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+  public func setShaderResource(_ resource: any BVGfx.ShaderResource, index: Swift.Int)
+  public func removeShaderResource(type: BVGfx.ShaderResourceType, index: Swift.Int)
+  public func clearShaderResources()
+  public func encode(encoder: any Metal.MTLRenderCommandEncoder) -> Swift.Bool
+  public func encode(encoder: any Metal.MTLComputeCommandEncoder) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class ShaderLibrary : BVGfx.ManagedResource {
+  final public let device: BVGfx.Device
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+  public func makeShader(name functionName: Swift.String, as shaderType: BVGfx.ShaderType) -> BVGfx.Shader?
+  public func makeShaders(vertexShader vsName: Swift.String, fragmentShader fsName: Swift.String) -> (vertex: BVGfx.Shader?, fragment: BVGfx.Shader?)
+}
+public protocol ShaderResource {
+  var resourceType: BVGfx.ShaderResourceType { get }
+  func bind(using encoder: any Metal.MTLRenderCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+  func bind(using encoder: any Metal.MTLComputeCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class Texture : BVGfx.ShaderResource, BVGfx.ManagedResource {
+  final public let device: BVGfx.Device
+  public var resourceType: BVGfx.ShaderResourceType {
+    get
+  }
+  open var width: Swift.Int {
+    get
+  }
+  open var height: Swift.Int {
+    get
+  }
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+  public func add(delegate: any BVGfx.TextureDelegate)
+  public func remove(delegate: any BVGfx.TextureDelegate)
+  public func resize(size: BVGfx.Size2i) -> Swift.Bool
+  public func resize(width: Swift.Int, height: Swift.Int) -> Swift.Bool
+  public func bind(using encoder: any Metal.MTLRenderCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+  public func bind(using encoder: any Metal.MTLComputeCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+}
+public protocol TextureDelegate : AnyObject {
+  func texture(_ texture: BVGfx.Texture, didChangeSize size: BVGfx.Size2i)
+}
+@_hasMissingDesignatedInitializers public class MetalTextureConverter {
+  public func getYUVPixelBufferFormat(_ pixelBuffer: CoreVideo.CVPixelBuffer) -> BVGfx.YUVFormats
+  public func size(of pixelBuffer: CoreVideo.CVPixelBuffer) -> BVGfx.Size2i
+  public func texture(from pixelBuffer: CoreVideo.CVPixelBuffer) -> (any Metal.MTLTexture)?
+  public func makePixelBufferPool(forWidth width: Swift.Int, height: Swift.Int, pixelFormat: Swift.UInt32) -> CoreVideo.CVPixelBufferPool?
+  public func makePixelBuffer(from texture: BVGfx.Texture, pixelBufferPool: CoreVideo.CVPixelBufferPool) -> CoreVideo.CVPixelBuffer?
+  public func makeSampleBuffer(from pixelBuffer: CoreVideo.CVPixelBuffer, originalSampleBuffer: CoreMedia.CMSampleBuffer) -> CoreMedia.CMSampleBuffer?
+  @objc deinit
+}
+public enum ShaderType : Swift.String {
+  case vertexShader
+  case fragmentShader
+  case computeShader
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ShaderResourceType : Swift.String {
+  case sampler
+  case texture
+  case constantBuffer
+  case uniformBuffer
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ImageRotation : Swift.Int {
+  case degrees0
+  case degrees90
+  case degrees180
+  case degrees270
+  public var matrix: simd.simd_float2x2 {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ContentMode {
+  case scaleToFill
+  case scaleAspectFit
+  case scaleAspectFill
+  public static func == (a: BVGfx.ContentMode, b: BVGfx.ContentMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum YUVFormats {
+  case Unknown
+  case NV12FullRange
+  case NV12VideoRange
+  public static func == (a: BVGfx.YUVFormats, b: BVGfx.YUVFormats) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class UniformBuffer : BVGfx.ShaderResource, BVGfx.ManagedResource {
+  final public let device: BVGfx.Device
+  public var resourceType: BVGfx.ShaderResourceType {
+    get
+  }
+  public init(device: BVGfx.Device)
+  public func updateBufferContent(withData data: Swift.UnsafeRawPointer, length: Swift.Int)
+  @objc deinit
+  public func prepareForRelease()
+  public func cleanup()
+  public func bind(using encoder: any Metal.MTLRenderCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+  public func bind(using encoder: any Metal.MTLComputeCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class VideoTexture : BVGfx.Texture, BVGfx.VideoFrameSourceDelegate {
+  override public var width: Swift.Int {
+    get
+  }
+  override public var height: Swift.Int {
+    get
+  }
+  override public func prepareForRelease()
+  public func set(frameSource: any BVGfx.VideoFrameSource)
+  public func clearFrameSource()
+  public func videoFrameSource(_ source: any BVGfx.VideoFrameSource, didReceiveNewVideoFrame pixelBuffer: CoreVideo.CVPixelBuffer)
+  @objc deinit
+}
+extension os.Logger {
+  public static let gfx: os.Logger
+}
+public func printVector(_ vector: simd.simd_float2, format: Swift.String = "%6.3f")
+public func printVector(_ vector: simd.simd_float3, format: Swift.String = "%6.3f")
+public func printVector(_ vector: simd.simd_float4, format: Swift.String = "%6.3f")
+public func printMatrix(_ matrix: simd.float2x2, format: Swift.String = "%6.3f")
+public func printMatrix(_ matrix: simd.float3x3, format: Swift.String = "%6.3f")
+public func printMatrix(_ matrix: simd.float4x4, format: Swift.String = "%6.3f")
+public struct Size2<T> : Swift.Equatable where T : Swift.Numeric {
+  public let width: T
+  public let height: T
+  public init(_ width: T, _ height: T)
+  public static func == (lhs: BVGfx.Size2<T>, rhs: BVGfx.Size2<T>) -> Swift.Bool
+  public static func + (lhs: BVGfx.Size2<T>, rhs: T) -> BVGfx.Size2<T>
+  public static func - (lhs: BVGfx.Size2<T>, rhs: T) -> BVGfx.Size2<T>
+  public static func * (lhs: BVGfx.Size2<T>, rhs: T) -> BVGfx.Size2<T>
+  public static func / (lhs: BVGfx.Size2<T>, rhs: T) -> BVGfx.Size2<T> where T : Swift.BinaryFloatingPoint
+  public static func / (lhs: BVGfx.Size2<T>, rhs: T) -> BVGfx.Size2<T> where T : Swift.BinaryInteger
+}
+public struct Size3<T> : Swift.Equatable where T : Swift.Numeric {
+  public let width: T
+  public let height: T
+  public let depth: T
+  public init(_ width: T, _ height: T, _ depth: T)
+  public static func == (lhs: BVGfx.Size3<T>, rhs: BVGfx.Size3<T>) -> Swift.Bool
+  public static func + (lhs: BVGfx.Size3<T>, rhs: T) -> BVGfx.Size3<T>
+  public static func - (lhs: BVGfx.Size3<T>, rhs: T) -> BVGfx.Size3<T>
+  public static func * (lhs: BVGfx.Size3<T>, rhs: T) -> BVGfx.Size3<T>
+  public static func / (lhs: BVGfx.Size3<T>, rhs: T) -> BVGfx.Size3<T> where T : Swift.BinaryFloatingPoint
+  public static func / (lhs: BVGfx.Size3<T>, rhs: T) -> BVGfx.Size3<T> where T : Swift.BinaryInteger
+}
+public typealias Size2i = BVGfx.Size2<Swift.Int>
+public typealias Size2ui = BVGfx.Size2<Swift.UInt>
+public typealias Size2f = BVGfx.Size2<Swift.Float>
+public typealias Size2d = BVGfx.Size2<Swift.Double>
+public typealias Size3i = BVGfx.Size3<Swift.Int>
+public typealias Size3ui = BVGfx.Size3<Swift.UInt>
+public typealias Size3f = BVGfx.Size3<Swift.Float>
+public typealias Size3d = BVGfx.Size3<Swift.Double>
+extension BVGfx.Size2 {
+  public static var zero: BVGfx.Size2<T> {
+    get
+  }
+  public static var one: BVGfx.Size2<T> {
+    get
+  }
+}
+extension BVGfx.Size2 where T == Swift.Int {
+  public init(_ size: CoreFoundation.CGSize)
+}
+public struct Vector2<T> : Swift.Equatable where T : Swift.Numeric {
+  public let x: T
+  public let y: T
+  public init(_ x: T, _ y: T)
+  public static func == (lhs: BVGfx.Vector2<T>, rhs: BVGfx.Vector2<T>) -> Swift.Bool
+  public static func + (lhs: BVGfx.Vector2<T>, rhs: T) -> BVGfx.Vector2<T>
+  public static func - (lhs: BVGfx.Vector2<T>, rhs: T) -> BVGfx.Vector2<T>
+  public static func * (lhs: BVGfx.Vector2<T>, rhs: T) -> BVGfx.Vector2<T>
+  public static func / (lhs: BVGfx.Vector2<T>, rhs: T) -> BVGfx.Vector2<T> where T : Swift.BinaryFloatingPoint
+  public static func / (lhs: BVGfx.Vector2<T>, rhs: T) -> BVGfx.Vector2<T> where T : Swift.BinaryInteger
+}
+public struct Vector3<T> : Swift.Equatable where T : Swift.Numeric {
+  public let x: T
+  public let y: T
+  public let z: T
+  public init(_ x: T, _ y: T, _ z: T)
+  public static func == (lhs: BVGfx.Vector3<T>, rhs: BVGfx.Vector3<T>) -> Swift.Bool
+  public static func + (lhs: BVGfx.Vector3<T>, rhs: T) -> BVGfx.Vector3<T>
+  public static func - (lhs: BVGfx.Vector3<T>, rhs: T) -> BVGfx.Vector3<T>
+  public static func * (lhs: BVGfx.Vector3<T>, rhs: T) -> BVGfx.Vector3<T>
+  public static func / (lhs: BVGfx.Vector3<T>, rhs: T) -> BVGfx.Vector3<T> where T : Swift.BinaryFloatingPoint
+  public static func / (lhs: BVGfx.Vector3<T>, rhs: T) -> BVGfx.Vector3<T> where T : Swift.BinaryInteger
+}
+public struct Vector4<T> : Swift.Equatable where T : Swift.Numeric {
+  public let x: T
+  public let y: T
+  public let z: T
+  public let w: T
+  public init(_ x: T, _ y: T, _ z: T, _ w: T)
+  public static func == (lhs: BVGfx.Vector4<T>, rhs: BVGfx.Vector4<T>) -> Swift.Bool
+  public static func + (lhs: BVGfx.Vector4<T>, rhs: T) -> BVGfx.Vector4<T>
+  public static func - (lhs: BVGfx.Vector4<T>, rhs: T) -> BVGfx.Vector4<T>
+  public static func * (lhs: BVGfx.Vector4<T>, rhs: T) -> BVGfx.Vector4<T>
+  public static func / (lhs: BVGfx.Vector4<T>, rhs: T) -> BVGfx.Vector4<T> where T : Swift.BinaryFloatingPoint
+  public static func / (lhs: BVGfx.Vector4<T>, rhs: T) -> BVGfx.Vector4<T> where T : Swift.BinaryInteger
+}
+public typealias Vector2i = BVGfx.Vector2<Swift.Int>
+public typealias Vector2ui = BVGfx.Vector2<Swift.UInt>
+public typealias Vector2f = BVGfx.Vector2<Swift.Float>
+public typealias Vector2d = BVGfx.Vector2<Swift.Double>
+public typealias Vector3i = BVGfx.Vector3<Swift.Int>
+public typealias Vector3ui = BVGfx.Vector3<Swift.UInt>
+public typealias Vector3f = BVGfx.Vector3<Swift.Float>
+public typealias Vector3d = BVGfx.Vector3<Swift.Double>
+public typealias Vector4i = BVGfx.Vector4<Swift.Int>
+public typealias Vector4ui = BVGfx.Vector4<Swift.UInt>
+public typealias Vector4f = BVGfx.Vector4<Swift.Float>
+public typealias Vector4d = BVGfx.Vector4<Swift.Double>
+extension BVGfx.Vector2 {
+  public static var zero: BVGfx.Vector2<T> {
+    get
+  }
+  public static var one: BVGfx.Vector2<T> {
+    get
+  }
+}
+extension BVGfx.Vector3 {
+  public static var zero: BVGfx.Vector3<T> {
+    get
+  }
+  public static var one: BVGfx.Vector3<T> {
+    get
+  }
+}
+extension BVGfx.Vector4 {
+  public static var zero: BVGfx.Vector4<T> {
+    get
+  }
+  public static var one: BVGfx.Vector4<T> {
+    get
+  }
+}
+public protocol ManagedResource : AnyObject {
+  func prepareForRelease()
+  func cleanup()
+}
+extension BVGfx.ManagedResource {
+  @inline(__always) public func track(withDevice device: BVGfx.Device)
+  @inline(__always) public func untrack(fromDevice device: BVGfx.Device)
+}
+public class MulticastDelegate<T> {
+  public init()
+  public func add(delegate: T)
+  public func remove(delegate: T)
+  public func removeAll()
+  public func invoke(_ invocation: (T) -> Swift.Void)
+  @objc deinit
+}
+public class Profiler {
+  public var isStarted: Swift.Bool {
+    get
+  }
+  public init(timerCount: Swift.Int, updateInterval: Foundation.TimeInterval = 0.5)
+  @objc deinit
+  public func getMeanInterval(timerIndex: Swift.Int) -> CoreFoundation.CFTimeInterval?
+  public func onStarted(timerIndex: Swift.Int)
+  public func onEnded(timerIndex: Swift.Int)
+  public func update() -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class Utility {
+  public static func measure(_ label: Swift.String = "", block: () -> Swift.Void)
+  @objc deinit
+}
+extension BVGfx.ShaderType : Swift.Equatable {}
+extension BVGfx.ShaderType : Swift.Hashable {}
+extension BVGfx.ShaderType : Swift.RawRepresentable {}
+extension BVGfx.ShaderResourceType : Swift.Equatable {}
+extension BVGfx.ShaderResourceType : Swift.Hashable {}
+extension BVGfx.ShaderResourceType : Swift.RawRepresentable {}
+extension BVGfx.ImageRotation : Swift.Equatable {}
+extension BVGfx.ImageRotation : Swift.Hashable {}
+extension BVGfx.ImageRotation : Swift.RawRepresentable {}
+extension BVGfx.ContentMode : Swift.Equatable {}
+extension BVGfx.ContentMode : Swift.Hashable {}
+extension BVGfx.YUVFormats : Swift.Equatable {}
+extension BVGfx.YUVFormats : Swift.Hashable {}

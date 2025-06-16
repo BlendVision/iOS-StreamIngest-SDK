@@ -12,7 +12,13 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "bv-streamingest",
-            targets: ["bv-streamingest", "HaishinKit", "Logboard"]),
+            targets: [
+                "bv-streamingest",
+                "bv-beautify", "bv-Gfx",
+                "HaishinKit",
+                "Logboard"
+            ]
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -20,6 +26,14 @@ let package = Package(
         .binaryTarget(
             name: "bv-streamingest",
             path: "Sources/Frameworks/BVStreamIngest.xcframework"
+        ),
+        .binaryTarget(
+            name: "bv-beautify",
+            path: "Sources/Frameworks/BVBeautify.xcframework"
+        ),
+        .binaryTarget(
+            name: "bv-Gfx",
+            path: "Sources/Frameworks/BVGfx.xcframework"
         ),
         .binaryTarget(
             name: "HaishinKit",

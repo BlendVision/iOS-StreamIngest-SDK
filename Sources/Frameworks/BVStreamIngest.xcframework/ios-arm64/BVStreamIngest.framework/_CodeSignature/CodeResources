@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BVStreamIngest-Swift.h</key>
 		<data>
-		SBSPABHWDUntdzX2gzO53iLVgVI=
+		367zHaaPXlqtohbummik9k9yLmc=
 		</data>
 		<key>Headers/BVStreamIngest.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1SjE28G9dsFZyQBOgighM1B3HnQ=
+		U6V7E4RZ23qNsA+KAjUjaXbqSgA=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		T14KYU8IeUZFnGToHgfvZnxHFx4=
+		bWUSfkqEld9LnX0NSCAIg1syjSU=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		JCEbNN1og/QOuRTu9anBeoII4aM=
+		6FNJbxp8nnaKHyHWuyqRKQGP8ic=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		tP8EzxYj61+CtB3/ma5py4k5ttI=
+		Iku6OC8a/g0j+7xB5R9umMen/iY=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		JCEbNN1og/QOuRTu9anBeoII4aM=
+		6FNJbxp8nnaKHyHWuyqRKQGP8ic=
 		</data>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6BZ7H0zt9lo3ImHEb3i4shGVBnc=
+		53HX6T50t6c4j9JY63R50jNatZ8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -44,18 +44,6 @@
 		<data>
 		c5DRA1IC8ULaL2uCHxf/2LIvEXI=
 		</data>
-		<key>configs/config.json</key>
-		<data>
-		ApcFFFt/7DinR17h7TYl28ujkSY=
-		</data>
-		<key>model/YMK_Davinci_20200512_fp16.mnn</key>
-		<data>
-		2QiUJV8vG7zb7xCZVfy8WP5171U=
-		</data>
-		<key>model/YMK_Venus_20210709_fp16_alignmodel.mnn</key>
-		<data>
-		hD+j4A/oXVtE8lF6oD3uxEtBR54=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -63,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			smn+p4VwR+j7FMeUzDWcykTUgHbBgKsqlmGi98tbLjE=
+			wEWOG26kd3+B55SdZjW3U+cOPFCxiklylibnmMN2XNc=
 			</data>
 		</dict>
 		<key>Headers/BVStreamIngest.h</key>
@@ -77,35 +65,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7bDuM/+52Sqib6S/mX5wZgrUXtKuK7S5w1/CURu7hG4=
+			hi3YMrMh+yHwHjd0i25mrD7WUXC6kZGTIzx+iMmVe3I=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kw+qq6ABSUI5Y2J4cpunKpbGGD+qudoaGcZabsATxY4=
+			WceqqfvUXCMKU0Rw3eC5qLnmR9Zu3UvO6ZrlAM8ihvw=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RgJCIDiR5D3pnNh/BfAUyi2qh6p+43CibRaHy2nhiYo=
+			ReKSOVNFx6QRo/uCp/v+vpN3GfxbVzoEcJOggfWwqIQ=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kw+qq6ABSUI5Y2J4cpunKpbGGD+qudoaGcZabsATxY4=
+			WceqqfvUXCMKU0Rw3eC5qLnmR9Zu3UvO6ZrlAM8ihvw=
 			</data>
 		</dict>
 		<key>Modules/BVStreamIngest.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4IpPxmVHKp4l96pt7UPO8ziqfS31mtQC2eh/16dyIjo=
+			SjjwlcF0EZ3hfC2nL3CzOjtmuf8otmdKqIbPD95hLj8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -120,27 +108,6 @@
 			<key>hash2</key>
 			<data>
 			quvaTGU9s+IVd+jD9US4bpleAgylmRFIhR5bvIVAGOw=
-			</data>
-		</dict>
-		<key>configs/config.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5jXbqHsOlSY5RMOMzhRjHs9/OwdzHdBKGqVZzGysqiA=
-			</data>
-		</dict>
-		<key>model/YMK_Davinci_20200512_fp16.mnn</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2kWCP8aIyCHQrPNxjWkwde0yM4dBml0oiTKWrWICi5s=
-			</data>
-		</dict>
-		<key>model/YMK_Venus_20210709_fp16_alignmodel.mnn</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KZ17OPPRCPbCf6Odu4K4NCn2xf4r08DZy27xRfhAlVs=
 			</data>
 		</dict>
 	</dict>

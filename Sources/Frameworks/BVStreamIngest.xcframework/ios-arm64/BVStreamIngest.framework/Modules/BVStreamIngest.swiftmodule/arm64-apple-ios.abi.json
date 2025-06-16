@@ -94,6 +94,43 @@
             "moduleName": "BVStreamIngest"
           },
           {
+            "kind": "Var",
+            "name": "skinTone",
+            "printedName": "skinTone",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BVStreamIngest.EffectType.Type) -> BVStreamIngest.EffectType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EffectType",
+                    "printedName": "BVStreamIngest.EffectType",
+                    "usr": "s:14BVStreamIngest10EffectTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BVStreamIngest.EffectType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EffectType",
+                        "printedName": "BVStreamIngest.EffectType",
+                        "usr": "s:14BVStreamIngest10EffectTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14BVStreamIngest10EffectTypeO8skinToneyA2CmF",
+            "mangledName": "$s14BVStreamIngest10EffectTypeO8skinToneyA2CmF",
+            "moduleName": "BVStreamIngest"
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -522,6 +559,114 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SkinToneEffect",
+        "printedName": "SkinToneEffect",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EffectType",
+                "printedName": "BVStreamIngest.EffectType",
+                "usr": "s:14BVStreamIngest10EffectTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest14SkinToneEffectC4typeAA0E4TypeOvp",
+            "mangledName": "$s14BVStreamIngest14SkinToneEffectC4typeAA0E4TypeOvp",
+            "moduleName": "BVStreamIngest",
+            "overriding": true,
+            "declAttributes": [
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EffectType",
+                    "printedName": "BVStreamIngest.EffectType",
+                    "usr": "s:14BVStreamIngest10EffectTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest14SkinToneEffectC4typeAA0E4TypeOvg",
+                "mangledName": "$s14BVStreamIngest14SkinToneEffectC4typeAA0E4TypeOvg",
+                "moduleName": "BVStreamIngest",
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(intensity:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SkinToneEffect",
+                "printedName": "BVStreamIngest.SkinToneEffect",
+                "usr": "s:14BVStreamIngest14SkinToneEffectC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVStreamIngest14SkinToneEffectC9intensityACSi_tcfc",
+            "mangledName": "$s14BVStreamIngest14SkinToneEffectC9intensityACSi_tcfc",
+            "moduleName": "BVStreamIngest",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14BVStreamIngest14SkinToneEffectC",
+        "mangledName": "$s14BVStreamIngest14SkinToneEffectC",
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:14BVStreamIngest6EffectC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BVStreamIngest.Effect"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
@@ -547,113 +692,20 @@
         "printedName": "EffectStreamIngestConfig",
         "children": [
           {
-            "kind": "Var",
-            "name": "enableSkinSmoothFaceOnly",
-            "printedName": "enableSkinSmoothFaceOnly",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlySbvp",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlySbvp",
-            "moduleName": "BVStreamIngest",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlySbvg",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlySbvg",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlySbvs",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlySbvs",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlySbvM",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlySbvM",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(enableSkinSmoothFaceOnly:)",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "EffectStreamIngestConfig",
                 "printedName": "BVStreamIngest.EffectStreamIngestConfig",
                 "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlyACSb_tcfc",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB6ConfigV24enableSkinSmoothFaceOnlyACSb_tcfc",
+            "usr": "s:14BVStreamIngest012EffectStreamB6ConfigVACycfc",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB6ConfigVACycfc",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "AccessControl"
@@ -705,6 +757,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "BVBeautify",
+        "printedName": "BVBeautify",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
       },
       {
         "kind": "TypeDecl",
@@ -942,13 +1001,10 @@
             "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovp",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "HasInitialValue",
               "Preconcurrency",
               "Custom",
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -966,7 +1022,6 @@
                 "usr": "s:14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovg",
                 "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovg",
                 "moduleName": "BVStreamIngest",
-                "implicit": true,
                 "accessorKind": "get"
               },
               {
@@ -990,7 +1045,6 @@
                 "usr": "s:14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovs",
                 "mangledName": "$s14BVStreamIngest17CameraPreviewViewC9scaleModeAC05ScaleG0Ovs",
                 "moduleName": "BVStreamIngest",
-                "implicit": true,
                 "accessorKind": "set"
               },
               {
@@ -1015,44 +1069,6 @@
           },
           {
             "kind": "Function",
-            "name": "adjustRenderView",
-            "printedName": "adjustRenderView(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreFoundation.CGSize?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14BVStreamIngest17CameraPreviewViewC012adjustRenderE02toySo6CGSizeVSg_tF",
-            "mangledName": "$s14BVStreamIngest17CameraPreviewViewC012adjustRenderE02toySo6CGSizeVSg_tF",
-            "moduleName": "BVStreamIngest",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "switchScaleMode",
             "printedName": "switchScaleMode()",
             "children": [
@@ -1065,6 +1081,35 @@
             "declKind": "Func",
             "usr": "s:14BVStreamIngest17CameraPreviewViewC15switchScaleModeyyF",
             "mangledName": "$s14BVStreamIngest17CameraPreviewViewC15switchScaleModeyyF",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "activateCamera",
+            "printedName": "activateCamera(isFrontCamera:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest17CameraPreviewViewC08activateC007isFrontC0ySb_tF",
+            "mangledName": "$s14BVStreamIngest17CameraPreviewViewC08activateC007isFrontC0ySb_tF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
               "Preconcurrency",
@@ -3265,41 +3310,13 @@
       },
       {
         "kind": "Import",
-        "name": "PerfectLibCore",
-        "printedName": "PerfectLibCore",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibMakeupPlus",
-        "printedName": "PerfectLibMakeupPlus",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibProductHandler",
-        "printedName": "PerfectLibProductHandler",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest"
+        "moduleName": "BVStreamIngest",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -3309,292 +3326,11 @@
         "moduleName": "BVStreamIngest"
       },
       {
-        "kind": "TypeDecl",
-        "name": "EffectStreamIngestLoadStatus",
-        "printedName": "EffectStreamIngestLoadStatus",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "unknown",
-            "printedName": "unknown",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BVStreamIngest.EffectStreamIngestLoadStatus.Type) -> BVStreamIngest.EffectStreamIngestLoadStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EffectStreamIngestLoadStatus",
-                    "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                    "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EffectStreamIngestLoadStatus",
-                        "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                        "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO7unknownyA2CmF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO7unknownyA2CmF",
-            "moduleName": "BVStreamIngest"
-          },
-          {
-            "kind": "Var",
-            "name": "loading",
-            "printedName": "loading",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BVStreamIngest.EffectStreamIngestLoadStatus.Type) -> BVStreamIngest.EffectStreamIngestLoadStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EffectStreamIngestLoadStatus",
-                    "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                    "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EffectStreamIngestLoadStatus",
-                        "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                        "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO7loadingyA2CmF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO7loadingyA2CmF",
-            "moduleName": "BVStreamIngest"
-          },
-          {
-            "kind": "Var",
-            "name": "ready",
-            "printedName": "ready",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BVStreamIngest.EffectStreamIngestLoadStatus.Type) -> BVStreamIngest.EffectStreamIngestLoadStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EffectStreamIngestLoadStatus",
-                    "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                    "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EffectStreamIngestLoadStatus",
-                        "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                        "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO5readyyA2CmF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO5readyyA2CmF",
-            "moduleName": "BVStreamIngest"
-          },
-          {
-            "kind": "Var",
-            "name": "fail",
-            "printedName": "fail",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BVStreamIngest.EffectStreamIngestLoadStatus.Type) -> BVStreamIngest.EffectStreamIngestLoadStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EffectStreamIngestLoadStatus",
-                    "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                    "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EffectStreamIngestLoadStatus",
-                        "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                        "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO4failyA2CmF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO4failyA2CmF",
-            "moduleName": "BVStreamIngest"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "EffectStreamIngestLoadStatus",
-                "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "EffectStreamIngestLoadStatus",
-                "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO2eeoiySbAC_ACtFZ",
-            "moduleName": "BVStreamIngest",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO9hashValueSivp",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO9hashValueSivp",
-            "moduleName": "BVStreamIngest",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO9hashValueSivg",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO9hashValueSivg",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO4hash4intoys6HasherVz_tF",
-            "moduleName": "BVStreamIngest",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO",
-        "mangledName": "$s14BVStreamIngest012EffectStreamB10LoadStatusO",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
+        "kind": "Import",
+        "name": "BVBeautify",
+        "printedName": "BVBeautify",
+        "declKind": "Import",
+        "moduleName": "BVStreamIngest"
       },
       {
         "kind": "TypeDecl",
@@ -3604,12 +3340,13 @@
           {
             "kind": "Function",
             "name": "effectStreamIngest",
-            "printedName": "effectStreamIngest(_:didChange:)",
+            "printedName": "effectStreamIngest(_:didOutputVideo:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
               },
               {
                 "kind": "TypeNominal",
@@ -3619,41 +3356,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "EffectStreamIngestLoadStatus",
-                "printedName": "BVStreamIngest.EffectStreamIngestLoadStatus",
-                "usr": "s:14BVStreamIngest012EffectStreamB10LoadStatusO"
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB8DelegateP06effectdB0_9didChangeyAA0cdB0C_AA0cdB10LoadStatusOtF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB8DelegateP06effectdB0_9didChangeyAA0cdB0C_AA0cdB10LoadStatusOtF",
-            "moduleName": "BVStreamIngest",
-            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.EffectStreamIngestDelegate>",
-            "sugared_genericSig": "<Self where Self : BVStreamIngest.EffectStreamIngestDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "effectStreamIngestSwitchToUnfiltered",
-            "printedName": "effectStreamIngestSwitchToUnfiltered(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "EffectStreamIngest",
-                "printedName": "BVStreamIngest.EffectStreamIngest",
-                "usr": "c:@M@BVStreamIngest@objc(cs)EffectStreamIngest"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB8DelegateP06effectdB18SwitchToUnfilteredyyAA0cdB0CF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB8DelegateP06effectdB18SwitchToUnfilteredyyAA0cdB0CF",
+            "usr": "s:14BVStreamIngest012EffectStreamB8DelegateP06effectdB0_14didOutputVideoSo17CMSampleBufferRefaAA0cdB0C_AGtF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB8DelegateP06effectdB0_14didOutputVideoSo17CMSampleBufferRefaAA0cdB0C_AGtF",
             "moduleName": "BVStreamIngest",
             "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.EffectStreamIngestDelegate>",
             "sugared_genericSig": "<Self where Self : BVStreamIngest.EffectStreamIngestDelegate>",
@@ -3662,6 +3372,109 @@
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "effectStreamIngest",
+            "printedName": "effectStreamIngest(_:didOutputAudio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EffectStreamIngest",
+                "printedName": "BVStreamIngest.EffectStreamIngest",
+                "usr": "c:@M@BVStreamIngest@objc(cs)EffectStreamIngest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest012EffectStreamB8DelegateP06effectdB0_14didOutputAudioSo17CMSampleBufferRefaAA0cdB0C_AGtF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB8DelegateP06effectdB0_14didOutputAudioSo17CMSampleBufferRefaAA0cdB0C_AGtF",
+            "moduleName": "BVStreamIngest",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.EffectStreamIngestDelegate>",
+            "sugared_genericSig": "<Self where Self : BVStreamIngest.EffectStreamIngestDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "effectStreamIngest",
+            "printedName": "effectStreamIngest(_:didOutputVideo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EffectStreamIngest",
+                "printedName": "BVStreamIngest.EffectStreamIngest",
+                "usr": "c:@M@BVStreamIngest@objc(cs)EffectStreamIngest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest012EffectStreamB8DelegatePAAE06effectdB0_14didOutputVideoSo17CMSampleBufferRefaAA0cdB0C_AGtF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB8DelegatePAAE06effectdB0_14didOutputVideoSo17CMSampleBufferRefaAA0cdB0C_AGtF",
+            "moduleName": "BVStreamIngest",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.EffectStreamIngestDelegate>",
+            "sugared_genericSig": "<Self where Self : BVStreamIngest.EffectStreamIngestDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "effectStreamIngest",
+            "printedName": "effectStreamIngest(_:didOutputAudio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EffectStreamIngest",
+                "printedName": "BVStreamIngest.EffectStreamIngest",
+                "usr": "c:@M@BVStreamIngest@objc(cs)EffectStreamIngest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVStreamIngest012EffectStreamB8DelegatePAAE06effectdB0_14didOutputAudioSo17CMSampleBufferRefaAA0cdB0C_AGtF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB8DelegatePAAE06effectdB0_14didOutputAudioSo17CMSampleBufferRefaAA0cdB0C_AGtF",
+            "moduleName": "BVStreamIngest",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVStreamIngest.EffectStreamIngestDelegate>",
+            "sugared_genericSig": "<Self where Self : BVStreamIngest.EffectStreamIngestDelegate>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -3672,7 +3485,8 @@
         "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
         "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -3698,182 +3512,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "filterConfig",
-            "printedName": "filterConfig",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EffectStreamIngestConfig",
-                "printedName": "BVStreamIngest.EffectStreamIngestConfig",
-                "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C12filterConfigAA0cdbF0Vvp",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C12filterConfigAA0cdbF0Vvp",
-            "moduleName": "BVStreamIngest",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EffectStreamIngestConfig",
-                    "printedName": "BVStreamIngest.EffectStreamIngestConfig",
-                    "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB0C12filterConfigAA0cdbF0Vvg",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB0C12filterConfigAA0cdbF0Vvg",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EffectStreamIngestConfig",
-                    "printedName": "BVStreamIngest.EffectStreamIngestConfig",
-                    "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB0C12filterConfigAA0cdbF0Vvs",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB0C12filterConfigAA0cdbF0Vvs",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB0C12filterConfigAA0cdbF0VvM",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB0C12filterConfigAA0cdbF0VvM",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "videoRawDataFrameSize",
-            "printedName": "videoRawDataFrameSize",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "usr": "c:@S@CGSize"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvp",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvp",
-            "moduleName": "BVStreamIngest",
-            "deprecated": true,
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "Available"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvg",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvg",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvs",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvs",
-                "moduleName": "BVStreamIngest",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvM",
-                "mangledName": "$s14BVStreamIngest012EffectStreamB0C21videoRawDataFrameSizeSo6CGSizeVvM",
-                "moduleName": "BVStreamIngest",
-                "deprecated": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -3891,7 +3529,8 @@
               "HasInitialValue",
               "HasStorage",
               "ReferenceOwnership",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "ownership": 1,
             "hasStorage": true,
@@ -3977,6 +3616,88 @@
           },
           {
             "kind": "Var",
+            "name": "isBeautifyEnabled",
+            "printedName": "isBeautifyEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C17isBeautifyEnabledSbvp",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C17isBeautifyEnabledSbvp",
+            "moduleName": "BVStreamIngest",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest012EffectStreamB0C17isBeautifyEnabledSbvg",
+                "mangledName": "$s14BVStreamIngest012EffectStreamB0C17isBeautifyEnabledSbvg",
+                "moduleName": "BVStreamIngest",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest012EffectStreamB0C17isBeautifyEnabledSbvs",
+                "mangledName": "$s14BVStreamIngest012EffectStreamB0C17isBeautifyEnabledSbvs",
+                "moduleName": "BVStreamIngest",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest012EffectStreamB0C17isBeautifyEnabledSbvM",
+                "mangledName": "$s14BVStreamIngest012EffectStreamB0C17isBeautifyEnabledSbvM",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "effects",
             "printedName": "effects",
             "children": [
@@ -4000,12 +3721,9 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C7effectsSayAA0C0CGvp",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4031,8 +3749,56 @@
                 "usr": "s:14BVStreamIngest012EffectStreamB0C7effectsSayAA0C0CGvg",
                 "mangledName": "$s14BVStreamIngest012EffectStreamB0C7effectsSayAA0C0CGvg",
                 "moduleName": "BVStreamIngest",
-                "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[BVStreamIngest.Effect]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Effect",
+                        "printedName": "BVStreamIngest.Effect",
+                        "usr": "s:14BVStreamIngest6EffectC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest012EffectStreamB0C7effectsSayAA0C0CGvs",
+                "mangledName": "$s14BVStreamIngest012EffectStreamB0C7effectsSayAA0C0CGvs",
+                "moduleName": "BVStreamIngest",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVStreamIngest012EffectStreamB0C7effectsSayAA0C0CGvM",
+                "mangledName": "$s14BVStreamIngest012EffectStreamB0C7effectsSayAA0C0CGvM",
+                "moduleName": "BVStreamIngest",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -4074,42 +3840,6 @@
           {
             "kind": "Function",
             "name": "createCameraView",
-            "printedName": "createCameraView(aspectRatio:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BVStreamIngest.CameraPreviewView?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CameraPreviewView",
-                    "printedName": "BVStreamIngest.CameraPreviewView",
-                    "usr": "c:@M@BVStreamIngest@objc(cs)CameraPreviewView"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C16createCameraView11aspectRatioAA0f7PreviewG0CSg14CoreFoundation7CGFloatV_tF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C16createCameraView11aspectRatioAA0f7PreviewG0CSg12CoreGraphics7CGFloatV_tF",
-            "moduleName": "BVStreamIngest",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "createCameraView",
             "printedName": "createCameraView(mode:)",
             "children": [
               {
@@ -4130,6 +3860,7 @@
                 "kind": "TypeNominal",
                 "name": "ScaleMode",
                 "printedName": "BVStreamIngest.CameraPreviewView.ScaleMode",
+                "hasDefaultArg": true,
                 "usr": "s:14BVStreamIngest17CameraPreviewViewC9ScaleModeO"
               }
             ],
@@ -4165,7 +3896,8 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C12attachCamera6deviceySo15AVCaptureDeviceC_tKF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -4199,7 +3931,8 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C11attachAudio6device034automaticallyConfiguresApplicationF7SessionySo15AVCaptureDeviceC_SbtKF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -4220,7 +3953,8 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C12startRunningyyF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4240,7 +3974,8 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C11stopRunningyyF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4260,7 +3995,8 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C12detachCamerayyF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4280,7 +4016,8 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C11detachAudioyyF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4315,7 +4052,8 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C03getC04withAA0C0CSgAA0C4TypeO_tF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4349,7 +4087,8 @@
             "mangledName": "$s14BVStreamIngest012EffectStreamB0C10setEffectsyySayAA0C0CGF",
             "moduleName": "BVStreamIngest",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4380,91 +4119,34 @@
             "init_kind": "Designated"
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(streamIngest:config:videoRawDataFrameSize:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EffectStreamIngest",
-                "printedName": "BVStreamIngest.EffectStreamIngest",
-                "usr": "c:@M@BVStreamIngest@objc(cs)EffectStreamIngest"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "StreamIngest",
-                "printedName": "BVStreamIngest.StreamIngest",
-                "usr": "c:@M@BVStreamIngest@objc(cs)StreamIngest"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "EffectStreamIngestConfig",
-                "printedName": "BVStreamIngest.EffectStreamIngestConfig",
-                "hasDefaultArg": true,
-                "usr": "s:14BVStreamIngest012EffectStreamB6ConfigV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "hasDefaultArg": true,
-                "usr": "c:@S@CGSize"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C06streamB06config21videoRawDataFrameSizeAcA0dB0C_AA0cdB6ConfigVSo6CGSizeVtcfc",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C06streamB06config21videoRawDataFrameSizeAcA0dB0C_AA0cdB6ConfigVSo6CGSizeVtcfc",
-            "moduleName": "BVStreamIngest",
-            "deprecated": true,
-            "declAttributes": [
-              "Convenience",
-              "AccessControl",
-              "Available",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "init_kind": "Convenience"
-          },
-          {
             "kind": "Function",
-            "name": "createCameraView",
-            "printedName": "createCameraView(frame:aspectRatio:)",
+            "name": "beautifier",
+            "printedName": "beautifier(_:didOutputProcessedSampleBuffer:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BVStreamIngest.CameraPreviewView?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CameraPreviewView",
-                    "printedName": "BVStreamIngest.CameraPreviewView",
-                    "usr": "c:@M@BVStreamIngest@objc(cs)CameraPreviewView"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
+                "name": "BVBeautifier",
+                "printedName": "BVBeautify.BVBeautifier",
+                "usr": "s:10BVBeautify12BVBeautifierC"
               },
               {
                 "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BVStreamIngest012EffectStreamB0C16createCameraView5frame11aspectRatioAA0f7PreviewG0CSgSo6CGRectV_14CoreFoundation7CGFloatVtF",
-            "mangledName": "$s14BVStreamIngest012EffectStreamB0C16createCameraView5frame11aspectRatioAA0f7PreviewG0CSgSo6CGRectV_12CoreGraphics7CGFloatVtF",
+            "usr": "s:14BVStreamIngest012EffectStreamB0C10beautifier_30didOutputProcessedSampleBuffery10BVBeautify12BVBeautifierC_So08CMSampleJ3RefatF",
+            "mangledName": "$s14BVStreamIngest012EffectStreamB0C10beautifier_30didOutputProcessedSampleBuffery10BVBeautify12BVBeautifierC_So08CMSampleJ3RefatF",
             "moduleName": "BVStreamIngest",
-            "deprecated": true,
             "declAttributes": [
               "AccessControl",
-              "Available",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -4547,6 +4229,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BVBeautifierDelegate",
+            "printedName": "BVBeautifierDelegate",
+            "usr": "s:10BVBeautify20BVBeautifierDelegateP",
+            "mangledName": "$s10BVBeautify20BVBeautifierDelegateP"
           }
         ]
       },
@@ -4600,36 +4289,6 @@
         "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "BVStreamIngest"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibCore",
-        "printedName": "PerfectLibCore",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibMakeupPlus",
-        "printedName": "PerfectLibMakeupPlus",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       },
       {
         "kind": "Import",
@@ -5283,143 +4942,6 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "BVStreamIngest"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibCore",
-        "printedName": "PerfectLibCore",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "StreamIngestAuthorizer",
-        "printedName": "StreamIngestAuthorizer",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(debugMode:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "StreamIngestAuthorizer",
-                "printedName": "BVStreamIngest.StreamIngestAuthorizer",
-                "usr": "s:14BVStreamIngest06StreamB10AuthorizerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14BVStreamIngest06StreamB10AuthorizerC9debugModeACSb_tcfc",
-            "mangledName": "$s14BVStreamIngest06StreamB10AuthorizerC9debugModeACSb_tcfc",
-            "moduleName": "BVStreamIngest",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "requestAuthentication",
-            "printedName": "requestAuthentication(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(((any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "((any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "(any Swift.Error)?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "any Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14BVStreamIngest06StreamB10AuthorizerC21requestAuthentication10completionyys5Error_pSgcSg_tF",
-            "mangledName": "$s14BVStreamIngest06StreamB10AuthorizerC21requestAuthentication10completionyys5Error_pSgcSg_tF",
-            "moduleName": "BVStreamIngest",
-            "deprecated": true,
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:14BVStreamIngest06StreamB10AuthorizerC",
-        "mangledName": "$s14BVStreamIngest06StreamB10AuthorizerC",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -6876,36 +6398,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibCore",
-        "printedName": "PerfectLibCore",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibMakeupPlus",
-        "printedName": "PerfectLibMakeupPlus",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6937,36 +6429,6 @@
         "printedName": "HaishinKit",
         "declKind": "Import",
         "moduleName": "BVStreamIngest"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibCore",
-        "printedName": "PerfectLibCore",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibMakeupPlus",
-        "printedName": "PerfectLibMakeupPlus",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       },
       {
         "kind": "Import",
@@ -7375,8 +6837,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "BVStreamIngest",
         "declAttributes": [
@@ -7385,33 +6847,17 @@
       },
       {
         "kind": "Import",
-        "name": "PerfectLibCore",
-        "printedName": "PerfectLibCore",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "BVStreamIngest"
       },
       {
         "kind": "Import",
-        "name": "PerfectLibMakeupPlus",
-        "printedName": "PerfectLibMakeupPlus",
+        "name": "BVBeautify",
+        "printedName": "BVBeautify",
         "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PerfectLibProductHandler",
-        "printedName": "PerfectLibProductHandler",
-        "declKind": "Import",
-        "moduleName": "BVStreamIngest",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "BVStreamIngest"
       },
       {
         "kind": "Import",
@@ -7630,23 +7076,16 @@
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Effect.swift",
       "kind": "IntegerLiteral",
-      "offset": 339,
+      "offset": 357,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Effect.swift",
       "kind": "IntegerLiteral",
-      "offset": 379,
+      "offset": 397,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngestConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 402,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandlerConfig.swift",
@@ -7714,7 +7153,7 @@
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/EffectStreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 4654,
+      "offset": 5190,
       "length": 5,
       "value": "false"
     },
@@ -7724,13 +7163,6 @@
       "offset": 716,
       "length": 39,
       "value": "\"com.bv.ingest.video.capture.unit.lock\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/StreamIngestModule.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2301,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestEvent.swift",
@@ -7782,151 +7214,32 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/ReadyToDeprecate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 761,
-      "length": 3,
-      "value": "720"
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/ReadyToDeprecate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 774,
-      "length": 4,
-      "value": "1280"
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngestAuthorizer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 683,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 4906,
+      "offset": 4508,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "Array",
-      "offset": 6259,
+      "offset": 5728,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "IntegerLiteral",
-      "offset": 6728,
+      "offset": 6197,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/StreamIngest.swift",
       "kind": "BooleanLiteral",
-      "offset": 7148,
+      "offset": 6617,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 307,
-      "length": 26,
-      "value": "\"attribute vec4 position;\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 344,
-      "length": 40,
-      "value": "\"attribute vec4 inputTextureCoordinate;\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 395,
-      "length": 33,
-      "value": "\"varying vec2 textureCoordinate;\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 439,
-      "length": 13,
-      "value": "\"void main()\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 463,
-      "length": 3,
-      "value": "\"{\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 477,
-      "length": 28,
-      "value": "\"   gl_Position = position;\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 516,
-      "length": 51,
-      "value": "\"   textureCoordinate = inputTextureCoordinate.xy;\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 570,
-      "length": 3,
-      "value": "\"}\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 730,
-      "length": 39,
-      "value": "\"varying highp vec2 textureCoordinate;\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 780,
-      "length": 38,
-      "value": "\"uniform sampler2D inputImageTexture;\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 829,
-      "length": 13,
-      "value": "\"void main()\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 853,
-      "length": 3,
-      "value": "\"{\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 867,
-      "length": 73,
-      "value": "\"   gl_FragColor = texture2D(inputImageTexture, textureCoordinate).bgra;\""
-    },
-    {
-      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Output\/RawOutputPluginDemo.swift",
-      "kind": "StringLiteral",
-      "offset": 943,
-      "length": 3,
-      "value": "\"}\""
     },
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Retry\/RetryHandler.swift",
@@ -8112,8 +7425,43 @@
     },
     {
       "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "FloatLiteral",
+      "offset": 265,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "FloatLiteral",
+      "offset": 312,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
       "kind": "BooleanLiteral",
-      "offset": 1670,
+      "offset": 372,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 413,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1373,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cptios\/builds\/t3_asGX6v\/0\/playback\/ios-bv-streamingest\/BVStreamIngest\/Source\/Modules\/EffectStreamIngestModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2770,
       "length": 5,
       "value": "false"
     },

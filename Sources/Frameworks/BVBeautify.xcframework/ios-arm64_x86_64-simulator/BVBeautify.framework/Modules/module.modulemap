@@ -1,0 +1,6 @@
+framework module BVBeautify {
+  umbrella header "BVBeautify.h"
+  export *
+
+  module * { export * }
+}

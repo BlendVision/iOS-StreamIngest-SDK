@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import Accelerate
+import BVBeautify
 @_exported import BVStreamIngest
 import CoreTelephony
 import CoreVideo
@@ -19,6 +20,7 @@ import _SwiftConcurrencyShims
 public enum EffectType {
   case unknown
   case skinSmooth
+  case skinTone
   public static func == (a: BVStreamIngest.EffectType, b: BVStreamIngest.EffectType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -40,9 +42,15 @@ public class Effect {
   override public init(intensity: Swift.Int = super)
   @objc deinit
 }
+@_inheritsConvenienceInitializers public class SkinToneEffect : BVStreamIngest.Effect {
+  override public var type: BVStreamIngest.EffectType {
+    get
+  }
+  override public init(intensity: Swift.Int = super)
+  @objc deinit
+}
 public struct EffectStreamIngestConfig {
-  public var enableSkinSmoothFaceOnly: Swift.Bool
-  public init(enableSkinSmoothFaceOnly: Swift.Bool = false)
+  public init()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CameraPreviewView : UIKit.UIView {
   public enum ScaleMode {
@@ -58,9 +66,9 @@ public struct EffectStreamIngestConfig {
     get
     set
   }
-  @objc deinit
-  @_Concurrency.MainActor @preconcurrency public func adjustRenderView(to size: CoreFoundation.CGSize? = nil)
   @_Concurrency.MainActor @preconcurrency public func switchScaleMode()
+  @_Concurrency.MainActor @preconcurrency public func activateCamera(isFrontCamera: Swift.Bool)
+  @objc deinit
 }
 public enum StreamIngestQualityLevel : Swift.String {
   case auto
@@ -158,33 +166,27 @@ public class StreamIngestBufferState {
   }
   @objc deinit
 }
-public enum EffectStreamIngestLoadStatus {
-  case unknown
-  case loading
-  case ready
-  case fail
-  public static func == (a: BVStreamIngest.EffectStreamIngestLoadStatus, b: BVStreamIngest.EffectStreamIngestLoadStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public protocol EffectStreamIngestDelegate : ObjectiveC.NSObjectProtocol {
-  func effectStreamIngest(_ ingest: BVStreamIngest.EffectStreamIngest, didChange loadStatus: BVStreamIngest.EffectStreamIngestLoadStatus)
-  func effectStreamIngestSwitchToUnfiltered(_ ingest: BVStreamIngest.EffectStreamIngest)
+  func effectStreamIngest(_ effectStreamIngest: BVStreamIngest.EffectStreamIngest, didOutputVideo sampleBuffer: CoreMedia.CMSampleBuffer) -> CoreMedia.CMSampleBuffer
+  func effectStreamIngest(_ effectStreamIngest: BVStreamIngest.EffectStreamIngest, didOutputAudio sampleBuffer: CoreMedia.CMSampleBuffer) -> CoreMedia.CMSampleBuffer
+}
+extension BVStreamIngest.EffectStreamIngestDelegate {
+  public func effectStreamIngest(_ effectStreamIngest: BVStreamIngest.EffectStreamIngest, didOutputVideo sampleBuffer: CoreMedia.CMSampleBuffer) -> CoreMedia.CMSampleBuffer
+  public func effectStreamIngest(_ effectStreamIngest: BVStreamIngest.EffectStreamIngest, didOutputAudio sampleBuffer: CoreMedia.CMSampleBuffer) -> CoreMedia.CMSampleBuffer
 }
 @objc @_hasMissingDesignatedInitializers public class EffectStreamIngest : ObjectiveC.NSObject {
-  public var filterConfig: BVStreamIngest.EffectStreamIngestConfig
-  @available(*, deprecated, message: "This parameter will soon be deprecated and no longer available.")
-  public var videoRawDataFrameSize: CoreFoundation.CGSize
   weak public var delegate: (any BVStreamIngest.EffectStreamIngestDelegate)?
+  public var isBeautifyEnabled: Swift.Bool {
+    get
+    set
+  }
   public var effects: [BVStreamIngest.Effect] {
     get
+    set
   }
   convenience public init(streamIngest: BVStreamIngest.StreamIngest, config: BVStreamIngest.EffectStreamIngestConfig = EffectStreamIngestConfig())
   @objc deinit
-  public func createCameraView(aspectRatio ratio: CoreFoundation.CGFloat) -> BVStreamIngest.CameraPreviewView?
-  public func createCameraView(mode: BVStreamIngest.CameraPreviewView.ScaleMode) -> BVStreamIngest.CameraPreviewView?
+  public func createCameraView(mode: BVStreamIngest.CameraPreviewView.ScaleMode = .aspectFit) -> BVStreamIngest.CameraPreviewView?
   public func attachCamera(device: AVFoundation.AVCaptureDevice) throws
   public func attachAudio(device: AVFoundation.AVCaptureDevice, automaticallyConfiguresApplicationAudioSession: Swift.Bool = false) throws
   public func startRunning()
@@ -193,6 +195,9 @@ public protocol EffectStreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   public func detachAudio()
   public func getEffect(with type: BVStreamIngest.EffectType) -> BVStreamIngest.Effect?
   public func setEffects(_ effects: [BVStreamIngest.Effect])
+}
+extension BVStreamIngest.EffectStreamIngest : BVBeautify.BVBeautifierDelegate {
+  public func beautifier(_ beautifier: BVBeautify.BVBeautifier, didOutputProcessedSampleBuffer sampleBuffer: CoreMedia.CMSampleBuffer)
 }
 public enum StreamIngestEventName : Swift.String {
   case streamError
@@ -218,23 +223,9 @@ public enum StreamIngestEventName : Swift.String {
   public var data: Any?
   @objc deinit
 }
-extension BVStreamIngest.EffectStreamIngest {
-  @available(*, deprecated, renamed: "init(streamIngest:)", message: "This method is deprecated. Use 'init(streamIngest:)' without the videoRawDataFrameSize parameter instead.")
-  convenience public init(streamIngest: BVStreamIngest.StreamIngest, config: BVStreamIngest.EffectStreamIngestConfig = EffectStreamIngestConfig(), videoRawDataFrameSize: CoreFoundation.CGSize = CGSize(width: 720, height: 1280))
-  @available(*, deprecated, message: "This function is deprecated and will be removed in a future release. Use createCameraView(aspectRatio:) instead.")
-  public func createCameraView(frame: CoreFoundation.CGRect, aspectRatio ratio: CoreFoundation.CGFloat) -> BVStreamIngest.CameraPreviewView?
-}
-extension BVStreamIngest.StreamIngestAuthorizer {
-  @available(*, deprecated, message: "This method is deprecated and has been removed. The authentication functionality has been moved to StreamIngest.create().")
-  public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
-}
 extension BVStreamIngest.StreamIngest {
   @available(*, deprecated, message: "This method is deprecated and has no effect. The authentication functionality has been moved to StreamIngest.create().")
   final public func requestAuthentication(completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
-}
-public class StreamIngestAuthorizer {
-  public init(debugMode: Swift.Bool = false)
-  @objc deinit
 }
 public protocol StreamIngestDelegate : ObjectiveC.NSObjectProtocol {
   func streamIngestDidStartPublishing(_ streamIngest: BVStreamIngest.StreamIngest)
@@ -307,8 +298,6 @@ extension BVStreamIngest.StreamIngestQualityLevel : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestQualityLevel : Swift.RawRepresentable {}
 extension BVStreamIngest.StreamIngestBufferState.BufferState : Swift.Equatable {}
 extension BVStreamIngest.StreamIngestBufferState.BufferState : Swift.Hashable {}
-extension BVStreamIngest.EffectStreamIngestLoadStatus : Swift.Equatable {}
-extension BVStreamIngest.EffectStreamIngestLoadStatus : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestEventName : Swift.Equatable {}
 extension BVStreamIngest.StreamIngestEventName : Swift.Hashable {}
 extension BVStreamIngest.StreamIngestEventName : Swift.RawRepresentable {}
