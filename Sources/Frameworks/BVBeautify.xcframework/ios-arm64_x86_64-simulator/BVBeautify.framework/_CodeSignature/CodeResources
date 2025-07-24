@@ -4,26 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/BVGfx.framework/BVGfx</key>
-		<data>
-		S0s0e7vIl9nilWQJHqvANaq3jLU=
-		</data>
-		<key>Frameworks/BVGfx.framework/Info.plist</key>
-		<data>
-		p+/uUPRD2KaadDq2o1hJILFFpew=
-		</data>
-		<key>Frameworks/BVGfx.framework/README.md</key>
-		<data>
-		rcg7GeeTSRscbqD9i0bNnzLlkvw=
-		</data>
-		<key>Frameworks/BVGfx.framework/_CodeSignature/CodeResources</key>
-		<data>
-		ono3Je1Sq3bTYUWQBpQRtEvDzg8=
-		</data>
-		<key>Frameworks/BVGfx.framework/default.metallib</key>
-		<data>
-		zuLCdurAf4lHpAqjVt1dmUrRlpU=
-		</data>
 		<key>Headers/BVBeautify.h</key>
 		<data>
 		PXvOSurotw/8T6CKkeBQqWpZCHQ=
@@ -34,7 +14,7 @@
 		</data>
 		<key>Modules/BVBeautify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		u5XbFHHcvOHukYEICzzELnlM+5E=
+		S582FrW6BIwSseJ4TSWluk2RDh8=
 		</data>
 		<key>Modules/BVBeautify.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +34,7 @@
 		</data>
 		<key>Modules/BVBeautify.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		u5XbFHHcvOHukYEICzzELnlM+5E=
+		S582FrW6BIwSseJ4TSWluk2RDh8=
 		</data>
 		<key>Modules/BVBeautify.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -95,41 +75,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/BVGfx.framework/BVGfx</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Sdg9Jp9Jh3KYqPvwkluuyHlEIiWKHqrik66gdFfNUsk=
-			</data>
-		</dict>
-		<key>Frameworks/BVGfx.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2B5bROhHOY2KMGI6NvxB4DwYOzVJyYWiTKhHub6Og0I=
-			</data>
-		</dict>
-		<key>Frameworks/BVGfx.framework/README.md</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
-			</data>
-		</dict>
-		<key>Frameworks/BVGfx.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/zGkl9Ku/47GHm997Eo39tFqSCvAMfHmeEPd3nC59to=
-			</data>
-		</dict>
-		<key>Frameworks/BVGfx.framework/default.metallib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OAi3Ixrn1UUAzoA2K7uKW10fj5nclJRR5KllT8s1mbk=
-			</data>
-		</dict>
 		<key>Headers/BVBeautify.h</key>
 		<dict>
 			<key>hash2</key>
@@ -141,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d1kxM7CzeJy1M9eFJTK+zY7mWLil0rQUfcYGq2EZrD8=
+			0cYJKlt4LKLHkpjkcnraYNQYMVjFhRzfkCAT28epvFw=
 			</data>
 		</dict>
 		<key>Modules/BVBeautify.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -176,7 +121,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d1kxM7CzeJy1M9eFJTK+zY7mWLil0rQUfcYGq2EZrD8=
+			0cYJKlt4LKLHkpjkcnraYNQYMVjFhRzfkCAT28epvFw=
 			</data>
 		</dict>
 		<key>Modules/BVBeautify.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

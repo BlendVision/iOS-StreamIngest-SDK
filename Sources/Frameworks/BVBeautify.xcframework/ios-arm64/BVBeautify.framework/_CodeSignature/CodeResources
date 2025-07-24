@@ -4,26 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/BVGfx.framework/BVGfx</key>
-		<data>
-		sg9ihI8iu9jT1TeIWR7hIJD7Wm8=
-		</data>
-		<key>Frameworks/BVGfx.framework/Info.plist</key>
-		<data>
-		tPrduabMjSKZpV13qSnpNt6b//M=
-		</data>
-		<key>Frameworks/BVGfx.framework/README.md</key>
-		<data>
-		rcg7GeeTSRscbqD9i0bNnzLlkvw=
-		</data>
-		<key>Frameworks/BVGfx.framework/_CodeSignature/CodeResources</key>
-		<data>
-		4brJWd2WCRv/Unh/B/DtRrvBc7c=
-		</data>
-		<key>Frameworks/BVGfx.framework/default.metallib</key>
-		<data>
-		K7NrqYxKYumF/gAqd7SzB5ikrRg=
-		</data>
 		<key>Headers/BVBeautify.h</key>
 		<data>
 		PXvOSurotw/8T6CKkeBQqWpZCHQ=
@@ -34,7 +14,7 @@
 		</data>
 		<key>Modules/BVBeautify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		u5XbFHHcvOHukYEICzzELnlM+5E=
+		S582FrW6BIwSseJ4TSWluk2RDh8=
 		</data>
 		<key>Modules/BVBeautify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -75,41 +55,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/BVGfx.framework/BVGfx</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sKcIXsbJuK40Gg8NEtyEVbEBpFG9brc3v7DjCG0GzJ0=
-			</data>
-		</dict>
-		<key>Frameworks/BVGfx.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Bt0moa6CuKn0gd1jrbGD833WaDYvbvu5/X2zM2D1MhI=
-			</data>
-		</dict>
-		<key>Frameworks/BVGfx.framework/README.md</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
-			</data>
-		</dict>
-		<key>Frameworks/BVGfx.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ucdhQ8nR7Hm7mGV/dj0gpRQAeKr6ft1POubZAfOE4oc=
-			</data>
-		</dict>
-		<key>Frameworks/BVGfx.framework/default.metallib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GitaKtTWU+GWkRbVPE5k906RqRqB6YCZKL7asiEWDMo=
-			</data>
-		</dict>
 		<key>Headers/BVBeautify.h</key>
 		<dict>
 			<key>hash2</key>
@@ -121,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d1kxM7CzeJy1M9eFJTK+zY7mWLil0rQUfcYGq2EZrD8=
+			0cYJKlt4LKLHkpjkcnraYNQYMVjFhRzfkCAT28epvFw=
 			</data>
 		</dict>
 		<key>Modules/BVBeautify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>

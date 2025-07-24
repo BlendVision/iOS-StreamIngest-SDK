@@ -148,6 +148,215 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BlitEffect",
+        "printedName": "BlitEffect",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "inputTexture",
+            "printedName": "inputTexture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BVGfx10BlitEffectC12inputTextureAA0E0Cvp",
+            "mangledName": "$s5BVGfx10BlitEffectC12inputTextureAA0E0Cvp",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Texture",
+                    "printedName": "BVGfx.Texture",
+                    "usr": "s:5BVGfx7TextureC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx10BlitEffectC12inputTextureAA0E0Cvg",
+                "mangledName": "$s5BVGfx10BlitEffectC12inputTextureAA0E0Cvg",
+                "moduleName": "BVGfx",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Texture",
+                    "printedName": "BVGfx.Texture",
+                    "usr": "s:5BVGfx7TextureC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx10BlitEffectC12inputTextureAA0E0Cvs",
+                "mangledName": "$s5BVGfx10BlitEffectC12inputTextureAA0E0Cvs",
+                "moduleName": "BVGfx",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx10BlitEffectC12inputTextureAA0E0CvM",
+                "mangledName": "$s5BVGfx10BlitEffectC12inputTextureAA0E0CvM",
+                "moduleName": "BVGfx",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(device:inputTexture:outputTexture:passType:outputPixelFormat:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BlitEffect",
+                "printedName": "BVGfx.BlitEffect",
+                "usr": "s:5BVGfx10BlitEffectC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Device",
+                "printedName": "BVGfx.Device",
+                "usr": "s:5BVGfx6DeviceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PassType",
+                "printedName": "BVGfx.PassType",
+                "usr": "s:5BVGfx8PassTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTLPixelFormat",
+                "printedName": "Metal.MTLPixelFormat",
+                "hasDefaultArg": true,
+                "usr": "c:@E@MTLPixelFormat"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5BVGfx10BlitEffectC6device12inputTexture06outputF08passType0G11PixelFormatAcA6DeviceC_AA0F0CAlA04PassI0OSo08MTLPixelK0Vtcfc",
+            "mangledName": "$s5BVGfx10BlitEffectC6device12inputTexture06outputF08passType0G11PixelFormatAcA6DeviceC_AA0F0CAlA04PassI0OSo08MTLPixelK0Vtcfc",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(device:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BlitEffect",
+                "printedName": "BVGfx.BlitEffect",
+                "usr": "s:5BVGfx10BlitEffectC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Device",
+                "printedName": "BVGfx.Device",
+                "usr": "s:5BVGfx6DeviceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5BVGfx10BlitEffectC6deviceAcA6DeviceC_tcfc",
+            "mangledName": "$s5BVGfx10BlitEffectC6deviceAcA6DeviceC_tcfc",
+            "moduleName": "BVGfx",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5BVGfx10BlitEffectC",
+        "mangledName": "$s5BVGfx10BlitEffectC",
+        "moduleName": "BVGfx",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:5BVGfx6EffectC",
+        "superclassNames": [
+          "BVGfx.Effect"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Metal",
+        "printedName": "Metal",
+        "declKind": "Import",
+        "moduleName": "BVGfx",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "PresentTextureEffect",
         "printedName": "PresentTextureEffect",
         "children": [
@@ -413,6 +622,88 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "inputTexture",
+            "printedName": "inputTexture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BVGfx20PresentTextureEffectC05inputC0AA0C0Cvp",
+            "mangledName": "$s5BVGfx20PresentTextureEffectC05inputC0AA0C0Cvp",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Texture",
+                    "printedName": "BVGfx.Texture",
+                    "usr": "s:5BVGfx7TextureC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx20PresentTextureEffectC05inputC0AA0C0Cvg",
+                "mangledName": "$s5BVGfx20PresentTextureEffectC05inputC0AA0C0Cvg",
+                "moduleName": "BVGfx",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Texture",
+                    "printedName": "BVGfx.Texture",
+                    "usr": "s:5BVGfx7TextureC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx20PresentTextureEffectC05inputC0AA0C0Cvs",
+                "mangledName": "$s5BVGfx20PresentTextureEffectC05inputC0AA0C0Cvs",
+                "moduleName": "BVGfx",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx20PresentTextureEffectC05inputC0AA0C0CvM",
+                "mangledName": "$s5BVGfx20PresentTextureEffectC05inputC0AA0C0CvM",
+                "moduleName": "BVGfx",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(device:inputTexture:outputTexture:outputPixelFormat:contentMode:rotation:flipHorizontally:)",
@@ -564,6 +855,215 @@
       },
       {
         "kind": "Import",
+        "name": "Metal",
+        "printedName": "Metal",
+        "declKind": "Import",
+        "moduleName": "BVGfx",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "BVGfx"
+      },
+      {
+        "kind": "Import",
+        "name": "Metal",
+        "printedName": "Metal",
+        "declKind": "Import",
+        "moduleName": "BVGfx",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "BVGfx"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BlitRenderPass",
+        "printedName": "BlitRenderPass",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(device:inputTexture:outputTexture:outputPixelFormat:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BlitRenderPass",
+                "printedName": "BVGfx.BlitRenderPass",
+                "usr": "s:5BVGfx14BlitRenderPassC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Device",
+                "printedName": "BVGfx.Device",
+                "usr": "s:5BVGfx6DeviceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTLPixelFormat",
+                "printedName": "Metal.MTLPixelFormat",
+                "usr": "c:@E@MTLPixelFormat"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5BVGfx14BlitRenderPassC6device12inputTexture06outputG00H11PixelFormatAcA6DeviceC_AA0G0CAKSo08MTLPixelJ0Vtcfc",
+            "mangledName": "$s5BVGfx14BlitRenderPassC6device12inputTexture06outputG00H11PixelFormatAcA6DeviceC_AA0G0CAKSo08MTLPixelJ0Vtcfc",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(inputTexture:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx14BlitRenderPassC3set12inputTextureyAA0G0C_tF",
+            "mangledName": "$s5BVGfx14BlitRenderPassC3set12inputTextureyAA0G0C_tF",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(device:vertexShader:fragmentShader:mesh:outputTexture:outputPixelFormat:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BlitRenderPass",
+                "printedName": "BVGfx.BlitRenderPass",
+                "usr": "s:5BVGfx14BlitRenderPassC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Device",
+                "printedName": "BVGfx.Device",
+                "usr": "s:5BVGfx6DeviceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Shader",
+                "printedName": "BVGfx.Shader",
+                "usr": "s:5BVGfx6ShaderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Shader",
+                "printedName": "BVGfx.Shader",
+                "usr": "s:5BVGfx6ShaderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Mesh",
+                "printedName": "BVGfx.Mesh",
+                "usr": "s:5BVGfx4MeshC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTLPixelFormat",
+                "printedName": "Metal.MTLPixelFormat",
+                "hasDefaultArg": true,
+                "usr": "c:@E@MTLPixelFormat"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5BVGfx14BlitRenderPassC6device12vertexShader08fragmentG04mesh13outputTexture0J11PixelFormatAcA6DeviceC_AA0G0CAmA4MeshCAA0K0CSo08MTLPixelM0Vtcfc",
+            "mangledName": "$s5BVGfx14BlitRenderPassC6device12vertexShader08fragmentG04mesh13outputTexture0J11PixelFormatAcA6DeviceC_AA0G0CAmA4MeshCAA0K0CSo08MTLPixelM0Vtcfc",
+            "moduleName": "BVGfx",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5BVGfx14BlitRenderPassC",
+        "mangledName": "$s5BVGfx14BlitRenderPassC",
+        "moduleName": "BVGfx",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:5BVGfx10RenderPassC",
+        "superclassNames": [
+          "BVGfx.RenderPass"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Pass",
+            "printedName": "Pass",
+            "usr": "s:5BVGfx4PassP",
+            "mangledName": "$s5BVGfx4PassP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
@@ -664,6 +1164,33 @@
               "RawDocComment"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(inputTexture:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Texture",
+                "printedName": "BVGfx.Texture",
+                "usr": "s:5BVGfx7TextureC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx18PresentTexturePassC3set05inputC0yAA0C0C_tF",
+            "mangledName": "$s5BVGfx18PresentTexturePassC3set05inputC0yAA0C0C_tF",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -889,8 +1416,8 @@
             "mangledName": "$s5BVGfx11ComputePassC6deviceAA6DeviceCvp",
             "moduleName": "BVGfx",
             "declAttributes": [
-              "Final",
               "HasStorage",
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -923,6 +1450,55 @@
           },
           {
             "kind": "Var",
+            "name": "shader",
+            "printedName": "shader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Shader",
+                "printedName": "BVGfx.Shader",
+                "usr": "s:5BVGfx6ShaderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BVGfx11ComputePassC6shaderAA6ShaderCvp",
+            "mangledName": "$s5BVGfx11ComputePassC6shaderAA6ShaderCvp",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Shader",
+                    "printedName": "BVGfx.Shader",
+                    "usr": "s:5BVGfx6ShaderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx11ComputePassC6shaderAA6ShaderCvg",
+                "mangledName": "$s5BVGfx11ComputePassC6shaderAA6ShaderCvg",
+                "moduleName": "BVGfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "outputTexture",
             "printedName": "outputTexture",
             "children": [
@@ -938,8 +1514,8 @@
             "mangledName": "$s5BVGfx11ComputePassC13outputTextureAA0E0Cvp",
             "moduleName": "BVGfx",
             "declAttributes": [
-              "Final",
               "HasStorage",
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1568,6 +2144,73 @@
           },
           {
             "kind": "Function",
+            "name": "set",
+            "printedName": "set(property:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx6EffectC3set8property5valueySS_yptF",
+            "mangledName": "$s5BVGfx6EffectC3set8property5valueySS_yptF",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(property:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx6EffectC3get8propertyypSgSS_tF",
+            "mangledName": "$s5BVGfx6EffectC3get8propertyypSgSS_tF",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "add",
             "printedName": "add(pass:named:)",
             "children": [
@@ -1827,6 +2470,110 @@
         "children": [
           {
             "kind": "Function",
+            "name": "set",
+            "printedName": "set(property:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx4PassP3set8property5valueySS_yptF",
+            "mangledName": "$s5BVGfx4PassP3set8property5valueySS_yptF",
+            "moduleName": "BVGfx",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVGfx.Pass>",
+            "sugared_genericSig": "<Self where Self : BVGfx.Pass>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(property:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx4PassP3get8propertyypSgSS_tF",
+            "mangledName": "$s5BVGfx4PassP3get8propertyypSgSS_tF",
+            "moduleName": "BVGfx",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVGfx.Pass>",
+            "sugared_genericSig": "<Self where Self : BVGfx.Pass>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "has",
+            "printedName": "has(property:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx4PassP3has8propertySbSS_tF",
+            "mangledName": "$s5BVGfx4PassP3has8propertySbSS_tF",
+            "moduleName": "BVGfx",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVGfx.Pass>",
+            "sugared_genericSig": "<Self where Self : BVGfx.Pass>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "encode",
             "printedName": "encode(commandBuffer:)",
             "children": [
@@ -1926,6 +2673,110 @@
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(property:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx4PassPAAE3set8property5valueySS_yptF",
+            "mangledName": "$s5BVGfx4PassPAAE3set8property5valueySS_yptF",
+            "moduleName": "BVGfx",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVGfx.Pass>",
+            "sugared_genericSig": "<Self where Self : BVGfx.Pass>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(property:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx4PassPAAE3get8propertyypSgSS_tF",
+            "mangledName": "$s5BVGfx4PassPAAE3get8propertyypSgSS_tF",
+            "moduleName": "BVGfx",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVGfx.Pass>",
+            "sugared_genericSig": "<Self where Self : BVGfx.Pass>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "has",
+            "printedName": "has(property:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BVGfx4PassPAAE3has8propertySbSS_tF",
+            "mangledName": "$s5BVGfx4PassPAAE3has8propertySbSS_tF",
+            "moduleName": "BVGfx",
+            "genericSig": "<τ_0_0 where τ_0_0 : BVGfx.Pass>",
+            "sugared_genericSig": "<Self where Self : BVGfx.Pass>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -6979,6 +7830,63 @@
           },
           {
             "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Size2",
+                "printedName": "BVGfx.Size2<Swift.Int>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:5BVGfx5Size2V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BVGfx7TextureC4sizeAA5Size2VySiGvp",
+            "mangledName": "$s5BVGfx7TextureC4sizeAA5Size2VySiGvp",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Size2",
+                    "printedName": "BVGfx.Size2<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:5BVGfx5Size2V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx7TextureC4sizeAA5Size2VySiGvg",
+                "mangledName": "$s5BVGfx7TextureC4sizeAA5Size2VySiGvg",
+                "moduleName": "BVGfx",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "width",
             "printedName": "width",
             "children": [
@@ -7920,6 +8828,220 @@
         "declKind": "Enum",
         "usr": "s:5BVGfx10ShaderTypeO",
         "mangledName": "$s5BVGfx10ShaderTypeO",
+        "moduleName": "BVGfx",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PassType",
+        "printedName": "PassType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "renderPass",
+            "printedName": "renderPass",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BVGfx.PassType.Type) -> BVGfx.PassType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassType",
+                    "printedName": "BVGfx.PassType",
+                    "usr": "s:5BVGfx8PassTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BVGfx.PassType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PassType",
+                        "printedName": "BVGfx.PassType",
+                        "usr": "s:5BVGfx8PassTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5BVGfx8PassTypeO06renderB0yA2CmF",
+            "mangledName": "$s5BVGfx8PassTypeO06renderB0yA2CmF",
+            "moduleName": "BVGfx"
+          },
+          {
+            "kind": "Var",
+            "name": "computePass",
+            "printedName": "computePass",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BVGfx.PassType.Type) -> BVGfx.PassType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassType",
+                    "printedName": "BVGfx.PassType",
+                    "usr": "s:5BVGfx8PassTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BVGfx.PassType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PassType",
+                        "printedName": "BVGfx.PassType",
+                        "usr": "s:5BVGfx8PassTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5BVGfx8PassTypeO07computeB0yA2CmF",
+            "mangledName": "$s5BVGfx8PassTypeO07computeB0yA2CmF",
+            "moduleName": "BVGfx"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BVGfx.PassType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassType",
+                    "printedName": "BVGfx.PassType",
+                    "usr": "s:5BVGfx8PassTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5BVGfx8PassTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5BVGfx8PassTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "BVGfx",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BVGfx8PassTypeO8rawValueSSvp",
+            "mangledName": "$s5BVGfx8PassTypeO8rawValueSSvp",
+            "moduleName": "BVGfx",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx8PassTypeO8rawValueSSvg",
+                "mangledName": "$s5BVGfx8PassTypeO8rawValueSSvg",
+                "moduleName": "BVGfx",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5BVGfx8PassTypeO",
+        "mangledName": "$s5BVGfx8PassTypeO",
         "moduleName": "BVGfx",
         "declAttributes": [
           "AccessControl",
@@ -9459,26 +10581,47 @@
         "children": [
           {
             "kind": "Var",
-            "name": "width",
-            "printedName": "width",
+            "name": "onFrameAvailable",
+            "printedName": "onFrameAvailable",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Optional",
+                "printedName": "((BVGfx.VideoTexture) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BVGfx.VideoTexture) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoTexture",
+                        "printedName": "BVGfx.VideoTexture",
+                        "usr": "s:5BVGfx12VideoTextureC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5BVGfx12VideoTextureC5widthSivp",
-            "mangledName": "$s5BVGfx12VideoTextureC5widthSivp",
+            "usr": "s:5BVGfx12VideoTextureC16onFrameAvailableyACcSgvp",
+            "mangledName": "$s5BVGfx12VideoTextureC16onFrameAvailableyACcSgvp",
             "moduleName": "BVGfx",
-            "overriding": true,
             "declAttributes": [
-              "Override",
+              "HasInitialValue",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -9487,61 +10630,99 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Optional",
+                    "printedName": "((BVGfx.VideoTexture) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(BVGfx.VideoTexture) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VideoTexture",
+                            "printedName": "BVGfx.VideoTexture",
+                            "usr": "s:5BVGfx12VideoTextureC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5BVGfx12VideoTextureC5widthSivg",
-                "mangledName": "$s5BVGfx12VideoTextureC5widthSivg",
+                "usr": "s:5BVGfx12VideoTextureC16onFrameAvailableyACcSgvg",
+                "mangledName": "$s5BVGfx12VideoTextureC16onFrameAvailableyACcSgvg",
                 "moduleName": "BVGfx",
-                "overriding": true,
+                "implicit": true,
                 "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "height",
-            "printedName": "height",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5BVGfx12VideoTextureC6heightSivp",
-            "mangledName": "$s5BVGfx12VideoTextureC6heightSivp",
-            "moduleName": "BVGfx",
-            "overriding": true,
-            "declAttributes": [
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
+              },
               {
                 "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Set",
+                "printedName": "Set()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((BVGfx.VideoTexture) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(BVGfx.VideoTexture) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VideoTexture",
+                            "printedName": "BVGfx.VideoTexture",
+                            "usr": "s:5BVGfx12VideoTextureC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5BVGfx12VideoTextureC6heightSivg",
-                "mangledName": "$s5BVGfx12VideoTextureC6heightSivg",
+                "usr": "s:5BVGfx12VideoTextureC16onFrameAvailableyACcSgvs",
+                "mangledName": "$s5BVGfx12VideoTextureC16onFrameAvailableyACcSgvs",
                 "moduleName": "BVGfx",
-                "overriding": true,
-                "accessorKind": "get"
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx12VideoTextureC16onFrameAvailableyACcSgvM",
+                "mangledName": "$s5BVGfx12VideoTextureC16onFrameAvailableyACcSgvM",
+                "moduleName": "BVGfx",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -10501,6 +11682,50 @@
                 "genericSig": "<τ_0_0 where τ_0_0 : Swift.Numeric>",
                 "sugared_genericSig": "<T where T : Swift.Numeric>",
                 "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isZero",
+            "printedName": "isZero",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BVGfx5Size2V6isZeroSbvp",
+            "mangledName": "$s5BVGfx5Size2V6isZeroSbvp",
+            "moduleName": "BVGfx",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BVGfx5Size2V6isZeroSbvg",
+                "mangledName": "$s5BVGfx5Size2V6isZeroSbvg",
+                "moduleName": "BVGfx",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Numeric>",
+                "sugared_genericSig": "<T where T : Swift.Numeric>",
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -13825,28 +15050,28 @@
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Effects\/PresentTextureEffect.swift",
       "kind": "BooleanLiteral",
-      "offset": 1222,
+      "offset": 1422,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Effects\/PresentTextureEffect.swift",
       "kind": "BooleanLiteral",
-      "offset": 2041,
+      "offset": 2241,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Passes\/PresentTexturePass.swift",
       "kind": "BooleanLiteral",
-      "offset": 1284,
+      "offset": 1285,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Passes\/PresentTexturePass.swift",
       "kind": "BooleanLiteral",
-      "offset": 2045,
+      "offset": 2046,
       "length": 5,
       "value": "false"
     },
@@ -13875,6 +15100,13 @@
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Utilities\/MetalComputeCommandRunner.swift",
       "kind": "BooleanLiteral",
       "offset": 6410,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/VideoSource\/AVPlayerItemFrameSource.swift",
+      "kind": "BooleanLiteral",
+      "offset": 440,
       "length": 5,
       "value": "false"
     },
@@ -14007,56 +15239,70 @@
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 404,
+      "offset": 379,
+      "length": 13,
+      "value": "\"render pass\""
+    },
+    {
+      "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
+      "kind": "StringLiteral",
+      "offset": 416,
+      "length": 14,
+      "value": "\"compute pass\""
+    },
+    {
+      "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
+      "kind": "StringLiteral",
+      "offset": 556,
       "length": 9,
       "value": "\"sampler\""
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 440,
+      "offset": 592,
       "length": 9,
       "value": "\"texture\""
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 476,
+      "offset": 628,
       "length": 17,
       "value": "\"constant buffer\""
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 520,
+      "offset": 672,
       "length": 16,
       "value": "\"uniform buffer\""
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
       "kind": "IntegerLiteral",
-      "offset": 667,
+      "offset": 819,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
       "kind": "IntegerLiteral",
-      "offset": 691,
+      "offset": 843,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
       "kind": "IntegerLiteral",
-      "offset": 716,
+      "offset": 868,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/chezhung\/repos\/kk\/bv-ios-pse\/BVGfx\/BVGfx\/Gfx\/Types.swift",
       "kind": "IntegerLiteral",
-      "offset": 742,
+      "offset": 894,
       "length": 3,
       "value": "270"
     },

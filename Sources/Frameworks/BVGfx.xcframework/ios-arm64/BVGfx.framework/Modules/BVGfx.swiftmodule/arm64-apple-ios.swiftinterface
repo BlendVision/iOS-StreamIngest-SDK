@@ -22,6 +22,14 @@ final public class ResourceTracker {
   final public func untrack(resource: any BVGfx.ManagedResource)
   final public func printTrackedResources()
 }
+public class BlitEffect : BVGfx.Effect {
+  public var inputTexture: BVGfx.Texture {
+    get
+    set
+  }
+  public init(device: BVGfx.Device, inputTexture: BVGfx.Texture, outputTexture: BVGfx.Texture, passType: BVGfx.PassType, outputPixelFormat: Metal.MTLPixelFormat = .bgra8Unorm)
+  @objc deinit
+}
 public class PresentTextureEffect : BVGfx.Effect {
   public var contentMode: BVGfx.ContentMode {
     get
@@ -35,12 +43,22 @@ public class PresentTextureEffect : BVGfx.Effect {
     get
     set
   }
+  public var inputTexture: BVGfx.Texture {
+    get
+    set
+  }
   public init(device: BVGfx.Device, inputTexture: BVGfx.Texture, outputTexture: BVGfx.Texture, outputPixelFormat: Metal.MTLPixelFormat, contentMode: BVGfx.ContentMode = .scaleAspectFit, rotation: BVGfx.ImageRotation = .degrees0, flipHorizontally: Swift.Bool = false)
   override open func prepare() -> Swift.Bool
   @objc deinit
 }
+public class BlitRenderPass : BVGfx.RenderPass {
+  public init(device: BVGfx.Device, inputTexture: BVGfx.Texture, outputTexture: BVGfx.Texture, outputPixelFormat: Metal.MTLPixelFormat)
+  public func set(inputTexture: BVGfx.Texture)
+  @objc deinit
+}
 public class PresentTexturePass : BVGfx.RenderPass {
   public init(device: BVGfx.Device, inputTexture: BVGfx.Texture, outputTexture: BVGfx.Texture, outputPixelFormat: Metal.MTLPixelFormat, contentMode: BVGfx.ContentMode = .scaleAspectFit, rotation: BVGfx.ImageRotation = .degrees0, flipHorizontally: Swift.Bool = false)
+  public func set(inputTexture: BVGfx.Texture)
   public func set(contentMode: BVGfx.ContentMode, rotation: BVGfx.ImageRotation, flipHorizontally: Swift.Bool)
   @objc deinit
 }
@@ -49,6 +67,7 @@ extension BVGfx.PresentTexturePass : BVGfx.TextureDelegate {
 }
 open class ComputePass : BVGfx.Pass {
   final public let device: BVGfx.Device
+  final public let shader: BVGfx.Shader
   final public let outputTexture: BVGfx.Texture
   public init(device: BVGfx.Device, computeShader: BVGfx.Shader, outputTexture: BVGfx.Texture)
   @objc deinit
@@ -67,6 +86,8 @@ open class Effect {
   public var shouldWaitForCompletion: Swift.Bool
   public init(device: BVGfx.Device)
   @objc deinit
+  public func set(property: Swift.String, value: Any)
+  public func get(property: Swift.String) -> Any?
   public func add(pass: any BVGfx.Pass, named name: Swift.String)
   public func removeAllPasses()
   public func getPass(named name: Swift.String) -> (any BVGfx.Pass)?
@@ -76,9 +97,17 @@ open class Effect {
   open func apply(present drawable: (any Metal.MTLDrawable)? = nil) -> Swift.Bool
 }
 public protocol Pass {
+  func set(property: Swift.String, value: Any)
+  func get(property: Swift.String) -> Any?
+  func has(property: Swift.String) -> Swift.Bool
   func encode(commandBuffer: any Metal.MTLCommandBuffer) -> Swift.Bool
   func sourceResolutionDidChange(width: Swift.Int, height: Swift.Int)
   func outputResolutionDidChange(width: Swift.Int, height: Swift.Int)
+}
+extension BVGfx.Pass {
+  public func set(property: Swift.String, value: Any)
+  public func get(property: Swift.String) -> Any?
+  public func has(property: Swift.String) -> Swift.Bool
 }
 open class RenderPass : BVGfx.Pass {
   final public let device: BVGfx.Device
@@ -271,6 +300,9 @@ public protocol ShaderResource {
   public var resourceType: BVGfx.ShaderResourceType {
     get
   }
+  open var size: BVGfx.Size2i {
+    get
+  }
   open var width: Swift.Int {
     get
   }
@@ -303,6 +335,15 @@ public enum ShaderType : Swift.String {
   case vertexShader
   case fragmentShader
   case computeShader
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PassType : Swift.String {
+  case renderPass
+  case computePass
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -368,12 +409,7 @@ public class UniformBuffer : BVGfx.ShaderResource, BVGfx.ManagedResource {
   public func bind(using encoder: any Metal.MTLComputeCommandEncoder, to shader: BVGfx.Shader, index: Swift.Int) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class VideoTexture : BVGfx.Texture, BVGfx.VideoFrameSourceDelegate {
-  override public var width: Swift.Int {
-    get
-  }
-  override public var height: Swift.Int {
-    get
-  }
+  public var onFrameAvailable: ((BVGfx.VideoTexture) -> Swift.Void)?
   override public func prepareForRelease()
   public func set(frameSource: any BVGfx.VideoFrameSource)
   public func clearFrameSource()
@@ -425,6 +461,9 @@ extension BVGfx.Size2 {
     get
   }
   public static var one: BVGfx.Size2<T> {
+    get
+  }
+  public var isZero: Swift.Bool {
     get
   }
 }
@@ -537,6 +576,9 @@ public class Profiler {
 extension BVGfx.ShaderType : Swift.Equatable {}
 extension BVGfx.ShaderType : Swift.Hashable {}
 extension BVGfx.ShaderType : Swift.RawRepresentable {}
+extension BVGfx.PassType : Swift.Equatable {}
+extension BVGfx.PassType : Swift.Hashable {}
+extension BVGfx.PassType : Swift.RawRepresentable {}
 extension BVGfx.ShaderResourceType : Swift.Equatable {}
 extension BVGfx.ShaderResourceType : Swift.Hashable {}
 extension BVGfx.ShaderResourceType : Swift.RawRepresentable {}
